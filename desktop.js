@@ -7578,6 +7578,50 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   #salonDesktopTeam .std-team-edge-cue:hover span{border-color:#fff!important}
   @keyframes brTeamCueRight{0%,100%{opacity:.38;transform:translate3d(0,-50%,0)}50%{opacity:1;transform:translate3d(5px,-50%,0)}}
 
+  /* Final PC hero identity: centered within the left column and never overlaps the photo. */
+  #salonDesktopTop .std-copy-inner{width:min(100%,520px)!important}
+  #salonDesktopTop .std-logo,
+  #salonDesktopTop .std-logo-sub{width:100%!important;max-width:520px!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+  #salonDesktopTop .std-logo{font-size:clamp(38px,3.05vw,53px)!important;letter-spacing:.012em!important}
+  #salonDesktopTop .std-logo-sub{margin-top:15px!important;font-size:clamp(22px,1.75vw,30px)!important;letter-spacing:.09em!important}
+
+  /* Team: keep the approved card positions, make page 2 match page 1, add a subtle half-square cue and drag/swipe navigation. */
+  #salonDesktopTeam .std-team-window{overflow:visible!important}
+  #salonDesktopTeam .std-team-page{align-content:start!important;align-items:start!important}
+  #salonDesktopTeam .std-team-page:last-child{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:auto 1fr!important;
+    align-content:start!important;
+    align-items:start!important;
+    padding:5px 8px 9px!important;
+  }
+  #salonDesktopTeam .std-master{align-self:start!important}
+  #salonDesktopTeam .std-master-avatar{
+    width:216px!important;height:216px!important;min-width:216px!important;min-height:216px!important;
+    aspect-ratio:1/1!important;border-radius:50%!important;flex:none!important
+  }
+  #salonDesktopTeam .std-team-window:after{
+    content:""!important;
+    position:absolute!important;
+    z-index:8!important;
+    right:-18px!important;
+    top:46%!important;
+    width:20px!important;
+    height:32px!important;
+    border-top:2px solid rgba(247,243,240,.58)!important;
+    border-right:2px solid rgba(247,243,240,.58)!important;
+    border-bottom:2px solid rgba(247,243,240,.58)!important;
+    border-left:0!important;
+    border-radius:0 7px 7px 0!important;
+    transform:translateY(-50%)!important;
+    pointer-events:none!important;
+    animation:brTeamEdgeCue 1.7s ease-in-out infinite!important;
+  }
+  #salonDesktopTeam.is-last-page .std-team-window:after{opacity:.16!important;animation:none!important}
+  @keyframes brTeamEdgeCue{
+    0%,100%{opacity:.28;transform:translate3d(-2px,-50%,0)}
+    50%{opacity:.95;transform:translate3d(4px,-50%,0)}
+  }
   /* One viewer handles photographs and the salon video. */
   .std-gallery-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;background:#151312!important;border:0!important}
   .std-gallery-video[hidden],.std-gallery-image[hidden],.std-gallery-hint[hidden]{display:none!important}
@@ -8123,7 +8167,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     gallery.classList.add('open');
     document.body.style.overflow='hidden';
     if(galleryItems[galleryIndex]?.type==='video'){
-      requestAnimationFrame(()=>{const p=galleryVideo.play();if(p&&typeof p.catch==='function')p.catch(()=>{})});
+      requestAnimationFrame(()=>{try{galleryVideo.currentTime=0}catch(_){}const p=galleryVideo.play();if(p&&typeof p.catch==='function')p.catch(()=>{})});
     }
   }
   function closeDesktopViewer(){
@@ -8170,11 +8214,16 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     if(!gallery.classList.contains('open'))document.body.style.overflow='';
   }
 
-  document.querySelectorAll('.std-work[data-portfolio-index]').forEach(btn=>{
-    btn.addEventListener('click',()=>{
+  const desktopPortfolioGrid=document.querySelector('#salonDesktopPortfolio .std-portfolio-grid');
+  if(desktopPortfolioGrid){
+    desktopPortfolioGrid.addEventListener('click',e=>{
+      const btn=e.target.closest('.std-work[data-portfolio-index]');
+      if(!btn)return;
+      e.preventDefault();
+      e.stopPropagation();
       openDesktopViewer(PORTFOLIO,Number(btn.dataset.portfolioIndex)||0,'portfolio');
     });
-  });
+  }
   document.getElementById('stdOpenGallery').addEventListener('click',()=>openDesktopGalleryBrowser('Салон'));
   document.getElementById('stdStickyGalleryOpen')?.addEventListener('click',()=>openDesktopGalleryBrowser('Салон'));
   if(heroVideo)heroVideo.addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
