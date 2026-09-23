@@ -150,7 +150,8 @@
     }
   ]
 };
-  const DESKTOP_GALLERY=Object.values(DESKTOP_GALLERY_GROUPS).flat().map(x=>x.src);
+  const DESKTOP_ALL_MEDIA=[...new Map(Object.values(DESKTOP_GALLERY_GROUPS).flat().map(item=>[item.src,item])).values()];
+  const DESKTOP_GALLERY=DESKTOP_ALL_MEDIA.map(x=>x.src);
   const SERVICE_DATA={
   "Окрашивание": [
     [
@@ -8110,10 +8111,14 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     resetDesktopViewer();
   }
   function openDesktopViewer(items,index=0,source='gallery'){
-    galleryItems=Array.isArray(items)&&items.length?items:PORTFOLIO.slice();
+    const sourceItems=Array.isArray(items)&&items.length?items:PORTFOLIO.slice();
+    const safeIndex=Math.max(0,Math.min(index,sourceItems.length-1));
+    const selected=sourceItems[safeIndex];
+    const fullIndex=selected?DESKTOP_ALL_MEDIA.findIndex(item=>item.src===selected.src):-1;
+    galleryItems=fullIndex>=0?DESKTOP_ALL_MEDIA:sourceItems;
     gallery.dataset.source=source;
-    galleryViewAll.hidden=source!=='portfolio';
-    galleryIndex=Math.max(0,Math.min(index,galleryItems.length-1));
+    galleryViewAll.hidden=false;
+    galleryIndex=fullIndex>=0?fullIndex:safeIndex;
     paintGallery();
     gallery.classList.add('open');
     document.body.style.overflow='hidden';
@@ -8170,14 +8175,14 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
       openDesktopViewer(PORTFOLIO,Number(btn.dataset.portfolioIndex)||0,'portfolio');
     });
   });
-  document.getElementById('stdOpenGallery').addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
-  document.getElementById('stdStickyGalleryOpen')?.addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
+  document.getElementById('stdOpenGallery').addEventListener('click',()=>openDesktopGalleryBrowser('Салон'));
+  document.getElementById('stdStickyGalleryOpen')?.addEventListener('click',()=>openDesktopGalleryBrowser('Салон'));
   if(heroVideo)heroVideo.addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
   document.getElementById('stdGalleryBrowserBack').addEventListener('click',closeDesktopGalleryBrowser);
   document.getElementById('stdGalleryClose').addEventListener('click',closeDesktopViewer);
   document.getElementById('stdGalleryPrev').addEventListener('click',()=>moveDesktopGallery(-1));
   document.getElementById('stdGalleryNext').addEventListener('click',()=>moveDesktopGallery(1));
-  galleryViewAll.addEventListener('click',()=>{closeDesktopViewer();openDesktopGalleryBrowser('Ногти')});
+  galleryViewAll.addEventListener('click',()=>{closeDesktopViewer();openDesktopGalleryBrowser('Салон')});
   gallery.addEventListener('click',e=>{if(e.target===gallery)closeDesktopViewer()});
 
   galleryStage.addEventListener('wheel',e=>{
