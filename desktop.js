@@ -583,7 +583,7 @@
   const desktopStyle=document.createElement('style');
   desktopStyle.id='salon-desktop-styles';
   desktopStyle.textContent=String.raw`
-/* Consolidated desktop CSS: identical selectors/media have their superseded declarations removed. */
+/* Canonical desktop CSS: superseded declarations removed; effective cascade preserved. */
 @media(min-width:768px){
   html,body{
     margin:0!important;
@@ -607,7 +607,6 @@
     display:block;
     width:100%;
     min-height:100vh;
-    background:#fff;
     font-family:"Manrope",Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
   }
@@ -719,9 +718,6 @@
   }
   .std-hero-copy{
     display:flex;
-  }
-  .std-copy-inner{
-    width:min(100%,470px);
   }
   .std-hero-kicker{
     font:600 12px/1 "Manrope",Arial,sans-serif;
@@ -1921,17 +1917,8 @@
 }
 @media(min-width:768px){
   #salon-desktop-v1{
-    --br-bg:#f8f4ee;
     --br-section:#f7f2eb;
-    --br-warm:#e9e2da;
     --br-team:#f6f1e9;
-    --br-ink:#171513;
-    --br-soft:#746c66;
-    --br-line:rgba(62,51,44,.12);
-    --br-taupe:#8f7167;
-  }
-  .std-copy-inner{
-    width:min(100%,560px)!important;
   }
   .std-meta{
     margin-top:2px!important;
@@ -2344,9 +2331,6 @@
     color:#c7bbb3;
     font-size:10px;
     pointer-events:none;
-  }
-  .std-copy-inner{
-    width:min(100%,560px)!important;
   }
   .std-hero-kicker{
     margin-bottom:31px!important;
@@ -3156,7 +3140,6 @@
     pointer-events:none!important;
   }
   .std-copy-inner{
-    width:min(100% - 64px,560px)!important;
     margin-top:116px!important;
   }
   .std-scroll-hint{
@@ -4021,9 +4004,6 @@
   .std-hero-frame:after{
     display:none!important;
   }
-  .std-copy-inner{
-    width:min(100%,570px)!important;
-  }
   .std-hero-kicker{
     margin:0 0 28px!important;
     color:#9b7768!important;
@@ -4154,7 +4134,6 @@
     left:42px!important;
   }
   .std-copy-inner{
-    width:min(100%,500px)!important;
     margin-top:clamp(58px,8vh,86px)!important;
   }
   .std-logo{
@@ -4265,9 +4244,6 @@
     border-color:rgba(146,106,85,.12)!important;
     box-shadow:0 0 80px rgba(108,77,61,.035)!important;
   }
-  .std-copy-inner{
-    width:100%!important;
-  }
   .std-hero-kicker,
   .std-logo,
   .std-logo-sub,
@@ -4323,7 +4299,6 @@
     justify-content:center!important;
   }
   .std-copy-inner{
-    width:min(calc(100% - 72px),570px)!important;
     margin-left:auto!important;
     margin-right:auto!important;
   }
@@ -4332,9 +4307,6 @@
   .std-hero-copy{
     padding-left:0!important;
     padding-right:0!important;
-  }
-  .std-copy-inner{
-    width:min(calc(100% - 52px),500px)!important;
   }
 }
 @media(min-width:768px){
@@ -4348,7 +4320,6 @@
     position:absolute!important;
     z-index:4!important;
     top:0!important;
-    width:46.5%!important;
     max-width:none!important;
     height:100%!important;
     margin:0!important;
@@ -4373,7 +4344,6 @@
 }
 @media(min-width:768px) and (max-width:1180px){
   .std-copy-inner{
-    width:48%!important;
     padding:clamp(58px,8vh,86px) 26px 100px!important;
   }
 }
