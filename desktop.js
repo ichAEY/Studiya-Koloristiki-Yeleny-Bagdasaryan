@@ -1023,7 +1023,7 @@
         box-shadow:none;
       }
       .std-work:first-child{grid-row:1 / span 2}
-      .std-work img{
+      .std-work img,.std-work video{
         width:100%;
         height:100%;
         object-fit:cover;
@@ -1031,6 +1031,7 @@
         transition:transform .35s cubic-bezier(.2,.7,.2,1);
       }
       .std-work:hover img{transform:scale(1.018)}
+      .std-work-video{pointer-events:none}
       .std-portfolio-more{
         width:516px;
         max-width:calc(100% - 84px);
@@ -1993,7 +1994,7 @@
         overflow:hidden;
         background:#302b34;
       }
-      .std-gallery-browser-tile img{
+      .std-gallery-browser-tile img,.std-gallery-browser-tile video{
         display:block;
         width:100%;
         height:100%;
@@ -2255,14 +2256,14 @@
   #salonDesktopTeam .std-team-kicker{color:#9b7d72!important;font-size:12px!important}
   #salonDesktopTeam .std-team-title{margin-top:14px!important;color:#171513!important;font-size:64px!important;line-height:.93!important}
   #salonDesktopTeam .std-team-subtitle{margin-top:14px!important;color:#746c66!important;font-size:14px!important}
-  #salonDesktopTeam .std-team-track{display:grid!important;width:100%!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:30px!important;margin-top:46px!important;overflow:visible!important;padding:0!important}
-  #salonDesktopTeam .std-master{position:relative!important;display:block!important;width:100%!important;min-width:0!important;padding:0 8px 18px!important;border:0!important;background:none!important;color:#171513!important;text-align:center!important;cursor:pointer!important}
+  #salonDesktopTeam .std-team-window{position:relative!important;margin-top:46px!important;padding:0 52px!important;overflow:hidden!important}#salonDesktopTeam .std-team-track{display:flex!important;width:100%!important;gap:30px!important;margin:0!important;overflow-x:auto!important;overflow-y:hidden!important;padding:0 0 10px!important;scrollbar-width:none!important;scroll-snap-type:x mandatory!important;scroll-behavior:smooth!important}#salonDesktopTeam .std-team-track::-webkit-scrollbar{display:none!important}
+  #salonDesktopTeam .std-master{position:relative!important;display:block!important;flex:0 0 calc((100% - 90px)/4)!important;width:calc((100% - 90px)/4)!important;min-width:calc((100% - 90px)/4)!important;padding:0 8px 18px!important;border:0!important;background:none!important;color:#171513!important;text-align:center!important;cursor:pointer!important;scroll-snap-align:start!important}
   #salonDesktopTeam .std-master-arrow{position:absolute!important;top:7px!important;right:12px!important;z-index:2!important;width:36px!important;height:36px!important;border:1px solid rgba(62,51,44,.12)!important;border-radius:50%!important;background:rgba(255,255,255,.48)!important;display:grid!important;place-items:center!important;color:#75675f!important;font-size:14px!important}
   #salonDesktopTeam .std-master-avatar{width:min(100%,190px)!important;height:auto!important;aspect-ratio:1/1!important;margin:0 auto!important;border:0!important;border-radius:50%!important;background:linear-gradient(145deg,#e9e3dc,#d7cec6)!important;color:#9b9088!important;box-shadow:none!important;transition:transform .22s ease!important}
   #salonDesktopTeam .std-master:hover .std-master-avatar{transform:translateY(-4px)!important}
   #salonDesktopTeam .std-master-avatar svg{width:64px!important;height:64px!important}
   #salonDesktopTeam .std-master-name{margin-top:18px!important;color:#171513!important;font-size:29px!important}
-  #salonDesktopTeam .std-master-role{margin-top:7px!important;color:#827871!important;font-size:11px!important}
+  #salonDesktopTeam .std-master-role{margin-top:7px!important;color:#827871!important;font-size:11px!important}#salonDesktopTeam .std-team-nav{position:absolute!important;z-index:5!important;top:42%!important;width:40px!important;height:40px!important;border:1px solid rgba(62,51,44,.14)!important;border-radius:50%!important;background:rgba(255,255,255,.82)!important;color:#171513!important;font:300 25px/1 Arial,sans-serif!important;display:grid!important;place-items:center!important}#salonDesktopTeam .std-team-prev{left:3px!important}#salonDesktopTeam .std-team-next{right:3px!important}#salonDesktopTeam .std-team-pages{display:flex!important;justify-content:center!important;gap:7px!important;margin-top:16px!important}#salonDesktopTeam .std-team-pages span{width:6px!important;height:6px!important;border-radius:50%!important;background:rgba(23,21,19,.22)!important}#salonDesktopTeam .std-team-pages span.active{width:18px!important;border-radius:999px!important;background:#171513!important}
 
   /* Reviews — same warm mobile block color. */
   #salonDesktopReviews.std-reviews{
@@ -7680,7 +7681,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
           <p class="std-portfolio-copy">Реальные работы мастеров студии: окрашивание, стрижки, укладки, брови, ресницы, макияж и ногтевой сервис.</p>
         </div>
         <div class="std-portfolio-grid">
-          ${PORTFOLIO.map((item,i)=>`<button class="std-work" type="button" data-portfolio-index="${i}" aria-label="Открыть фотографию"><img src="${item.src}" alt="${item.alt}" loading="${i<4?'eager':'lazy'}"></button>`).join('')}
+          ${PORTFOLIO.map((item,i)=>item.type==='video'?`<div class="std-work std-work-video"><video src="${item.src}" muted autoplay loop playsinline preload="metadata" aria-label="${item.alt}"></video></div>`:`<button class="std-work" type="button" data-portfolio-src="${item.src}" aria-label="Открыть фотографию"><img src="${item.src}" alt="${item.alt}" loading="${i<4?'eager':'lazy'}"></button>`).join('')}
         </div>
         <button class="std-portfolio-more" id="stdOpenGallery" type="button">Открыть галерею <span aria-hidden="true">→</span></button>
       </div>
@@ -7773,16 +7774,21 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <aside class="br-team-panel" id="salonDesktopTeam" aria-labelledby="stdTeamTitle">
           <p class="std-team-kicker">Наша команда</p>
           <p class="std-team-subtitle">Нажмите на мастера, чтобы открыть страницу специалиста.</p>
-          <div class="std-team-track" id="stdTeamTrack">
-            ${TEAM_MASTERS.map(master=>`
-              <button class="std-master" type="button" data-desktop-master="${master.id}">
-                <div class="std-master-avatar">${TEAM_AVATAR}</div>
-                <strong class="std-master-name">${master.name}</strong>
-                <span class="std-master-role">${master.role}</span>
-                <span class="std-master-cats">${master.cats.map(cat=>'<span class="std-master-cat">'+cat+'</span>').join('')}</span>
-              </button>
-            `).join('')}
+          <div class="std-team-window">
+            <button class="std-team-nav std-team-prev" type="button" aria-label="Предыдущие мастера">‹</button>
+            <div class="std-team-track" id="stdTeamTrack">
+              ${TEAM_MASTERS.map(master=>`
+                <button class="std-master" type="button" data-desktop-master="${master.id}">
+                  <div class="std-master-avatar">${TEAM_AVATAR}</div>
+                  <strong class="std-master-name">${master.name}</strong>
+                  <span class="std-master-role">${master.role}</span>
+                  <span class="std-master-cats">${master.cats.map(cat=>'<span class="std-master-cat">'+cat+'</span>').join('')}</span>
+                </button>
+              `).join('')}
+            </div>
+            <button class="std-team-nav std-team-next" type="button" aria-label="Следующие мастера">›</button>
           </div>
+          <div class="std-team-pages" aria-label="Страницы команды"><span class="active"></span><span></span></div>
         </aside>
       </div>
     </section>
@@ -8069,9 +8075,11 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
       btn.classList.toggle('active',active);
       btn.setAttribute('aria-selected',active?'true':'false');
     });
-    galleryBrowserGrid.innerHTML=items.map((item,i)=>'<button class="std-gallery-browser-tile" type="button" data-gallery-item="'+i+'" aria-label="Открыть фотографию"><img src="'+item.src+'" alt="'+item.alt+'" loading="lazy" decoding="async"></button>').join('');
-    galleryBrowserGrid.querySelectorAll('[data-gallery-item]').forEach(btn=>btn.onclick=()=>{
-      openDesktopViewer(items,Number(btn.dataset.galleryItem)||0,'gallery');
+    galleryBrowserGrid.innerHTML=items.map(item=>item.type==='video'?'<div class="std-gallery-browser-tile std-gallery-browser-video"><video src="'+item.src+'" muted autoplay loop playsinline controls preload="metadata" aria-label="'+item.alt+'"></video></div>':'<button class="std-gallery-browser-tile" type="button" data-gallery-src="'+item.src+'" aria-label="Открыть фотографию"><img src="'+item.src+'" alt="'+item.alt+'" loading="lazy" decoding="async"></button>').join('');
+    const photoItems=items.filter(item=>item.type!=='video');
+    galleryBrowserGrid.querySelectorAll('[data-gallery-src]').forEach(btn=>btn.onclick=()=>{
+      const index=Math.max(0,photoItems.findIndex(item=>item.src===btn.dataset.gallerySrc));
+      openDesktopViewer(photoItems,index,'gallery');
     });
   }
   function openDesktopGalleryBrowser(cat='Ногти'){
@@ -8086,8 +8094,12 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     if(!gallery.classList.contains('open'))document.body.style.overflow='';
   }
 
-  document.querySelectorAll('.std-work').forEach(btn=>{
-    btn.addEventListener('click',()=>openDesktopViewer(PORTFOLIO,Number(btn.dataset.portfolioIndex)||0,'portfolio'));
+  document.querySelectorAll('.std-work[data-portfolio-src]').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const photos=PORTFOLIO.filter(item=>item.type!=='video');
+      const index=Math.max(0,photos.findIndex(item=>item.src===btn.dataset.portfolioSrc));
+      openDesktopViewer(photos,index,'portfolio');
+    });
   });
   document.getElementById('stdOpenGallery').addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
   document.getElementById('stdStickyGalleryOpen')?.addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
@@ -8305,6 +8317,24 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     });
   };
   renderDesktopServices();
+
+  const desktopTeamTrack=document.getElementById('stdTeamTrack');
+  const desktopTeamPrev=document.querySelector('#salonDesktopTeam .std-team-prev');
+  const desktopTeamNext=document.querySelector('#salonDesktopTeam .std-team-next');
+  const desktopTeamDots=[...document.querySelectorAll('#salonDesktopTeam .std-team-pages span')];
+  if(desktopTeamTrack&&desktopTeamPrev&&desktopTeamNext){
+    const teamPageWidth=()=>desktopTeamTrack.clientWidth;
+    const setTeamPage=page=>{
+      desktopTeamTrack.scrollTo({left:page*teamPageWidth(),behavior:'smooth'});
+      desktopTeamDots.forEach((dot,i)=>dot.classList.toggle('active',i===page));
+    };
+    desktopTeamPrev.addEventListener('click',()=>setTeamPage(0));
+    desktopTeamNext.addEventListener('click',()=>setTeamPage(1));
+    desktopTeamTrack.addEventListener('scroll',()=>{
+      const page=desktopTeamTrack.scrollLeft>teamPageWidth()*.35?1:0;
+      desktopTeamDots.forEach((dot,i)=>dot.classList.toggle('active',i===page));
+    },{passive:true});
+  }
 
   const desktopReviewsViewport=document.getElementById('stdReviewsViewport');
   const desktopReviewsLoop=desktopReviewsViewport?.querySelector('.std-reviews-loop');
