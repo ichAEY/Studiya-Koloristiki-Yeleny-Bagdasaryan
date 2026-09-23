@@ -10,7 +10,7 @@
   const YANDEX_REVIEWS='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/prices/?ll=38.040884%2C55.682708&z=10.82';
   const ADDRESS='Солнечная ул., 6, Люберцы';
   const RATING='5.0';
-  const RATINGS_COUNT=62;
+  const RATINGS_COUNT=258;
   const services=[
   [
     "hair",
@@ -971,12 +971,6 @@ const SERVICES=[
     "desc": ""
   },
   {
-    "cat": "Уход и кератин",
-    "title": "Кератиновое выпрямление до поясницы",
-    "price": "8500 ₽",
-    "desc": ""
-  },
-  {
     "cat": "Брови и ресницы",
     "title": "Архитектура бровей (коррекция + окрашивание хна/краска)",
     "price": "1800 ₽",
@@ -1511,7 +1505,7 @@ const reviewInitial=n=>([...String(n).trim()][0]||'S').toUpperCase();
 const reviewHref=()=> '#tn13Reviews';
 const reviewCard=r=>`<a class="tn30-review-card" href="${reviewHref(r)}" target="_blank" rel="noopener"><div class="tn30-review-head"><span class="tn30-review-avatar">${reviewInitial(r[0])}</span><span><strong class="tn30-review-name">${r[0]}</strong><span class="tn30-review-meta">Яндекс Карты</span></span></div><p>${r[1]}</p><span class="tn30-review-open">Подробнее →</span></a>`;
 const reviewLanes=[0,1,2].map(row=>REAL_REVIEW_DATA.filter((_,i)=>i%3===row));
-reviews.innerHTML=`<div class="tn30-reviews"><p class="tn22-kicker">Отзывы</p><h2>Что говорят о нас</h2><div class="tn30-score"><strong>—</strong><div class="tn30-stars">☆☆☆☆☆</div><div class="tn30-count">Отзывы · Яндекс Карты</div></div><div class="tn30-review-stage">${reviewLanes.map((lane,i)=>{const loop=[lane[lane.length-1],...lane,lane[0]];return `<div class="tn30-lane" data-lane="${i}"><div class="tn30-track">${loop.map(reviewCard).join('')}</div></div>`}).join('')}</div><a class="tn30-review-all" href="${YANDEX_REVIEWS}" target="_blank" rel="noopener">Смотреть все отзывы →</a></div>`;
+reviews.innerHTML=`<div class="tn30-reviews"><p class="tn22-kicker">Отзывы</p><h2>Что говорят о нас</h2><div class="tn30-score"><strong>5.0</strong><div class="tn30-stars">☆☆☆☆☆</div><div class="tn30-count">165 отзывов · 258 оценок · Яндекс Карты</div></div><div class="tn30-review-stage">${reviewLanes.map((lane,i)=>{const loop=[lane[lane.length-1],...lane,lane[0]];return `<div class="tn30-lane" data-lane="${i}"><div class="tn30-track">${loop.map(reviewCard).join('')}</div></div>`}).join('')}</div><a class="tn30-review-all" href="${YANDEX_REVIEWS}" target="_blank" rel="noopener">Смотреть все отзывы →</a></div>`;
 const reviewStage=reviews.querySelector('.tn30-review-stage'),reviewTracks=[...reviews.querySelectorAll('.tn30-track')];
 let reviewIndex=1,reviewPauseTimer=0,reviewMotionTimer=0,reviewDragging=false,reviewMoved=false,reviewSuppressClick=false,reviewStartX=0,reviewStartY=0,reviewDx=0;
 const reviewGap=12,reviewDuration=780,reviewGroupCount=Math.max(1,...reviewLanes.map(l=>l.length));
@@ -1576,7 +1570,7 @@ document.head.appendChild(style);
 
 const about=document.createElement('section');
 about.id='tn38About';
-about.innerHTML=`<div class="tn42-about"><p class="tn42-kicker">О нас</p><div class="tn42-card"><div class="tn42-photo"><img src="salon3.webp" alt="Студия Колористики Елены Багдасарян" loading="lazy"><div class="tn42-rating"><span class="tn42-rating-star">★</span><strong>—</strong><span>рейтинг салона</span></div></div><div class="tn42-body"><p class="tn42-lead">СТУДИЯ КОЛОРИСТИКИ — салон красоты.</p><p class="tn42-copy">Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.</p><div class="tn42-facts"><div class="tn42-fact">Мастера разных направлений</div><div class="tn42-fact">Комфортная атмосфера</div><div class="tn42-fact">Индивидуальный подход</div></div></div></div></div>`;
+about.innerHTML=`<div class="tn42-about"><p class="tn42-kicker">О нас</p><div class="tn42-card"><div class="tn42-photo"><img src="salon3.webp" alt="Студия Колористики Елены Багдасарян" loading="lazy"><div class="tn42-rating"><span class="tn42-rating-star">★</span><strong>5.0</strong><span>рейтинг салона</span></div></div><div class="tn42-body"><p class="tn42-lead">СТУДИЯ КОЛОРИСТИКИ — салон красоты.</p><p class="tn42-copy">Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.</p><div class="tn42-facts"><div class="tn42-fact">Мастера разных направлений</div><div class="tn42-fact">Комфортная атмосфера</div><div class="tn42-fact">Индивидуальный подход</div></div></div></div></div>`;
 services.insertAdjacentElement('afterend',about);
 })();
 
