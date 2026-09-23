@@ -1505,16 +1505,16 @@ services.insertAdjacentElement('afterend',about);
     style.textContent=`
     @media(max-width:1023px){
       
-      #salon-mobile .tn13-hero{height:744px!important;min-height:744px!important;max-height:none!important;padding:0!important;background:linear-gradient(180deg,#f8f4ee 0%,#f8f4ee 90%,#f7f2eb 100%)!important;position:relative!important;overflow:hidden!important}
-      .tn22-media{position:absolute!important;top:52px!important;left:50%!important;right:auto!important;width:100vw!important;height:372px!important;min-height:0!important;transform:translateX(-50%)!important;overflow:hidden!important;padding:0!important;margin:0!important;border:0!important}
+      #salon-mobile .tn13-hero{height:100svh!important;min-height:550px!important;max-height:none!important;padding:0!important;background:linear-gradient(180deg,#f8f4ee 0%,#f8f4ee 90%,#f7f2eb 100%)!important;position:relative!important;overflow:hidden!important}
+      .tn22-media{position:absolute!important;top:52px!important;left:50%!important;right:auto!important;width:100vw!important;height:clamp(300px,44svh,372px)!important;min-height:0!important;transform:translateX(-50%)!important;overflow:hidden!important;padding:0!important;margin:0!important;border:0!important}
       .tn22-media .tn22-slide,.tn22-media img{inset:0!important;width:100%!important;height:100%!important;margin:0!important;padding:0!important;display:block!important}
       .tn22-media img{object-fit:cover!important}
-      .tn22-card{position:absolute!important;z-index:8!important;top:343px!important;left:15px!important;right:15px!important;bottom:0!important;height:auto!important;display:flex!important;flex-direction:column!important;padding:18px 20px 8px!important;border-radius:13px 13px 0 0!important;text-align:center!important}
+      .tn22-card{position:absolute!important;z-index:8!important;top:clamp(250px,40svh,343px)!important;left:15px!important;right:15px!important;bottom:0!important;height:auto!important;display:flex!important;flex-direction:column!important;padding:16px 20px 8px!important;border-radius:13px 13px 0 0!important;text-align:center!important}
       .tn22-card:after{background:linear-gradient(180deg,rgba(247,242,235,0) 0%,rgba(247,242,235,.54) 48%,#f7f2eb 94%)!important}
       .tn22-title{margin:0!important;font:500 clamp(29px,8.3vw,36px)/.94 'Cormorant Garamond',Georgia,serif!important;letter-spacing:.035em!important;text-indent:.035em!important;text-transform:uppercase!important;white-space:nowrap!important;color:#211d1a!important}
       .tn22-sub{margin:9px 0 0!important;font:600 clamp(11px,3.35vw,14px)/1 'Manrope',Arial,sans-serif!important;letter-spacing:.18em!important;text-indent:.18em!important;text-transform:uppercase!important;color:#635d58!important;white-space:nowrap!important}
       .tn22-copy{display:none!important}
-      .tn37-hero-info{width:min(100%,330px)!important;margin:auto auto 0!important;display:grid!important;grid-template-columns:1fr 1px 1.18fr!important;align-items:center!important;gap:12px!important;text-align:left!important}
+      .tn37-hero-info{width:min(100%,330px)!important;margin:auto auto 0!important;min-height:42px!important;flex-shrink:0!important;display:grid!important;grid-template-columns:1fr 1px 1.18fr!important;align-items:center!important;gap:12px!important;text-align:left!important}
       .tn37-info-divider{width:1px!important;height:42px!important}
       .tn37-info{grid-template-columns:40px minmax(0,1fr)!important;gap:9px!important}
       .tn37-info-icon{width:40px!important;height:40px!important}
@@ -1525,7 +1525,7 @@ services.insertAdjacentElement('afterend',about);
       .tn50-hero-status-sub{margin-top:4px!important;color:#746a64!important}
       .tn22-cta{display:flex!important;width:min(100%,330px)!important;height:48px!important;margin:13px auto 0!important;align-items:center!important;justify-content:center!important;gap:12px!important;border:0!important;border-radius:8px!important;background:#715b53!important;color:#fff!important;font:500 14px/1 'Manrope',Arial,sans-serif!important;transition:transform .14s ease,background .14s ease!important}
       .tn22-cta:active{transform:translateY(1px) scale(.992)!important;background:#654f48!important}
-      .tn22-worklink{display:flex!important;width:min(100%,330px)!important;height:46px!important;margin:8px auto 0!important;align-items:center!important;justify-content:center!important;gap:11px!important;border-radius:8px!important;border:1px solid rgba(113,91,83,.38)!important;background:#efe7e1!important;color:#2f2926!important;text-decoration:none!important;font:500 13px/1 'Manrope',Arial,sans-serif!important;transition:transform .14s ease,background .14s ease,color .14s ease!important}
+      .tn22-worklink{display:flex!important;width:min(100%,330px)!important;height:46px!important;flex-shrink:0!important;margin:8px auto 0!important;align-items:center!important;justify-content:center!important;gap:11px!important;border-radius:8px!important;border:1px solid rgba(113,91,83,.38)!important;background:#efe7e1!important;color:#2f2926!important;text-decoration:none!important;font:500 13px/1 'Manrope',Arial,sans-serif!important;transition:transform .14s ease,background .14s ease,color .14s ease!important}
       .tn22-worklink:active{transform:translateY(2px) scale(.988)!important;background:#715b53!important;color:#fff!important;border-color:#715b53!important}
 
       
@@ -1589,7 +1589,7 @@ services.insertAdjacentElement('afterend',about);
       #tn13Reviews .br-count{margin-top:14px!important;font:400 13px/1 'Manrope',Arial,sans-serif!important;color:#716862!important}
       #tn13Reviews .br-review-stage{display:grid!important;gap:12px!important;margin-top:37px!important;overflow:hidden!important}
       #tn13Reviews .br-review-lane{width:100%!important;overflow:hidden!important}
-      #tn13Reviews .br-review-track{display:flex!important;align-items:stretch!important;gap:12px!important;width:max-content!important;will-change:transform!important;transform:translate3d(0,0,0)!important;backface-visibility:hidden!important;animation:brMobileReviewsLoop 56s linear infinite!important}
+      #tn13Reviews .br-review-track{display:flex!important;align-items:stretch!important;gap:12px!important;width:max-content!important;will-change:transform!important;backface-visibility:hidden!important;animation:brMobileReviewsLoop 56s linear infinite!important}
       #tn13Reviews .br-review-lane:nth-child(2) .br-review-track{animation-duration:61s!important;animation-direction:reverse!important}
       #tn13Reviews .br-review-lane:nth-child(3) .br-review-track{animation-duration:58s!important}
       #tn13Reviews .br-review-set{display:flex!important;flex:0 0 auto!important;gap:12px!important}
@@ -1614,10 +1614,10 @@ services.insertAdjacentElement('afterend',about);
     }
     @media(max-width:1023px) and (orientation:landscape){
       html,body{overflow-x:hidden!important}
-      #salon-mobile .tn13-hero{height:744px!important;min-height:744px!important}
-      #salon-mobile .tn22-media{height:372px!important}
+      #salon-mobile .tn13-hero{height:100svh!important;min-height:550px!important}
+      #salon-mobile .tn22-media{height:clamp(300px,44svh,372px)!important}
       #salon-mobile .tn22-card{
-        top:343px!important;
+        top:clamp(250px,40svh,343px)!important;
         left:50%!important;
         right:auto!important;
         width:min(calc(100vw - 30px),520px)!important;
