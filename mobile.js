@@ -2469,4 +2469,52 @@ services.insertAdjacentElement('afterend',about);
   start();
 })();
 
-(function(){'use strict';if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches||window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches)return;const root=document.getElementById('salon-mobile');if(!root)return;const PHONE_HREF="tel:+79266143300",PHONE_TEXT="+7 (926) 614-33-00",TELEGRAM="https://t.me/+79266143300",YANDEX_REVIEWS="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/",GOOGLE_MAPS="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B",MAP="https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed",ADDRESS="Солнечная ул., 6, Люберцы";const apply=()=>{const title=root.querySelector('.tn22-title');if(title)title.textContent='ЕЛЕНЫ БАГДАСАРЯН';const sub=root.querySelector('.tn22-sub');if(sub)sub.textContent='СТУДИЯ КОЛОРИСТИКИ';const copy=root.querySelector('.tn22-copy');if(copy)copy.textContent="Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.";const loc=root.querySelector('.tn37-location .tn37-info-copy');if(loc)loc.innerHTML='<strong>Люберцы</strong>';const al=root.querySelector('#tn38About .tn42-lead');if(al)al.textContent='Студия Колористики Елены Багдасарян';const ac=root.querySelector('#tn38About .tn42-copy');if(ac)ac.textContent="Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови и ресницы. В одном пространстве работают мастера разных направлений.";const ai=root.querySelector('#tn38About .tn42-photo img');if(ai){ai.src='master.webp';ai.alt="Студия Колористики Елены Багдасарян"}root.querySelectorAll('.tn30-review-card,.tn30-review-all').forEach(a=>{if(a.tagName==='A'){a.href=YANDEX_REVIEWS;a.target='_blank';a.rel='noopener'}});const cs=[...root.querySelectorAll('#tn13Visit .tn22-contact')];if(cs[0]){cs[0].href=GOOGLE_MAPS;cs[0].target='_blank';cs[0].rel='noopener';cs[0].removeAttribute('aria-disabled');const t=cs[0].querySelector('span>strong'),d=cs[0].querySelector('span>span');if(t)t.textContent=ADDRESS;if(d)d.textContent='Открыть в Google Картах'}if(cs[1]){cs[1].href=PHONE_HREF;cs[1].removeAttribute('aria-disabled');const t=cs[1].querySelector('span>strong'),d=cs[1].querySelector('span>span');if(t)t.textContent=PHONE_TEXT;if(d)d.textContent='Нажмите, чтобы позвонить'}if(cs[2]){cs[2].href=TELEGRAM;cs[2].target='_blank';cs[2].rel='noopener';cs[2].removeAttribute('aria-disabled');const t=cs[2].querySelector('span>strong'),d=cs[2].querySelector('span>span');if(t)t.textContent='Telegram';if(d)d.textContent='Написать в студию'}if(cs[3]){const d=cs[3].querySelector('span>span');if(d)d.textContent='Ежедневно 10:00–20:00'}const f=root.querySelector('#tn13Visit iframe');if(f)f.src=MAP;const call=root.querySelector('#tn13Visit .tn22-call');if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}const route=root.querySelector('#tn13Visit .tn22-route');if(route){route.href=GOOGLE_MAPS;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}const sh=root.querySelector('#tn13BookSheet');if(sh){const ls=[...sh.querySelectorAll('a.tn50-book-option')];if(ls[0]){ls[0].href=PHONE_HREF;ls[0].removeAttribute('aria-disabled');const t=ls[0].querySelector('strong');if(t)t.textContent='Позвонить'}if(ls[1]){ls[1].href=TELEGRAM;ls[1].target='_blank';ls[1].rel='noopener';ls[1].removeAttribute('aria-disabled');const t=ls[1].querySelector('strong');if(t)t.textContent='Telegram'}}const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())),open=h>=10&&h<20;const st=root.querySelector('#tn22Status');if(st){st.className='tn22-status '+(open?'open':'closed');const t=st.querySelector('.tn22-status-text');if(t)t.textContent=open?'Открыто до 20:00':'Закрыто'}const hs=root.querySelector('.tn50-hero-status');if(hs){hs.classList.toggle('open',open);hs.classList.toggle('closed',!open);const m=hs.querySelector('.tn50-hero-status-main'),s=hs.querySelector('.tn50-hero-status-sub');if(m)m.textContent=open?'Открыто':'Закрыто';if(s)s.textContent='10:00–20:00'}};apply();requestAnimationFrame(apply);setTimeout(apply,80)})();
+(function(){
+  'use strict';
+  if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches||window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches)return;
+  const root=document.getElementById('salon-mobile');
+  if(!root)return;
+
+  const PHONE_HREF='tel:+79266143300';
+  const TELEGRAM='https://t.me/+79266143300';
+  const GOOGLE_MAPS='https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B';
+  const GOOGLE_EMBED='https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed';
+
+  const contacts=[...root.querySelectorAll('#tn13Visit .tn22-contact')];
+  if(contacts[0]){contacts[0].href=GOOGLE_MAPS;contacts[0].target='_blank';contacts[0].rel='noopener';contacts[0].removeAttribute('aria-disabled')}
+  if(contacts[1]){contacts[1].href=PHONE_HREF;contacts[1].removeAttribute('aria-disabled')}
+  if(contacts[2]){contacts[2].href=TELEGRAM;contacts[2].target='_blank';contacts[2].rel='noopener';contacts[2].removeAttribute('aria-disabled')}
+
+  const map=root.querySelector('#tn13Visit iframe');
+  if(map)map.src=GOOGLE_EMBED;
+  const call=root.querySelector('#tn13Visit .tn22-call');
+  if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}
+  const route=root.querySelector('#tn13Visit .tn22-route');
+  if(route){route.href=GOOGLE_MAPS;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}
+
+  const bookOptions=[...root.querySelectorAll('#tn13BookSheet a.tn50-book-option')];
+  if(bookOptions[0]){bookOptions[0].href=PHONE_HREF;bookOptions[0].removeAttribute('aria-disabled')}
+  if(bookOptions[1]){bookOptions[1].href=TELEGRAM;bookOptions[1].target='_blank';bookOptions[1].rel='noopener';bookOptions[1].removeAttribute('aria-disabled')}
+
+  function applyStatus(){
+    const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date()));
+    const open=hour>=10&&hour<20;
+    const contactStatus=root.querySelector('#tn22Status');
+    if(contactStatus){
+      contactStatus.className='tn22-status '+(open?'open':'closed');
+      const text=contactStatus.querySelector('.tn22-status-text');
+      if(text)text.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';
+    }
+    const heroStatus=root.querySelector('.tn50-hero-status');
+    if(heroStatus){
+      heroStatus.classList.toggle('open',open);
+      heroStatus.classList.toggle('closed',!open);
+      const main=heroStatus.querySelector('.tn50-hero-status-main');
+      const sub=heroStatus.querySelector('.tn50-hero-status-sub');
+      if(main)main.textContent=open?'Открыто':'Закрыто';
+      if(sub)sub.textContent='10:00–20:00';
+    }
+  }
+  applyStatus();
+  setInterval(applyStatus,60000);
+})();
