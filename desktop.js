@@ -634,7 +634,7 @@
         letter-spacing:.075em;
         text-transform:uppercase;
       }
-      .std-header-crown{display:block;width:112px;height:64px;object-fit:contain}
+      .std-header-crown{display:block;width:144px;height:72px;object-fit:contain}
       .std-header-brand-sub{
         margin-top:8px;
         font:600 9px/1 "Manrope",Arial,sans-serif;
@@ -2351,7 +2351,7 @@
 
   .std-copy-inner{width:min(100%,560px)!important;transform:translateY(38px)!important}
   .std-hero-kicker{font-size:14px!important;letter-spacing:.40em!important;margin-bottom:31px!important}
-  .std-logo{max-width:100%!important;font-size:clamp(54px,4.15vw,70px)!important;letter-spacing:.055em!important;white-space:nowrap!important}
+  .std-logo{max-width:100%!important;font-size:clamp(44px,3.4vw,58px)!important;letter-spacing:.012em!important;white-space:nowrap!important}
   .std-logo-sub{font-size:14px!important;letter-spacing:.40em!important;margin-top:20px!important}
   .std-tagline{font-size:25px!important;line-height:1.38!important;max-width:500px!important}
   .std-meta-text{font-size:16px!important;line-height:1.42!important}
@@ -8592,22 +8592,21 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['Ежедневно 10:00–20:00','Կավելացվի','To be added'],['Ежедневно 10:00–20:00','Կավելացվի','To be added'],
     ['График работы','Աշխատանքային ժամեր','Opening hours'],['График работы','Աշխատանքային ժամեր','Opening hours']
   ];
-  const desktopLangIndex={ru:0,hy:1,en:2};
+  const desktopLangIndex={ru:0,en:2};
   const desktopDirect={};
   DESKTOP_I18N_ROWS.forEach(row=>desktopDirect[row[0]]=row);
 
   function desktopDetectLanguage(){
     try{
       const saved=localStorage.getItem(DESKTOP_LANG_STORAGE);
-      if(/^(hy|ru|en)$/.test(saved||''))return saved;
+      if(/^(ru|en)$/.test(saved||''))return saved;
     }catch(_){}
     const list=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']).map(x=>String(x).toLowerCase());
     for(const value of list){
-      if(value.startsWith('hy'))return 'hy';
       if(value.startsWith('ru'))return 'ru';
       if(value.startsWith('en'))return 'en';
     }
-    return 'hy';
+    return 'ru';
   }
   let currentDesktopLang=desktopDetectLanguage();
 
@@ -8671,30 +8670,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     document.documentElement.dir='ltr';
     document.body.dataset.brLang=currentDesktopLang;
 
-    if(currentDesktopLang==='hy'){
-      const team=root.querySelector('#salonDesktopTeam');
-      const teamKicker=team?.querySelector('.std-team-kicker');
-      const teamSubtitle=team?.querySelector('.std-team-subtitle');
-      if(teamKicker)teamKicker.textContent='Студия Колористики Елены Багдасарян Masters';
-      if(teamSubtitle)teamSubtitle.textContent='Choose a specialist to open their profile.';
-      const teamEnglish={
-        nails:{name:'Nail Master',role:'Manicure · Pedicure',cat:'Nails'},
-        hair:{name:'Hairdresser',role:'Hair · Styling',cat:'Hair'},
-        cosmetology:{name:'Cosmetologist',role:'Cosmetology',cat:'Cosmetology'},
-        brows:{name:'Brow & Lash Master',role:'Brows · Lashes',cat:'Brows & Lashes'}
-      };
-      root.querySelectorAll('#salonDesktopTeam [data-desktop-master]').forEach(card=>{
-        const data=teamEnglish[card.dataset.desktopMaster];
-        if(!data)return;
-        const name=card.querySelector('.std-master-name'),role=card.querySelector('.std-master-role'),cat=card.querySelector('.std-master-cat');
-        if(name)name.textContent=data.name;
-        if(role)role.textContent=data.role;
-        if(cat)cat.textContent=data.cat;
-      });
-    }
 
-    const titles={ru:'Студия Колористики Елены Багдасарян — Город',hy:'Студия Колористики Елены Багдасарян — Քաղաք',en:'Студия Колористики Елены Багдасарян — City'};
-    document.title=titles[currentDesktopLang]||titles.hy;
+    const titles={ru:'Студия Колористики Елены Багдасарян — Люберцы',en:'Elena Baghdasaryan Color Studio — Lyubertsy'};
+    document.title=titles[currentDesktopLang]||titles.ru;
   }
   root.querySelectorAll('.std-lang-switch [data-desktop-lang]').forEach(btn=>btn.addEventListener('click',()=>{
     currentDesktopLang=btn.dataset.desktopLang;
@@ -8731,16 +8709,24 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   }
 
   function updateStatus(){
-    const main=document.getElementById('stdStatusMain'),sub=document.getElementById('stdStatusSub');
-    if(main){main.textContent='График';main.className='std-status-main';main.style.color=''}
-    if(sub)sub.textContent='Ежедневно 10:00–20:00';
-    const stickyStatus=document.getElementById('stdStickyServiceStatus'),stickyStatusSub=document.getElementById('stdStickyServiceStatusSub'),stickyCard=document.getElementById('stdStickyServiceCard');
-    if(stickyStatus)stickyStatus.textContent='График';
+    const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date()));
+    const open=hour>=10&&hour<20;
+    const main=document.getElementById('stdStatusMain');
+    const sub=document.getElementById('stdStatusSub');
+    if(main){main.textContent=open?'Открыто':'Закрыто';main.className='std-status-main';main.style.color=''}
+    if(sub)sub.textContent='';
+    const address=root.querySelector('.std-address');
+    if(address)address.textContent='Люберцы';
+    const stickyStatus=document.getElementById('stdStickyServiceStatus');
+    const stickyStatusSub=document.getElementById('stdStickyServiceStatusSub');
+    const stickyCard=document.getElementById('stdStickyServiceCard');
+    if(stickyStatus)stickyStatus.textContent=open?'Открыто':'Закрыто';
     if(stickyStatusSub)stickyStatusSub.textContent='Ежедневно 10:00–20:00';
-    if(stickyCard)stickyCard.classList.remove('is-open','is-closed');
-    const contactStatus=document.getElementById('stdContactStatus'),contactStatusText=document.getElementById('stdContactStatusText');
-    if(contactStatus)contactStatus.classList.remove('open','closed');
-    if(contactStatusText)contactStatusText.textContent='График работы';
+    if(stickyCard){stickyCard.classList.toggle('is-open',open);stickyCard.classList.toggle('is-closed',!open)}
+    const contactStatus=document.getElementById('stdContactStatus');
+    const contactStatusText=document.getElementById('stdContactStatusText');
+    if(contactStatus){contactStatus.classList.toggle('open',open);contactStatus.classList.toggle('closed',!open)}
+    if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';
   }
   updateStatus();
 })();
