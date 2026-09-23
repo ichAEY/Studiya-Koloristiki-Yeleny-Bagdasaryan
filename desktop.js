@@ -7661,7 +7661,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <div class="std-lang-switch std-lang-switch-placeholder" aria-hidden="true"></div>
         <a class="std-phone" href="#salonDesktopContacts" aria-disabled="true" aria-label="Позвонить в Студия Колористики Елены Багдасарян">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.83 16.57a1 1 0 0 0 1.21-.3l.36-.47A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.47.35a1 1 0 0 0-.29 1.23 14 14 0 0 0 6.39 6.39Z" fill="currentColor"/></svg>
-          <span>Телефон салона</span>
+          <span>+7 (926) 614-33-00</span>
         </a>
         <button class="std-header-book" id="stdHeaderBookBtn" type="button">Записаться</button>
       </div>
@@ -7745,13 +7745,13 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   <small id="stdStickyServiceStatusSub">Уточняется</small>
                 </span>
               </div>
-              <a class="dct-service-sticky-row dct-service-sticky-route" href="#salonDesktopContacts" aria-disabled="true" aria-label="Построить маршрут в Яндекс Карты">
+              <a class="dct-service-sticky-row dct-service-sticky-route" href="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/" target="_blank" rel="noopener" aria-label="Построить маршрут в Яндекс Картах">
                 <span class="dct-service-sticky-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M19 10c0 5.2-7 10-7 10s-7-4.8-7-10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg>
                 </span>
                 <span class="dct-service-sticky-copy">
-                  <b>Город</b>
-                  <small>Солнечная ул., 6, Люберцы</small>
+                  <b>Люберцы</b>
+                  <small>Солнечная ул., 6</small>
                 </span>
               </a>
             </div>
@@ -7905,33 +7905,33 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
               <span class="std-contact-card-copy"><strong class="std-contact-card-title">Солнечная ул., 6, Люберцы</strong><span class="std-contact-card-sub">Солнечная ул., 6, Люберцы</span></span>
             </a>
 
-            <a class="std-contact-card" href="#salonDesktopContacts" aria-disabled="true">
+            <a class="std-contact-card" href="tel:+79266143300">
               <span class="std-contact-card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h3l1.3 4-2 1.5c1 2 2.6 3.6 4.6 4.6l1.5-2L19 13.5v3c0 1.1-.9 2-2 2C10.4 18.5 5.5 13.6 5.5 7A2 2 0 0 1 7 4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
-              <span class="std-contact-card-copy"><strong class="std-contact-card-title">Телефон салона</strong><span class="std-contact-card-sub">Контакт будет добавлен</span></span>
+              <span class="std-contact-card-copy"><strong class="std-contact-card-title">+7 (926) 614-33-00</strong><span class="std-contact-card-sub">Нажмите, чтобы позвонить</span></span>
             </a>
 
-            <a class="std-contact-card" href="#salonDesktopContacts" aria-disabled="true">
+            <a class="std-contact-card" href="https://t.me/+79266143300" target="_blank" rel="noopener">
               <span class="std-contact-card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H9l-4 3v-13Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 9.2c.8 2.2 2.1 3.5 4.3 4.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
               </span>
-              <span class="std-contact-card-copy"><strong class="std-contact-card-title">Мессенджер</strong><span class="std-contact-card-sub">Контакт будет добавлен</span></span>
+              <span class="std-contact-card-copy"><strong class="std-contact-card-title">Telegram</strong><span class="std-contact-card-sub">Написать в студию</span></span>
             </a>
 
             <div class="std-contact-card static">
               <span class="std-contact-card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3.2 1.8"></path></svg>
               </span>
-              <span class="std-contact-card-copy"><strong class="std-contact-card-title">График работы</strong><span class="std-contact-card-sub">Уточняется</span></span>
+              <span class="std-contact-card-copy"><strong class="std-contact-card-title">График работы</strong><span class="std-contact-card-sub">Ежедневно 10:00–20:00</span></span>
             </div>
           </div>
 
           <div class="std-contact-right">
-            <div class="std-contact-map"><iframe title="Карта салона" loading="eager" src="about:blank"></iframe></div>
+            <div class="std-contact-map"><iframe title="Карта салона" loading="eager" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B"></iframe></div>
             <div class="std-contact-actions">
-              <a class="std-contact-action-btn std-contact-call" href="#salonDesktopContacts" aria-disabled="true">Позвонить</a>
-              <a class="std-contact-action-btn std-contact-route" href="#salonDesktopContacts" aria-disabled="true">Построить маршрут</a>
+              <a class="std-contact-action-btn std-contact-call" href="tel:+79266143300">Позвонить</a>
+              <a class="std-contact-action-btn std-contact-route" href="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/" target="_blank" rel="noopener">Построить маршрут</a>
             </div>
           </div>
         </div>
@@ -7962,9 +7962,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <button class="std-book-close" id="stdBookClose" type="button" aria-label="Закрыть">×</button>
         <p class="std-services-kicker">Запись</p><h3>Как вам удобнее записаться?</h3><p>Выберите удобный способ связи.</p>
         <div class="std-book-options">
-          <a href="#visit" aria-disabled="true"><span>Телефон</span><span>Телефон салона →</span></a>
-          <a href="#salonDesktopContacts" aria-disabled="true"><span>Мессенджер</span><span>Будет добавлен →</span></a>
-          <a href="#salonDesktopContacts" aria-disabled="true"><span>Яндекс Карты</span><span>Будет добавлено →</span></a>
+          <a href="tel:+79266143300"><span>Телефон</span><span>+7 (926) 614-33-00 →</span></a>
+          <a href="https://t.me/+79266143300" target="_blank" rel="noopener"><span>Telegram</span><span>Написать →</span></a>
+          <a href="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/" target="_blank" rel="noopener"><span>Яндекс Карты</span><span>Открыть →</span></a>
         </div>
       </div>
     </div>
@@ -8746,10 +8746,10 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   function updateStatus(){
     const main=document.getElementById('stdStatusMain'),sub=document.getElementById('stdStatusSub');
     if(main){main.textContent='График';main.className='std-status-main';main.style.color=''}
-    if(sub)sub.textContent='Уточняется';
+    if(sub)sub.textContent='Ежедневно 10:00–20:00';
     const stickyStatus=document.getElementById('stdStickyServiceStatus'),stickyStatusSub=document.getElementById('stdStickyServiceStatusSub'),stickyCard=document.getElementById('stdStickyServiceCard');
     if(stickyStatus)stickyStatus.textContent='График';
-    if(stickyStatusSub)stickyStatusSub.textContent='Уточняется';
+    if(stickyStatusSub)stickyStatusSub.textContent='Ежедневно 10:00–20:00';
     if(stickyCard)stickyCard.classList.remove('is-open','is-closed');
     const contactStatus=document.getElementById('stdContactStatus'),contactStatusText=document.getElementById('stdContactStatusText');
     if(contactStatus)contactStatus.classList.remove('open','closed');
