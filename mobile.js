@@ -1261,7 +1261,35 @@ const css=document.createElement('style'); css.id='salon-mobile-base-style'; css
 
 #tn13Portfolio{margin:0!important;padding:0!important;background:#f7f2eb!important;color:#171513!important;min-height:860px!important}.tn22-port{padding:22px 24px 34px}.tn22-kicker{margin:0;font:500 10px/1 'Manrope',Arial,sans-serif;letter-spacing:.31em;text-transform:uppercase;color:#6f665f}.tn22-port h2,.tn22-services h2,.tn22-team h2,.tn22-reviews h2,.tn22-visit h2{margin:16px 0 0;font:500 44px/.95 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em}.tn22-port-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:6px;margin-top:27px}.tn22-photo{border:0;padding:0;border-radius:10px;overflow:hidden;background:#ddd}.tn22-photo img,.tn22-photo video{width:100%;height:100%;object-fit:cover;filter:none!important;display:block}.tn22-photo-video video{pointer-events:none}.tn22-photo:nth-child(1){grid-row:span 2}.tn22-port-all{width:100%;height:48px;margin-top:18px;border:1px solid rgba(64,52,46,.18);border-radius:10px;background:transparent;color:#1a1715;font:500 13px/1 'Manrope',Arial,sans-serif;display:flex;align-items:center;justify-content:center;gap:12px}
 
-#tn13Services{margin:0!important;padding:0!important;background:#e9e2da!important;color:#171513!important;overflow:hidden!important;border-top:1px solid rgba(62,51,44,.07);border-bottom:1px solid rgba(62,51,44,.07)}.tn31-services{padding:43px 25px 40px}.tn31-services .tn22-kicker{color:#746c66}.tn31-services h2{margin:17px 0 0;font:500 50px/.92 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;color:#171513;white-space:nowrap}.tn31-cats-wrap{position:relative;margin:25px -25px 0}.tn31-cats{display:flex;align-items:center;gap:8px;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 25px 11px}.tn31-cats::-webkit-scrollbar{display:none}.tn31-cat{position:relative;flex:0 0 auto;height:35px;padding:0 15px;border:1px solid rgba(67,57,51,.18);border-radius:999px;background:transparent;color:#655d57;font:500 10.5px/1 'Manrope',Arial,sans-serif;white-space:nowrap;transition:background .18s ease,color .18s ease,border-color .18s ease}.tn31-cat.active{background:#171513!important;color:#fff!important;border-color:#171513!important}.tn31-service-list{margin-top:18px;border-top:1px solid rgba(55,47,42,.18)}.tn31-service-row{min-height:84px;display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:16px;align-items:center;border-bottom:1px solid rgba(55,47,42,.18)}.tn31-service-copy{min-width:0;padding:13px 0}.tn31-service-name{font:600 18px/1.15 'Cormorant Garamond',Georgia,serif;color:#171513;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.tn31-service-detail{display:block;margin-top:5px;font:400 9.5px/1.35 'Manrope',Arial,sans-serif;color:#81766f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tn31-service-side{text-align:right;align-self:center}.tn31-service-price{font:600 20px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.005em;color:#fff;white-space:nowrap}.tn31-service-book{display:inline-block;margin-top:8px;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;color:#d9d3ce!important;font:500 9.5px/1 'Manrope',Arial,sans-serif!important;white-space:nowrap;text-decoration:none!important}.tn31-service-more{width:100%;height:48px;margin-top:22px;padding:0!important;border:1px solid #bbaea5!important;border-radius:7px!important;background:rgba(255,255,255,.18)!important;color:#342f2b!important;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:none!important;font:500 12px/1 'Manrope',Arial,sans-serif!important}.tn31-service-more span:last-child{font-size:17px;line-height:1;color:#82756c}.tn31-service-more[hidden]{display:none!important}@media(max-width:370px){.tn31-services{padding-left:20px;padding-right:20px}.tn31-cats-wrap{margin-left:-20px;margin-right:-20px}.tn31-cats{padding-left:20px;padding-right:20px}.tn31-service-row{grid-template-columns:minmax(0,1fr) 100px;gap:12px}.tn31-services h2{font-size:46px}.tn31-service-name{font-size:17px}.tn31-service-price{font-size:19px;color:#fff}}
+#tn13Services{margin:0!important;padding:0!important;background:#242424!important;color:#f3f3f3!important;overflow:hidden!important;border-top:1px solid rgba(255,255,255,.08)!important;border-bottom:1px solid rgba(255,255,255,.08)!important}
+.tn31-services{padding:43px 25px 40px}
+#tn13Services .tn22-kicker{color:#bdbdbd!important}
+#tn13Services .tn31-services h2{margin:17px 0 0;font:500 50px/.92 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;color:#f5f5f5!important;white-space:nowrap}
+#tn13Services .tn31-cats-wrap{position:relative;margin:25px -25px 0;overflow:hidden}
+#tn13Services .tn31-cats{display:flex;align-items:center;gap:8px;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 0 11px;scroll-padding-left:36px;scroll-padding-right:25px;box-sizing:border-box}
+#tn13Services .tn31-cats::-webkit-scrollbar{display:none}
+#tn13Services .tn31-cats:before,#tn13Services .tn31-cats:after{content:'';display:block;height:1px;pointer-events:none}
+#tn13Services .tn31-cats:before{flex:0 0 36px;width:36px}
+#tn13Services .tn31-cats:after{flex:0 0 25px;width:25px}
+#tn13Services .tn31-cat{position:relative;flex:0 0 auto;height:35px;padding:0 15px;border:1px solid rgba(255,255,255,.20);border-radius:999px;background:rgba(255,255,255,.03);color:#d2d2d2;font:500 10.5px/1 'Manrope',Arial,sans-serif;white-space:nowrap;transition:background .18s ease,color .18s ease,border-color .18s ease}
+#tn13Services .tn31-cat.active{background:#f7f2eb!important;color:#2f2926!important;border-color:#f7f2eb!important}
+#tn13Services .tn31-service-list{display:grid;gap:9px;margin-top:18px;border:0}
+#tn13Services .tn31-service-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;min-height:60px;width:100%;align-items:center;gap:12px;padding:10px 12px;border:1px solid rgba(255,255,255,.11);border-radius:11px;background:rgba(255,255,255,.055);color:#f7f3f0;text-align:left;box-shadow:none}
+#tn13Services .tn31-service-row:after{display:none;content:none}
+#tn13Services .tn31-service-row:active{background:rgba(255,255,255,.10);transform:translateY(1px)}
+#tn13Services .tn31-service-copy{min-width:0;padding:0}
+#tn13Services .tn31-service-name{display:block;color:#f7f3f0;font:500 16.5px/1.15 'Cormorant Garamond',Georgia,serif;white-space:normal;overflow:visible;-webkit-line-clamp:unset}
+#tn13Services .tn31-service-detail{display:block;margin-top:4px;color:#aaa09a;font:400 9px/1.3 'Manrope',Arial,sans-serif;white-space:normal;overflow:visible}
+#tn13Services .tn31-service-side{display:flex;align-items:center;justify-content:flex-end;margin:0;padding:0;text-align:right}
+#tn13Services .tn31-service-book{display:none!important}
+#tn13Services .tn31-service-price{position:static;display:block;min-width:0;height:auto;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:#fff;font:600 13px/1 'Manrope',Arial,sans-serif;white-space:nowrap;box-shadow:none;overflow:visible}
+#tn13Services .tn31-service-price:before{display:none;content:none;animation:none;box-shadow:none}
+#tn13Services .tn31-service-more{width:100%;height:48px;margin-top:22px;padding:0;border:1px solid rgba(255,255,255,.24);border-radius:7px;background:rgba(255,255,255,.04);color:#f2f2f2;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:none;font:500 12px/1 'Manrope',Arial,sans-serif}
+#tn13Services .tn31-service-more span:last-child{font-size:17px;line-height:1;color:#d3d3d3}
+#tn13Services .tn31-service-more[hidden]{display:none!important}
+@media(max-width:370px){.tn31-services{padding-left:20px;padding-right:20px}#tn13Services .tn31-cats-wrap{margin-left:-20px;margin-right:-20px}#tn13Services .tn31-services h2{font-size:46px}#tn13Services .tn31-service-row{gap:10px;padding-left:10px;padding-right:10px}#tn13Services .tn31-service-name{font-size:16px}#tn13Services .tn31-service-price{font-size:12px}}
+
+
 
 #tn13Team{margin:0!important;padding:0!important;background:#f6f1e9!important;color:#171513!important}.tn22-team{padding:42px 28px 38px;overflow:hidden}.tn22-team h2{font-size:40px}.tn22-team-grid{display:flex;gap:14px;margin:30px 0 0;padding:0 0 8px;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;scrollbar-width:none;scroll-padding:0}.tn22-team-grid::-webkit-scrollbar{display:none}.tn22-master-card{flex:0 0 136px;scroll-snap-align:start;border:0;background:none;padding:0;text-align:center;color:#171513}.tn22-master-circle{width:100%;aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#e9e3dc,#d7cec6);overflow:hidden;color:#9b9088}.tn22-master-circle svg{width:62px;height:62px}.tn22-master-name{display:block;margin-top:11px;font:500 20px/1 'Cormorant Garamond',Georgia,serif}.tn22-master-role{display:block;margin-top:5px;font:400 10px/1.3 'Manrope',Arial,sans-serif;color:#827871}.tn22-team-all{display:none!important}.tn42-team-hint{margin-top:8px;text-align:right;font:500 9px/1 'Manrope',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a7f78}.tn42-team-hint span{display:inline-block;margin-left:5px;font-size:14px;vertical-align:-1px}
 
@@ -1493,31 +1521,6 @@ services.insertAdjacentElement('afterend',about);
     style.textContent=`
     @media(max-width:1023px){
       
-      /* SERVICES — canonical compact cards; price is plain text. */
-      #tn13Services{background:#242424!important;color:#f3f3f3!important;border-color:rgba(255,255,255,.08)!important}
-      #tn13Services .tn22-kicker{color:#bdbdbd!important}
-      #tn13Services h2{color:#f5f5f5!important}
-      #tn13Services .tn31-cats-wrap{position:relative!important;margin:25px -25px 0!important;overflow:hidden!important}
-      #tn13Services .tn31-cats{display:flex!important;align-items:center!important;gap:8px!important;overflow-x:auto!important;overscroll-behavior-inline:contain!important;-webkit-overflow-scrolling:touch!important;padding:0 0 11px!important;scroll-padding-left:36px!important;scroll-padding-right:25px!important;box-sizing:border-box!important}
-      #tn13Services .tn31-cats:before,#tn13Services .tn31-cats:after{content:''!important;display:block!important;height:1px!important;pointer-events:none!important}
-      #tn13Services .tn31-cats:before{flex:0 0 36px!important;width:36px!important}
-      #tn13Services .tn31-cats:after{flex:0 0 25px!important;width:25px!important}
-      #tn13Services .tn31-cat{border-color:rgba(255,255,255,.20)!important;color:#d2d2d2!important;background:rgba(255,255,255,.03)!important}
-      #tn13Services .tn31-cat.active{background:#f7f2eb!important;border-color:#f7f2eb!important;color:#2f2926!important}
-      #tn13Services .tn31-service-list{display:grid!important;gap:9px!important;margin-top:18px!important;border:0!important}
-      #tn13Services .tn31-service-row{position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;min-height:60px!important;width:100%!important;align-items:center!important;gap:12px!important;padding:10px 12px!important;border:1px solid rgba(255,255,255,.11)!important;border-radius:11px!important;background:rgba(255,255,255,.055)!important;color:#f7f3f0!important;text-align:left!important;box-shadow:none!important}
-      #tn13Services .tn31-service-row:after{display:none!important;content:none!important}
-      #tn13Services .tn31-service-row:active{background:rgba(255,255,255,.10)!important;transform:translateY(1px)!important}
-      #tn13Services .tn31-service-copy{min-width:0!important;padding:0!important}
-      #tn13Services .tn31-service-name{display:block!important;color:#f7f3f0!important;font:500 16.5px/1.15 'Cormorant Garamond',Georgia,serif!important;white-space:normal!important;overflow:visible!important;-webkit-line-clamp:unset!important}
-      #tn13Services .tn31-service-detail{display:block!important;margin-top:4px!important;color:#aaa09a!important;font:400 9px/1.3 'Manrope',Arial,sans-serif!important;white-space:normal!important;overflow:visible!important}
-      #tn13Services .tn31-service-side{display:flex!important;align-items:center!important;justify-content:flex-end!important;margin:0!important;padding:0!important;text-align:right!important}
-      #tn13Services .tn31-service-book{display:none!important}
-      #tn13Services .tn31-service-price{position:static!important;display:block!important;min-width:0!important;height:auto!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#fff!important;font:600 13px/1 'Manrope',Arial,sans-serif!important;white-space:nowrap!important;box-shadow:none!important;overflow:visible!important}
-      #tn13Services .tn31-service-price:before{display:none!important;content:none!important;animation:none!important;box-shadow:none!important}
-      #tn13Services .tn31-service-more{border-color:rgba(255,255,255,.24)!important;background:rgba(255,255,255,.04)!important;color:#f2f2f2!important}
-      #tn13Services .tn31-service-more span:last-child{color:#d3d3d3!important}
-
       /* ABOUT — keep salon name serif, supporting copy modern; facts a brighter warm tone. */
       #tn38About .tn42-card{background:#e7ded5!important;border-color:rgba(66,55,49,.14)!important}
       #tn38About .tn42-body{background:#e7ded5!important}
