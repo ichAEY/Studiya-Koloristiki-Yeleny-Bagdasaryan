@@ -8731,4 +8731,144 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   updateStatus();
 })();
 
-(function(){'use strict';const root=document.getElementById('salon-desktop-v1');if(!root)return;const PHONE_HREF="tel:+79266143300",PHONE_TEXT="+7 (926) 614-33-00",TELEGRAM="https://t.me/+79266143300",YANDEX="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/prices/?ll=38.040884%2C55.682708&z=10.82",MAP="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B",ADDRESS="Солнечная ул., 6, Люберцы";const hb=root.querySelector('.std-header-brand');if(hb){hb.innerHTML='<img src="logo.webp" alt="Студия Колористики Елены Багдасарян">';hb.style.width='242px';hb.style.minWidth='242px';const im=hb.querySelector('img');if(im){im.style.maxWidth='220px';im.style.maxHeight='66px';im.style.objectFit='contain'}}const lg=root.querySelector('.std-logo');if(lg)lg.textContent='СТУДИЯ';const ls=root.querySelector('.std-logo-sub');if(ls)ls.textContent='КОЛОРИСТИКИ ЕЛЕНЫ БАГДАСАРЯН';const tg=root.querySelector('.std-tagline');if(tg)tg.textContent="Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.";const hm=root.querySelector('#stdHeroMedia');if(hm){const v=document.createElement('video');v.id='stdHeroMedia';v.muted=true;v.defaultMuted=true;v.autoplay=true;v.loop=true;v.playsInline=true;v.preload='metadata';v.poster='salon3.webp';v.src='galery1.MP4';v.setAttribute('aria-label','Видео студии');hm.replaceWith(v);const p=v.play();if(p&&p.catch)p.catch(()=>{})}const ai=root.querySelector('.mct-about-portrait img');if(ai){ai.src='masterpc.webp';ai.alt="Студия Колористики Елены Багдасарян"}const ab=root.querySelector('.dct-about-brand');if(ab)ab.textContent='Студия Колористики';const ak=root.querySelector('.dct-about-kind');if(ak)ak.textContent='Елены Багдасарян';const at=root.querySelector('.dct-about-copy');if(at)at.textContent="Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.";const am=[...root.querySelectorAll('.dct-about-amenities-grid article')];if(am[0])am[0].innerHTML='<strong>Колористика и волосы</strong><span>Окрашивание, стрижки, укладки, ботокс и кератин.</span>';if(am[1])am[1].innerHTML='<strong>Beauty-направления</strong><span>Брови, ресницы, макияж и ногтевой сервис.</span>';if(am[2])am[2].innerHTML='<strong>Прямая запись</strong><span>Связь по телефону или Telegram без лишних шагов.</span>';const sc=root.querySelector('.std-reviews-score strong');if(sc)sc.textContent='5.0';const rc=root.querySelector('.std-reviews-count');if(rc)rc.textContent='165 отзывов · 258 оценок · Яндекс Карты';root.querySelectorAll('.std-review-card,.std-reviews-all').forEach(a=>{a.href=YANDEX;a.target='_blank';a.rel='noopener'});root.querySelectorAll('.std-review-meta').forEach(x=>x.textContent='Яндекс Карты');const cs=[...root.querySelectorAll('#salonDesktopContacts .std-contact-card')];if(cs[0]){cs[0].href=YANDEX;cs[0].target='_blank';cs[0].rel='noopener';cs[0].removeAttribute('aria-disabled');const t=cs[0].querySelector('.std-contact-card-title'),s=cs[0].querySelector('.std-contact-card-sub');if(t)t.textContent=ADDRESS;if(s)s.textContent='Открыть в Яндекс Картах'}if(cs[1]){cs[1].href=PHONE_HREF;cs[1].removeAttribute('aria-disabled');const t=cs[1].querySelector('.std-contact-card-title'),s=cs[1].querySelector('.std-contact-card-sub');if(t)t.textContent=PHONE_TEXT;if(s)s.textContent='Нажмите, чтобы позвонить'}if(cs[2]){cs[2].href=TELEGRAM;cs[2].target='_blank';cs[2].rel='noopener';cs[2].removeAttribute('aria-disabled');const t=cs[2].querySelector('.std-contact-card-title'),s=cs[2].querySelector('.std-contact-card-sub');if(t)t.textContent='Telegram';if(s)s.textContent='Написать в студию'}if(cs[3]){const s=cs[3].querySelector('.std-contact-card-sub');if(s)s.textContent='Ежедневно 10:00–20:00'}const f=root.querySelector('#salonDesktopContacts iframe');if(f)f.src=MAP;const call=root.querySelector('#salonDesktopContacts .std-contact-call');if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}const route=root.querySelector('#salonDesktopContacts .std-contact-route');if(route){route.href=YANDEX;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}const os=[...root.querySelectorAll('#stdBookOverlay .std-book-options a')];if(os[0]){os[0].href=PHONE_HREF;os[0].removeAttribute('aria-disabled');os[0].innerHTML='<span>Телефон</span><span>'+PHONE_TEXT+' →</span>'}if(os[1]){os[1].href=TELEGRAM;os[1].target='_blank';os[1].rel='noopener';os[1].removeAttribute('aria-disabled');os[1].innerHTML='<span>Telegram</span><span>Написать →</span>'}if(os[2]){os[2].href=YANDEX;os[2].target='_blank';os[2].rel='noopener';os[2].removeAttribute('aria-disabled');os[2].innerHTML='<span>Яндекс Карты</span><span>Открыть →</span>'}const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())),open=h>=10&&h<20;const st=root.querySelector('#stdContactStatus');if(st){st.classList.toggle('open',open);const tx=root.querySelector('#stdContactStatusText');if(tx)tx.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00'}const ss=root.querySelector('#stdStickyServiceStatus'),sb=root.querySelector('#stdStickyServiceStatusSub');if(ss)ss.textContent=open?'Открыто':'Закрыто';if(sb)sb.textContent='Ежедневно 10:00–20:00'})();
+(function(){
+  'use strict';
+  const root=document.getElementById('salon-desktop-v1');
+  if(!root)return;
+
+  const PHONE_HREF='tel:+79266143300';
+  const PHONE_TEXT='+7 (926) 614-33-00';
+  const TELEGRAM='https://t.me/+79266143300';
+  const YANDEX_REVIEWS='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/';
+  const GOOGLE_MAPS='https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B';
+  const GOOGLE_EMBED='https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed';
+  const ADDRESS='Солнечная ул., 6, Люберцы';
+
+  const hb=root.querySelector('.std-header-brand');
+  if(hb)hb.innerHTML='<img class="std-header-crown" src="crown.svg" alt="Корона — Студия Колористики Елены Багдасарян">';
+
+  const lg=root.querySelector('.std-logo');
+  const ls=root.querySelector('.std-logo-sub');
+  const tg=root.querySelector('.std-tagline');
+  if(lg)lg.textContent='ЕЛЕНЫ БАГДАСАРЯН';
+  if(ls)ls.textContent='СТУДИЯ КОЛОРИСТИКИ';
+  if(tg)tg.textContent='Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.';
+
+  const heroMedia=root.querySelector('#stdHeroMedia');
+  if(heroMedia){
+    if(heroMedia.tagName!=='IMG'){
+      const img=document.createElement('img');
+      img.id='stdHeroMedia';
+      img.src='salon3.webp';
+      img.alt='Интерьер Студии колористики Елены Багдасарян';
+      heroMedia.replaceWith(img);
+    }else{
+      heroMedia.src='salon3.webp';
+      heroMedia.alt='Интерьер Студии колористики Елены Багдасарян';
+    }
+  }
+
+  const aboutImage=root.querySelector('.mct-about-portrait img');
+  if(aboutImage){aboutImage.src='masterpc.webp';aboutImage.alt='Студия Колористики Елены Багдасарян'}
+  const aboutBrand=root.querySelector('.dct-about-brand');
+  const aboutKind=root.querySelector('.dct-about-kind');
+  const aboutCopy=root.querySelector('.dct-about-copy');
+  if(aboutBrand)aboutBrand.textContent='Студия Колористики';
+  if(aboutKind)aboutKind.textContent='Елены Багдасарян';
+  if(aboutCopy)aboutCopy.textContent='Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови и ресницы. В одном пространстве работают мастера разных направлений.';
+
+  const amenities=[...root.querySelectorAll('.dct-about-amenities-grid article')];
+  if(amenities[0])amenities[0].innerHTML='<strong>Колористика и волосы</strong><span>Окрашивание, стрижки, укладки, ботокс и кератин.</span>';
+  if(amenities[1])amenities[1].innerHTML='<strong>Beauty-направления</strong><span>Брови, ресницы и ногтевой сервис.</span>';
+  if(amenities[2])amenities[2].innerHTML='<strong>Прямая запись</strong><span>Связь по телефону или Telegram без лишних шагов.</span>';
+
+  const score=root.querySelector('.std-reviews-score strong');
+  const count=root.querySelector('.std-reviews-count');
+  if(score)score.textContent='5.0';
+  if(count)count.textContent='165 отзывов · Яндекс Карты';
+  root.querySelectorAll('.std-review-card,.std-reviews-all').forEach(a=>{
+    a.href=YANDEX_REVIEWS;
+    a.target='_blank';
+    a.rel='noopener';
+  });
+
+  const contacts=[...root.querySelectorAll('#salonDesktopContacts .std-contact-card')];
+  if(contacts[0]){
+    contacts[0].href=GOOGLE_MAPS;
+    contacts[0].target='_blank';
+    contacts[0].rel='noopener';
+    contacts[0].removeAttribute('aria-disabled');
+    const title=contacts[0].querySelector('.std-contact-card-title');
+    const sub=contacts[0].querySelector('.std-contact-card-sub');
+    if(title)title.textContent=ADDRESS;
+    if(sub)sub.textContent='Открыть в Google Картах';
+  }
+  if(contacts[1]){
+    contacts[1].href=PHONE_HREF;
+    contacts[1].removeAttribute('aria-disabled');
+    const title=contacts[1].querySelector('.std-contact-card-title');
+    const sub=contacts[1].querySelector('.std-contact-card-sub');
+    if(title)title.textContent=PHONE_TEXT;
+    if(sub)sub.textContent='Нажмите, чтобы позвонить';
+  }
+  if(contacts[2]){
+    contacts[2].href=TELEGRAM;
+    contacts[2].target='_blank';
+    contacts[2].rel='noopener';
+    contacts[2].removeAttribute('aria-disabled');
+    const title=contacts[2].querySelector('.std-contact-card-title');
+    const sub=contacts[2].querySelector('.std-contact-card-sub');
+    if(title)title.textContent='Telegram';
+    if(sub)sub.textContent='Написать в студию';
+  }
+  if(contacts[3]){
+    const sub=contacts[3].querySelector('.std-contact-card-sub');
+    if(sub)sub.textContent='Ежедневно 10:00–20:00';
+  }
+
+  const map=root.querySelector('#salonDesktopContacts iframe');
+  if(map)map.src=GOOGLE_EMBED;
+  const call=root.querySelector('#salonDesktopContacts .std-contact-call');
+  if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}
+  const route=root.querySelector('#salonDesktopContacts .std-contact-route');
+  if(route){route.href=GOOGLE_MAPS;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}
+
+  root.querySelectorAll('.dct-service-sticky-route').forEach(a=>{
+    a.href=GOOGLE_MAPS;
+    a.target='_blank';
+    a.rel='noopener';
+    a.setAttribute('aria-label','Построить маршрут в Google Картах');
+  });
+
+  const options=[...root.querySelectorAll('#stdBookOverlay .std-book-options a')];
+  if(options[0]){
+    options[0].href=PHONE_HREF;
+    options[0].removeAttribute('aria-disabled');
+    options[0].innerHTML='<span>Телефон</span><span>'+PHONE_TEXT+' →</span>';
+  }
+  if(options[1]){
+    options[1].href=TELEGRAM;
+    options[1].target='_blank';
+    options[1].rel='noopener';
+    options[1].removeAttribute('aria-disabled');
+    options[1].innerHTML='<span>Telegram</span><span>Написать →</span>';
+  }
+  if(options[2]){
+    options[2].href=GOOGLE_MAPS;
+    options[2].target='_blank';
+    options[2].rel='noopener';
+    options[2].removeAttribute('aria-disabled');
+    options[2].innerHTML='<span>Google Карты</span><span>Открыть →</span>';
+  }
+
+  const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date()));
+  const open=hour>=10&&hour<20;
+  const contactStatus=root.querySelector('#stdContactStatus');
+  const contactStatusText=root.querySelector('#stdContactStatusText');
+  if(contactStatus){contactStatus.classList.toggle('open',open);contactStatus.classList.toggle('closed',!open)}
+  if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';
+  const stickyStatus=root.querySelector('#stdStickyServiceStatus');
+  const stickySub=root.querySelector('#stdStickyServiceStatusSub');
+  if(stickyStatus)stickyStatus.textContent=open?'Открыто':'Закрыто';
+  if(stickySub)stickySub.textContent='Ежедневно 10:00–20:00';
+})();
