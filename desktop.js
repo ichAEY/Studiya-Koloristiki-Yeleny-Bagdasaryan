@@ -7586,7 +7586,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   #salonDesktopTop .std-logo-sub{margin-top:15px!important;font-size:clamp(22px,1.75vw,30px)!important;letter-spacing:.09em!important}
 
   /* Team: keep the approved card positions, make page 2 match page 1, add a subtle half-square cue and drag/swipe navigation. */
-  #salonDesktopTeam .std-team-window{overflow:visible!important}
+  #salonDesktopTeam .std-team-window{overflow:visible!important;touch-action:pan-y!important}
   #salonDesktopTeam .std-team-page{align-content:start!important;align-items:start!important}
   #salonDesktopTeam .std-team-page:last-child{
     grid-template-columns:repeat(2,minmax(0,1fr))!important;
@@ -7599,28 +7599,6 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   #salonDesktopTeam .std-master-avatar{
     width:216px!important;height:216px!important;min-width:216px!important;min-height:216px!important;
     aspect-ratio:1/1!important;border-radius:50%!important;flex:none!important
-  }
-  #salonDesktopTeam .std-team-window:after{
-    content:""!important;
-    position:absolute!important;
-    z-index:8!important;
-    right:-18px!important;
-    top:46%!important;
-    width:20px!important;
-    height:32px!important;
-    border-top:2px solid rgba(247,243,240,.58)!important;
-    border-right:2px solid rgba(247,243,240,.58)!important;
-    border-bottom:2px solid rgba(247,243,240,.58)!important;
-    border-left:0!important;
-    border-radius:0 7px 7px 0!important;
-    transform:translateY(-50%)!important;
-    pointer-events:none!important;
-    animation:brTeamEdgeCue 1.7s ease-in-out infinite!important;
-  }
-  #salonDesktopTeam.is-last-page .std-team-window:after{opacity:.16!important;animation:none!important}
-  @keyframes brTeamEdgeCue{
-    0%,100%{opacity:.28;transform:translate3d(-2px,-50%,0)}
-    50%{opacity:.95;transform:translate3d(4px,-50%,0)}
   }
   /* One viewer handles photographs and the salon video. */
   .std-gallery-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;background:#151312!important;border:0!important}
