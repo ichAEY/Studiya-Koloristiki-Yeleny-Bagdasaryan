@@ -8791,3 +8791,11 @@ const win=root.querySelector('#salonDesktopTeam .std-team-window'),track=root.qu
 return true}
 let n=0;const timer=setInterval(()=>{n++;if(apply()||n>100)clearInterval(timer)},80);apply();
 })();
+
+/* TANEM desktop crown/team completion — 2026-09-23 */
+(()=>{
+ if(!window.matchMedia||!window.matchMedia('(min-width:768px)').matches)return;
+ const root=document.getElementById('salon-desktop-v1');if(!root)return;
+ const s=document.createElement('style');s.textContent='@media(min-width:768px){#salon-desktop-v1 .std-header-brand.br-crown-only{width:126px!important;min-width:126px!important;height:74px!important;overflow:hidden!important;display:flex!important;align-items:flex-start!important;justify-content:center!important}#salon-desktop-v1 .std-header-brand.br-crown-only img{width:176px!important;max-width:none!important;height:auto!important;max-height:none!important;transform:translateY(-2px)!important}#salonDesktopTeam .std-team-track{width:100%!important;min-width:100%!important}#salonDesktopTeam .std-master{flex:0 0 calc((100% - 84px)/4)!important;min-width:calc((100% - 84px)/4)!important}}';document.head.appendChild(s);
+ const logo=root.querySelector('.std-header-brand img[src="logo.webp"]');if(logo)logo.parentElement.classList.add('br-crown-only');
+})();
