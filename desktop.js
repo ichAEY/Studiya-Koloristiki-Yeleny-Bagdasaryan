@@ -151,6 +151,7 @@
   ]
 };
   const DESKTOP_ALL_MEDIA=[...new Map(Object.values(DESKTOP_GALLERY_GROUPS).flat().map(item=>[item.src,item])).values()];
+  const DESKTOP_VIEWER_MEDIA=[...new Map([...PORTFOLIO,...DESKTOP_ALL_MEDIA].map(item=>[item.src,item])).values()];
   const DESKTOP_GALLERY=DESKTOP_ALL_MEDIA.map(x=>x.src);
   const SERVICE_DATA={
   "Окрашивание": [
@@ -7788,7 +7789,7 @@
               <span class="std-meta-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.7v4.8l3 1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
-              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Открыто</span><span class="std-status-sub" id="stdStatusSub">10:00–20:00</span></span>
+              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Закрыто</span><span class="std-status-sub" id="stdStatusSub">до 10:00</span></span>
             </div>
 
             <span class="std-meta-divider" aria-hidden="true"></span>
@@ -7848,7 +7849,7 @@
                 </span>
                 <span class="dct-service-sticky-copy">
                   <b id="stdStickyServiceStatus">Закрыто</b>
-                  <small id="stdStickyServiceStatusSub">10:00–20:00</small>
+                  <small id="stdStickyServiceStatusSub">до 10:00</small>
                 </span>
               </div>
               <a class="dct-service-sticky-row dct-service-sticky-route" href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B" target="_blank" rel="noopener" aria-label="Построить маршрут в Google Картах">
@@ -8183,8 +8184,8 @@
     const sourceItems=Array.isArray(items)&&items.length?items:PORTFOLIO.slice();
     const safeIndex=Math.max(0,Math.min(index,sourceItems.length-1));
     const selected=sourceItems[safeIndex];
-    const fullIndex=selected?DESKTOP_ALL_MEDIA.findIndex(item=>item.src===selected.src):-1;
-    galleryItems=fullIndex>=0?DESKTOP_ALL_MEDIA:sourceItems;
+    const fullIndex=selected?DESKTOP_VIEWER_MEDIA.findIndex(item=>item.src===selected.src):-1;
+    galleryItems=fullIndex>=0?DESKTOP_VIEWER_MEDIA:sourceItems;
     gallery.dataset.source=source;
     galleryViewAll.hidden=false;
     galleryIndex=fullIndex>=0?fullIndex:safeIndex;
@@ -8690,7 +8691,7 @@
     ['Удаление волос нитью','Մազահեռացում թելով','Threading hair removal'],['Шугаринг','Շուգարինգ','Sugaring'],
     ['Электроэпиляция игловая','Ասեղային էլեկտրոէպիլյացիա','Needle electrolysis'],['Восковая эпиляция','Մոմային էպիլյացիա','Waxing'],
     ['Прокалывание ушей','Ականջների ծակում','Ear piercing'],
-    ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['10:00–20:00','10:00–20:00','10:00–20:00'],['10:00–20:00','10:00–20:00','10:00–20:00'],
+    ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['Открыто до 20:00','Открыто до 20:00','Open until 20:00'],['Закрыто до 10:00','Закрыто до 10:00','Closed until 10:00'],['до 20:00','до 20:00','until 20:00'],['до 10:00','до 10:00','until 10:00'],['10:00–20:00','10:00–20:00','10:00–20:00'],['10:00–20:00','10:00–20:00','10:00–20:00'],
     ['График работы','Աշխատանքային ժամեր','Opening hours'],['График работы','Աշխատանքային ժամեր','Opening hours']
   ];
   const desktopLangIndex={ru:0,en:2};
@@ -8815,22 +8816,23 @@
     const main=document.getElementById('stdStatusMain');
     const sub=document.getElementById('stdStatusSub');
     if(main){main.textContent=open?'Открыто':'Закрыто';main.className='std-status-main';main.style.color=''}
-    if(sub)sub.textContent='10:00–20:00';
+    if(sub)sub.textContent=open?'до 20:00':'до 10:00';
     const address=root.querySelector('.std-address');
     if(address)address.innerHTML='<span>Люберцы</span><span>Солнечная ул., 6</span>';
     const stickyStatus=document.getElementById('stdStickyServiceStatus');
     const stickyStatusSub=document.getElementById('stdStickyServiceStatusSub');
     const stickyCard=document.getElementById('stdStickyServiceCard');
     if(stickyStatus)stickyStatus.textContent=open?'Открыто':'Закрыто';
-    if(stickyStatusSub)stickyStatusSub.textContent='10:00–20:00';
+    if(stickyStatusSub)stickyStatusSub.textContent=open?'до 20:00':'до 10:00';
     if(stickyCard){stickyCard.classList.toggle('is-open',open);stickyCard.classList.toggle('is-closed',!open)}
     const contactStatus=document.getElementById('stdContactStatus');
     const contactStatusText=document.getElementById('stdContactStatusText');
     if(contactStatus){contactStatus.classList.toggle('open',open);contactStatus.classList.toggle('closed',!open)}
-    if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';
+    if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто до 10:00';
     requestAnimationFrame(applyDesktopLanguage);
   }
   updateStatus();
+  setInterval(updateStatus,60000);
 })();
 
 (function(){
@@ -8964,9 +8966,9 @@
   const contactStatus=root.querySelector('#stdContactStatus');
   const contactStatusText=root.querySelector('#stdContactStatusText');
   if(contactStatus){contactStatus.classList.toggle('open',open);contactStatus.classList.toggle('closed',!open)}
-  if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';
+  if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто до 10:00';
   const stickyStatus=root.querySelector('#stdStickyServiceStatus');
   const stickySub=root.querySelector('#stdStickyServiceStatusSub');
   if(stickyStatus)stickyStatus.textContent=open?'Открыто':'Закрыто';
-  if(stickySub)stickySub.textContent='10:00–20:00';
+  if(stickySub)stickySub.textContent=open?'до 20:00':'до 10:00';
 })();
