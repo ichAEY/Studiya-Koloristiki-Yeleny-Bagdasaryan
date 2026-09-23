@@ -8145,29 +8145,6 @@
     revealDesktopRoot();
   }
 
-  const heroVideo=document.getElementById('stdHeroVideo');
-  if(heroVideo){
-    heroVideo.muted=true;
-    heroVideo.defaultMuted=true;
-    const tryHeroVideo=()=>{if(document.hidden)return;const p=heroVideo.play();if(p&&typeof p.catch==='function')p.catch(()=>{})};
-    if(document.documentElement.classList.contains('br-booting')){
-      try{heroVideo.pause()}catch(_){}
-      window.addEventListener('br:intro-done',tryHeroVideo,{once:true});
-    }else{
-      requestAnimationFrame(tryHeroVideo);
-    }
-    heroVideo.addEventListener('loadeddata',()=>{if(!document.documentElement.classList.contains('br-booting'))tryHeroVideo()},{once:true});
-    if('IntersectionObserver' in window){
-      const heroVideoObserver=new IntersectionObserver(entries=>{
-        const visible=!!entries[0]?.isIntersecting;
-        if(visible&&!document.hidden)tryHeroVideo();
-        else try{heroVideo.pause()}catch(_){}
-      },{threshold:.04});
-      heroVideoObserver.observe(heroVideo);
-    }
-    document.addEventListener('visibilitychange',()=>{if(document.hidden){try{heroVideo.pause()}catch(_){}}else if(heroVideo.getBoundingClientRect().bottom>0)tryHeroVideo()});
-  }
-
   const bookBtn=document.getElementById('stdBookBtn');
   const bookOverlay=document.getElementById('stdBookOverlay');
   const openDesktopBooking=()=>{bookOverlay.classList.add('open');document.body.style.overflow='hidden'};
@@ -8305,7 +8282,18 @@
   }
   document.getElementById('stdOpenGallery').addEventListener('click',()=>openDesktopGalleryBrowser('Салон'));
   document.getElementById('stdStickyGalleryOpen')?.addEventListener('click',()=>openDesktopGalleryBrowser('Салон'));
-  if(heroVideo){heroVideo.style.cursor='pointer';heroVideo.addEventListener('click',()=>openDesktopViewer(DESKTOP_GALLERY_GROUPS['Салон'],0,'hero'));}
+  const heroPhoto=root.querySelector('.std-hero-photo');
+  if(heroPhoto){
+    heroPhoto.style.cursor='pointer';
+    heroPhoto.setAttribute('role','button');
+    heroPhoto.setAttribute('tabindex','0');
+    heroPhoto.setAttribute('aria-label','Открыть галерею салона');
+    const openHeroGallery=()=>openDesktopGalleryBrowser('Салон');
+    heroPhoto.addEventListener('click',openHeroGallery);
+    heroPhoto.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();openHeroGallery()}
+    });
+  }
   document.getElementById('stdGalleryBrowserBack').addEventListener('click',closeDesktopGalleryBrowser);
   document.getElementById('stdGalleryClose').addEventListener('click',closeDesktopViewer);
   document.getElementById('stdGalleryPrev').addEventListener('click',()=>moveDesktopGallery(-1));
