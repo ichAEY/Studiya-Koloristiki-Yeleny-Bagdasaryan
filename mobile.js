@@ -74,11 +74,6 @@
   ],
   [
     "hair",
-    "Окрашивание AirTouch — длина 3 (средние)",
-    "15000 ₽"
-  ],
-  [
-    "hair",
     "Стрижка женская — длина 1 (короткие)",
     "1500 ₽"
   ],
@@ -101,21 +96,6 @@
     "hair",
     "Стрижка челки",
     "500 ₽"
-  ],
-  [
-    "hair",
-    "Мужская модельная стрижка",
-    "1300 ₽"
-  ],
-  [
-    "hair",
-    "Мужская стрижка удлиненная (стильная)",
-    "1500 ₽"
-  ],
-  [
-    "hair",
-    "2 мужские стрижки",
-    "2600 ₽"
   ],
   [
     "hair",
@@ -277,21 +257,6 @@
     "Ламинирование ресниц + архитектура бровей с окрашиванием",
     "3500 ₽"
   ],
-  [
-    "makeup",
-    "Дневной макияж",
-    "3000 ₽"
-  ],
-  [
-    "makeup",
-    "Вечерний макияж",
-    "3500 ₽"
-  ],
-  [
-    "makeup",
-    "Креативный / сложный макияж",
-    "4000 ₽"
-  ]
 ];
   const works=[
   {
@@ -828,12 +793,6 @@ const SERVICES=[
     "desc": ""
   },
   {
-    "cat": "Окрашивание",
-    "title": "Окрашивание AirTouch — длина 3 (средние)",
-    "price": "15000 ₽",
-    "desc": ""
-  },
-  {
     "cat": "Стрижки",
     "title": "Стрижка женская — длина 1 (короткие)",
     "price": "1500 ₽",
@@ -861,24 +820,6 @@ const SERVICES=[
     "cat": "Стрижки",
     "title": "Стрижка челки",
     "price": "500 ₽",
-    "desc": ""
-  },
-  {
-    "cat": "Стрижки",
-    "title": "Мужская модельная стрижка",
-    "price": "1300 ₽",
-    "desc": ""
-  },
-  {
-    "cat": "Стрижки",
-    "title": "Мужская стрижка удлиненная (стильная)",
-    "price": "1500 ₽",
-    "desc": ""
-  },
-  {
-    "cat": "Стрижки",
-    "title": "2 мужские стрижки",
-    "price": "2600 ₽",
     "desc": ""
   },
   {
@@ -1073,27 +1014,14 @@ const SERVICES=[
     "price": "3500 ₽",
     "desc": ""
   },
-  {
-    "cat": "Макияж",
-    "title": "Дневной макияж",
-    "price": "3000 ₽",
-    "desc": ""
-  },
-  {
-    "cat": "Макияж",
-    "title": "Вечерний макияж",
-    "price": "3500 ₽",
-    "desc": ""
-  },
-  {
-    "cat": "Макияж",
-    "title": "Креативный / сложный макияж",
-    "price": "4000 ₽",
-    "desc": ""
-  }
 ];
 const GALLERY={
   "Салон": [
+    {
+      "type": "video",
+      "src": "galery1.MP4",
+      "alt": "Видео студии"
+    },
     {
       "src": "salon1.webp",
       "alt": "Фото студии"
@@ -1198,8 +1126,9 @@ const GALLERY={
 };
 const PORTFOLIO=[
   {
-    "src": "galery00001.webp",
-    "alt": "Работа студии"
+    "type": "video",
+    "src": "galery1.MP4",
+    "alt": "Видео студии"
   },
   {
     "src": "galery00004.webp",
@@ -1226,7 +1155,7 @@ const PORTFOLIO=[
     "alt": "Работа студии"
   }
 ];
-const REVIEW_DATA=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."]];
+const REVIEW_DATA=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."],["Александра Родина","Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.","23 января 2024"]];
 const MASTERS=[
   {
     "id": "elena",
@@ -1324,20 +1253,20 @@ const css=document.createElement('style'); css.id='salon-mobile-base-style'; css
 
 .tn23-section-nav{position:fixed;z-index:70;top:0;left:0;right:0;width:100%;height:48px;display:flex;align-items:stretch;overflow-x:auto;scrollbar-width:none;background:rgba(249,245,239,.96);border-bottom:1px solid rgba(61,49,43,.12);box-shadow:0 8px 26px rgba(48,36,30,.07);backdrop-filter:blur(18px);transform:translateY(-110%);opacity:0;pointer-events:none;transition:transform .28s cubic-bezier(.22,.78,.25,1),opacity .2s ease;will-change:transform,opacity;scroll-behavior:smooth}.tn23-section-nav.visible{transform:translateY(0);opacity:1;pointer-events:auto}.tn23-section-nav::-webkit-scrollbar{display:none}.tn23-section-nav button{position:relative;flex:0 0 auto;min-width:82px;padding:0 11px;border:0;background:transparent;color:#7b746f;font:500 11px/1 'Avenir Next',Avenir,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;letter-spacing:.012em;white-space:nowrap}.tn23-section-nav button.active{color:#171513;font-weight:600}.tn23-section-nav button.active:after{content:'';position:absolute;left:12px;right:12px;bottom:-1px;height:3px;border-radius:3px 3px 0 0;background:#171513}
 
-#tn13Portfolio{margin:0!important;padding:0!important;background:#f7f2eb!important;color:#171513!important;min-height:860px!important}.tn22-port{padding:22px 24px 34px}.tn22-kicker{margin:0;font:500 10px/1 'Manrope',Arial,sans-serif;letter-spacing:.31em;text-transform:uppercase;color:#6f665f}.tn22-port h2,.tn22-services h2,.tn22-team h2,.tn22-reviews h2,.tn22-visit h2{margin:16px 0 0;font:500 44px/.95 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em}.tn22-port-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:6px;margin-top:27px}.tn22-photo{border:0;padding:0;border-radius:10px;overflow:hidden;background:#ddd}.tn22-photo img{width:100%;height:100%;object-fit:cover;filter:none!important}.tn22-photo:nth-child(1){grid-row:span 2}.tn22-port-all{width:100%;height:48px;margin-top:18px;border:1px solid rgba(64,52,46,.18);border-radius:10px;background:transparent;color:#1a1715;font:500 13px/1 'Manrope',Arial,sans-serif;display:flex;align-items:center;justify-content:center;gap:12px}
+#tn13Portfolio{margin:0!important;padding:0!important;background:#f7f2eb!important;color:#171513!important;min-height:860px!important}.tn22-port{padding:22px 24px 34px}.tn22-kicker{margin:0;font:500 10px/1 'Manrope',Arial,sans-serif;letter-spacing:.31em;text-transform:uppercase;color:#6f665f}.tn22-port h2,.tn22-services h2,.tn22-team h2,.tn22-reviews h2,.tn22-visit h2{margin:16px 0 0;font:500 44px/.95 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em}.tn22-port-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:6px;margin-top:27px}.tn22-photo{border:0;padding:0;border-radius:10px;overflow:hidden;background:#ddd}.tn22-photo img,.tn22-photo video{width:100%;height:100%;object-fit:cover;filter:none!important;display:block}.tn22-photo-video{pointer-events:none}.tn22-photo:nth-child(1){grid-row:span 2}.tn22-port-all{width:100%;height:48px;margin-top:18px;border:1px solid rgba(64,52,46,.18);border-radius:10px;background:transparent;color:#1a1715;font:500 13px/1 'Manrope',Arial,sans-serif;display:flex;align-items:center;justify-content:center;gap:12px}
 
-#tn13Services{margin:0!important;padding:0!important;background:#e9e2da!important;color:#171513!important;overflow:hidden!important;border-top:1px solid rgba(62,51,44,.07);border-bottom:1px solid rgba(62,51,44,.07)}.tn31-services{padding:43px 25px 40px}.tn31-services .tn22-kicker{color:#746c66}.tn31-services h2{margin:17px 0 0;font:500 50px/.92 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;color:#171513;white-space:nowrap}.tn31-cats-wrap{position:relative;margin:25px -25px 0}.tn31-cats{display:flex;align-items:center;gap:8px;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 25px 11px}.tn31-cats::-webkit-scrollbar{display:none}.tn31-cat{position:relative;flex:0 0 auto;height:35px;padding:0 15px;border:1px solid rgba(67,57,51,.18);border-radius:999px;background:transparent;color:#655d57;font:500 10.5px/1 'Manrope',Arial,sans-serif;white-space:nowrap;transition:background .18s ease,color .18s ease,border-color .18s ease}.tn31-cat.active{background:#171513!important;color:#fff!important;border-color:#171513!important}.tn31-service-list{margin-top:18px;border-top:1px solid rgba(55,47,42,.18)}.tn31-service-row{min-height:84px;display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:16px;align-items:center;border-bottom:1px solid rgba(55,47,42,.18)}.tn31-service-copy{min-width:0;padding:13px 0}.tn31-service-name{font:600 18px/1.15 'Cormorant Garamond',Georgia,serif;color:#171513;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.tn31-service-detail{display:block;margin-top:5px;font:400 9.5px/1.35 'Manrope',Arial,sans-serif;color:#81766f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tn31-service-side{text-align:right;align-self:center}.tn31-service-price{font:500 20px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.005em;color:#171513;white-space:nowrap}.tn31-service-book{display:inline-block;margin-top:8px;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;color:#655d57!important;font:500 9.5px/1 'Manrope',Arial,sans-serif!important;white-space:nowrap;text-decoration:none!important}.tn31-service-more{width:100%;height:48px;margin-top:22px;padding:0!important;border:1px solid #bbaea5!important;border-radius:7px!important;background:rgba(255,255,255,.18)!important;color:#342f2b!important;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:none!important;font:500 12px/1 'Manrope',Arial,sans-serif!important}.tn31-service-more span:last-child{font-size:17px;line-height:1;color:#82756c}.tn31-service-more[hidden]{display:none!important}@media(max-width:370px){.tn31-services{padding-left:20px;padding-right:20px}.tn31-cats-wrap{margin-left:-20px;margin-right:-20px}.tn31-cats{padding-left:20px;padding-right:20px}.tn31-service-row{grid-template-columns:minmax(0,1fr) 100px;gap:12px}.tn31-services h2{font-size:46px}.tn31-service-name{font-size:17px}.tn31-service-price{font-size:19px}}
+#tn13Services{margin:0!important;padding:0!important;background:#e9e2da!important;color:#171513!important;overflow:hidden!important;border-top:1px solid rgba(62,51,44,.07);border-bottom:1px solid rgba(62,51,44,.07)}.tn31-services{padding:43px 25px 40px}.tn31-services .tn22-kicker{color:#746c66}.tn31-services h2{margin:17px 0 0;font:500 50px/.92 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;color:#171513;white-space:nowrap}.tn31-cats-wrap{position:relative;margin:25px -25px 0}.tn31-cats{display:flex;align-items:center;gap:8px;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 25px 11px}.tn31-cats::-webkit-scrollbar{display:none}.tn31-cat{position:relative;flex:0 0 auto;height:35px;padding:0 15px;border:1px solid rgba(67,57,51,.18);border-radius:999px;background:transparent;color:#655d57;font:500 10.5px/1 'Manrope',Arial,sans-serif;white-space:nowrap;transition:background .18s ease,color .18s ease,border-color .18s ease}.tn31-cat.active{background:#171513!important;color:#fff!important;border-color:#171513!important}.tn31-service-list{margin-top:18px;border-top:1px solid rgba(55,47,42,.18)}.tn31-service-row{min-height:84px;display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:16px;align-items:center;border-bottom:1px solid rgba(55,47,42,.18)}.tn31-service-copy{min-width:0;padding:13px 0}.tn31-service-name{font:600 18px/1.15 'Cormorant Garamond',Georgia,serif;color:#171513;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.tn31-service-detail{display:block;margin-top:5px;font:400 9.5px/1.35 'Manrope',Arial,sans-serif;color:#81766f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tn31-service-side{text-align:right;align-self:center}.tn31-service-price{font:600 20px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.005em;color:#fff;white-space:nowrap}.tn31-service-book{display:inline-block;margin-top:8px;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;color:#655d57!important;font:500 9.5px/1 'Manrope',Arial,sans-serif!important;white-space:nowrap;text-decoration:none!important}.tn31-service-more{width:100%;height:48px;margin-top:22px;padding:0!important;border:1px solid #bbaea5!important;border-radius:7px!important;background:rgba(255,255,255,.18)!important;color:#342f2b!important;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:none!important;font:500 12px/1 'Manrope',Arial,sans-serif!important}.tn31-service-more span:last-child{font-size:17px;line-height:1;color:#82756c}.tn31-service-more[hidden]{display:none!important}@media(max-width:370px){.tn31-services{padding-left:20px;padding-right:20px}.tn31-cats-wrap{margin-left:-20px;margin-right:-20px}.tn31-cats{padding-left:20px;padding-right:20px}.tn31-service-row{grid-template-columns:minmax(0,1fr) 100px;gap:12px}.tn31-services h2{font-size:46px}.tn31-service-name{font-size:17px}.tn31-service-price{font-size:19px;color:#fff}}
 
 #tn13Team{margin:0!important;padding:0!important;background:#f6f1e9!important;color:#171513!important}.tn22-team{padding:42px 28px 38px;overflow:hidden}.tn22-team h2{font-size:40px}.tn22-team-grid{display:flex;gap:14px;margin:30px 0 0;padding:0 0 8px;overflow-x:auto;overscroll-behavior-inline:contain;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;scrollbar-width:none;scroll-padding:0}.tn22-team-grid::-webkit-scrollbar{display:none}.tn22-master-card{flex:0 0 136px;scroll-snap-align:start;border:0;background:none;padding:0;text-align:center;color:#171513}.tn22-master-circle{width:100%;aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#e9e3dc,#d7cec6);overflow:hidden;color:#9b9088}.tn22-master-circle svg{width:62px;height:62px}.tn22-master-name{display:block;margin-top:11px;font:500 20px/1 'Cormorant Garamond',Georgia,serif}.tn22-master-role{display:block;margin-top:5px;font:400 10px/1.3 'Manrope',Arial,sans-serif;color:#827871}.tn22-team-all{display:none!important}.tn42-team-hint{margin-top:8px;text-align:right;font:500 9px/1 'Manrope',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a7f78}.tn42-team-hint span{display:inline-block;margin-left:5px;font-size:14px;vertical-align:-1px}
 
-#tn13Reviews{margin:0!important;padding:0!important;background:#e9e2da!important;color:#171513!important;overflow:hidden!important;border-top:1px solid rgba(62,51,44,.07);border-bottom:1px solid rgba(62,51,44,.07)}.tn30-reviews{padding:44px 0 46px}.tn30-reviews>.tn22-kicker,.tn30-reviews>h2{margin-left:24px;margin-right:24px}.tn30-reviews .tn22-kicker{color:#746c66}.tn30-reviews h2{margin-top:16px;font:500 46px/.96 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em;color:#171513}.tn30-score{text-align:center;margin-top:43px}.tn30-score strong{display:block;font:500 84px/.82 'Cormorant Garamond',Georgia,serif;color:#171513}.tn30-stars{margin-top:20px;color:#b78d4f;font-size:27px;letter-spacing:6px}.tn30-count{margin-top:14px;font:400 13px/1 'Manrope',Arial,sans-serif;color:#716862}.tn30-review-stage{display:grid;gap:12px;margin:37px 0 0;overflow:hidden;touch-action:pan-y;cursor:grab;user-select:none}.tn30-review-stage.dragging{cursor:grabbing}.tn30-lane{width:100%;overflow:hidden}.tn30-track{display:flex;width:100%;gap:12px;will-change:transform}.tn30-review-card{flex:0 0 calc(100% - 52px);box-sizing:border-box;min-height:154px;padding:16px 17px 17px;border:1px solid rgba(66,55,49,.15);border-radius:13px;background:rgba(255,255,255,.34);text-decoration:none!important;color:#171513!important}.tn30-review-head{display:grid;grid-template-columns:45px minmax(0,1fr);gap:12px;align-items:center}.tn30-review-avatar{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#d7cec6;border:1px solid rgba(66,55,49,.1);font:500 22px/1 'Cormorant Garamond',Georgia,serif;color:#514943}.tn30-review-name{display:block;font:600 19px/1 'Cormorant Garamond',Georgia,serif;color:#2a2522}.tn30-review-meta{display:block;margin-top:5px;font:500 9px/1 'Manrope',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a817a}.tn30-review-card p{margin:14px 0 0;font:400 12.5px/1.5 'Manrope',Arial,sans-serif;color:#4f4843}.tn30-review-open{display:block;margin-top:11px;font:500 9.5px/1 'Manrope',Arial,sans-serif;color:#655b54}.tn30-review-all{display:flex;align-items:center;justify-content:center;margin:28px 22px 0;height:46px;border:1px solid rgba(66,55,49,.18);border-radius:7px;color:#2f2a26!important;text-decoration:none!important;font:500 10.5px/1 'Manrope',Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;background:rgba(255,255,255,.18)}
+#tn13Reviews{margin:0!important;padding:0!important;background:#e9e2da!important;color:#171513!important;overflow:hidden!important;border-top:1px solid rgba(62,51,44,.07);border-bottom:1px solid rgba(62,51,44,.07)}.tn30-reviews{padding:44px 0 46px}.tn30-reviews>.tn22-kicker,.tn30-reviews>h2{margin-left:24px;margin-right:24px}.tn30-reviews .tn22-kicker{color:#746c66}.tn30-reviews h2{margin-top:16px;font:500 46px/.96 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em;color:#171513}.tn30-score{text-align:center;margin-top:43px}.tn30-score strong{display:block;font:500 84px/.82 'Cormorant Garamond',Georgia,serif;color:#171513}.tn30-stars{margin-top:20px;color:#b78d4f;font-size:27px;letter-spacing:6px}.tn30-count{margin-top:14px;font:400 13px/1 'Manrope',Arial,sans-serif;color:#716862}.tn30-review-stage{display:grid;gap:12px;margin:37px 0 0;overflow:hidden;touch-action:pan-y;cursor:grab;user-select:none}.tn30-review-stage.dragging{cursor:grabbing}.tn30-lane{width:100%;overflow:hidden}.tn30-track{display:flex;width:max-content;gap:12px;will-change:transform;animation:tn30ReviewLoop 52s linear infinite}.tn30-track-1{animation-duration:60s;animation-direction:reverse}.tn30-track-2{animation-duration:56s}.tn30-review-set{display:flex;flex:0 0 auto;gap:12px}@keyframes tn30ReviewLoop{to{transform:translateX(calc(-50% - 6px))}}.tn30-review-card{flex:0 0 min(360px,calc(100vw - 52px));box-sizing:border-box;min-height:154px;padding:16px 17px 17px;border:1px solid rgba(66,55,49,.15);border-radius:13px;background:rgba(255,255,255,.34);text-decoration:none!important;color:#171513!important}.tn30-review-head{display:grid;grid-template-columns:45px minmax(0,1fr);gap:12px;align-items:center}.tn30-review-avatar{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#d7cec6;border:1px solid rgba(66,55,49,.1);font:500 22px/1 'Cormorant Garamond',Georgia,serif;color:#514943}.tn30-review-name{display:block;font:600 19px/1 'Cormorant Garamond',Georgia,serif;color:#2a2522}.tn30-review-meta{display:block;margin-top:5px;font:500 9px/1 'Manrope',Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8a817a}.tn30-review-card p{margin:14px 0 0;font:400 12.5px/1.5 'Manrope',Arial,sans-serif;color:#4f4843}.tn30-review-open{display:block;margin-top:11px;font:500 9.5px/1 'Manrope',Arial,sans-serif;color:#655b54}.tn30-review-all{display:flex;align-items:center;justify-content:center;margin:28px 22px 0;height:46px;border:1px solid rgba(66,55,49,.18);border-radius:7px;color:#2f2a26!important;text-decoration:none!important;font:500 10.5px/1 'Manrope',Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;background:rgba(255,255,255,.18)}
 
 #tn13Visit{margin:0!important;padding:0!important;background:#f7f2eb!important;color:#171513!important;border-radius:34px 34px 0 0!important;overflow:hidden!important}.tn22-visit{padding:40px 24px 0}.tn22-visit-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.tn22-status{display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid #b8b0aa;border-radius:999px;font:600 10px/1 'Manrope',Arial,sans-serif}.tn22-status svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.tn22-status.open{background:#e7f4e6;color:#3a7440}.tn22-status.closed{background:#fff0df;color:#a46020}.tn22-visit h2{font-size:46px}.tn22-contact-grid{display:grid;gap:9px;margin-top:28px}.tn22-contact{display:grid;grid-template-columns:38px minmax(0,1fr);gap:11px;align-items:center;min-height:62px;padding:10px 12px;border:1px solid rgba(63,50,44,.12);border-radius:12px;background:rgba(255,255,255,.55);text-decoration:none!important;color:#1e1a17!important}.tn22-contact svg{width:20px;height:20px;fill:none;stroke:#8d7e74;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.tn22-contact strong{display:block;font:500 15px/1.15 'Cormorant Garamond',Georgia,serif;color:#171513!important}.tn22-contact span{display:block;margin-top:4px;font:400 9.5px/1.3 'Manrope',Arial,sans-serif;color:#837971}.tn22-mapwrap{position:relative;height:168px;margin-top:15px;border-radius:13px;overflow:hidden;background:#e7e1da}.tn22-mapwrap iframe{width:100%;height:100%;border:0;filter:grayscale(.35) saturate(.75);opacity:0;transition:opacity .25s ease}.tn22-mapwrap.loaded iframe{opacity:1}.tn22-map-skeleton{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(110deg,#e8e1da 10%,#f3eee8 35%,#e8e1da 60%);background-size:220% 100%;animation:tn22Map 1.4s linear infinite;color:#8f837b;font:500 10px/1 'Manrope',Arial,sans-serif}@keyframes tn22Map{to{background-position:-220% 0}}.tn22-mapwrap.loaded .tn22-map-skeleton{display:none}.tn22-visit-actions{display:grid;grid-template-columns:1fr 1.2fr;gap:9px;margin-top:14px}.tn22-visit-btn{height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none!important;font:500 13px/1 'Manrope',Arial,sans-serif}.tn22-call{border:1px solid rgba(52,43,38,.18);color:#1e1a17!important;background:transparent}.tn22-route{background:#151311;color:#fff!important}.tn22-footer{margin:28px -24px 0;height:76px;background:#171513;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 24px;text-decoration:none!important}.tn22-footer strong{font:500 23px/1 'Cormorant Garamond',Georgia,serif;color:#fff!important}.tn22-footer span{max-width:185px;text-align:right;font:400 10px/1.35 'Manrope',Arial,sans-serif;color:#d6cec8}
 .tn22-contact>.tn50-book-icon{display:grid!important;margin:0!important;font:inherit!important}.tn22-contact>.tn50-book-icon svg{width:21px!important;height:21px!important}.tn22-contact>.tn50-book-icon.phone svg{stroke:currentColor!important}.tn50-brand-svg{fill:currentColor!important;stroke:none!important}.tn22-contact.is-pending{width:100%;cursor:default;text-align:left;font:inherit;opacity:1}
 
 #tn13Sticky{width:min(calc(100% - 20px),500px)!important;min-height:62px!important;padding:8px 8px 8px 15px!important;border-radius:18px!important;border:1px solid rgba(61,49,43,.12)!important;background:rgba(249,245,239,.96)!important;box-shadow:0 14px 40px rgba(48,36,30,.16)!important;backdrop-filter:blur(18px)!important;align-items:center!important}#tn13Sticky span{font:500 12px/1.12 'Manrope',Arial,sans-serif!important;color:#6f635c!important;white-space:nowrap}#tn13Sticky strong{display:block;margin:0;font:600 14px/1 'Manrope',Arial,sans-serif!important;color:#191613!important;white-space:nowrap}#tn13Sticky button{position:relative;overflow:hidden;height:46px!important;min-width:142px!important;border-radius:999px!important;background:#171513!important;color:#fff!important;padding:0 24px!important;font:600 12px/1 'Manrope',Arial,sans-serif!important}#tn13Sticky button:after{content:'';position:absolute;inset:-30% auto -30% -30%;width:34%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-20deg);animation:tn22Shine 3.2s ease-in-out infinite}@keyframes tn22Shine{0%,65%{left:-40%}100%{left:130%}}
 
-#tn13Gallery{display:block!important;z-index:650!important;background:#f7f2eb!important;color:#171513!important;padding:0!important;overflow:auto!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior:contain!important;touch-action:pan-y!important;visibility:hidden!important;opacity:0!important;transform:translate3d(0,38px,0)!important;pointer-events:none!important;transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .36s ease,visibility 0s linear .5s!important;will-change:transform,opacity}#tn13Gallery.open{visibility:visible!important;opacity:1!important;transform:translate3d(0,0,0)!important;pointer-events:auto!important;transition-delay:0s!important}#tn13Gallery.closing{visibility:visible!important;opacity:0!important;transform:translate3d(0,26px,0)!important;pointer-events:none!important}.tn22-gallery{min-height:100dvh;padding:24px 18px 40px}.tn22-gallery-top{display:grid;grid-template-columns:44px 1fr 44px;align-items:center}.tn22-gallery-back{width:40px;height:40px;border:0;background:none;font-size:28px}.tn22-gallery-title{text-align:center}.tn22-gallery-title strong{display:block;font:500 42px/.9 'Cormorant Garamond',Georgia,serif}.tn22-gallery-title span{display:block;margin-top:8px;font:500 10px/1 'Manrope',Arial,sans-serif;letter-spacing:.34em;color:#7e746d}.tn22-gallery-tabs{display:flex;gap:0;margin-top:26px;border:1px solid rgba(55,44,39,.12);border-radius:14px;overflow-x:auto;scrollbar-width:none}.tn22-gallery-tabs::-webkit-scrollbar{display:none}.tn22-gallery-tab{flex:0 0 auto;height:43px;padding:0 18px;border:0;background:transparent;font:500 11px/1 'Manrope',Arial,sans-serif;color:#6f655f}.tn22-gallery-tab.active{background:#171513;color:#fff!important}.tn22-gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:18px}.tn22-gallery-grid.salon{grid-template-columns:1fr 1fr}.tn22-gallery-tile{border:0;padding:0;overflow:hidden;border-radius:11px;background:#ddd;aspect-ratio:1/1}.tn22-gallery-grid.salon .tn22-gallery-tile{aspect-ratio:1/1}.tn23-gallery-empty{grid-column:1/-1;padding:54px 10px;text-align:center;color:#847a73;font:400 13px/1.5 'Manrope',Arial,sans-serif}.tn22-gallery-tile img{width:100%;height:100%;object-fit:cover;filter:none!important}
+#tn13Gallery{display:block!important;z-index:650!important;background:#f7f2eb!important;color:#171513!important;padding:0!important;overflow:auto!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior:contain!important;touch-action:pan-y!important;visibility:hidden!important;opacity:0!important;transform:translate3d(0,38px,0)!important;pointer-events:none!important;transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .36s ease,visibility 0s linear .5s!important;will-change:transform,opacity}#tn13Gallery.open{visibility:visible!important;opacity:1!important;transform:translate3d(0,0,0)!important;pointer-events:auto!important;transition-delay:0s!important}#tn13Gallery.closing{visibility:visible!important;opacity:0!important;transform:translate3d(0,26px,0)!important;pointer-events:none!important}.tn22-gallery{min-height:100dvh;padding:24px 18px 40px}.tn22-gallery-top{display:grid;grid-template-columns:44px 1fr 44px;align-items:center}.tn22-gallery-back{width:40px;height:40px;border:0;background:none;font-size:28px}.tn22-gallery-title{text-align:center}.tn22-gallery-title strong{display:block;font:500 42px/.9 'Cormorant Garamond',Georgia,serif}.tn22-gallery-title span{display:block;margin-top:8px;font:500 10px/1 'Manrope',Arial,sans-serif;letter-spacing:.34em;color:#7e746d}.tn22-gallery-tabs{display:flex;gap:0;margin-top:26px;border:1px solid rgba(55,44,39,.12);border-radius:14px;overflow-x:auto;scrollbar-width:none}.tn22-gallery-tabs::-webkit-scrollbar{display:none}.tn22-gallery-tab{flex:0 0 auto;height:43px;padding:0 18px;border:0;background:transparent;font:500 11px/1 'Manrope',Arial,sans-serif;color:#6f655f}.tn22-gallery-tab.active{background:#171513;color:#fff!important}.tn22-gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:18px}.tn22-gallery-grid.salon{grid-template-columns:1fr 1fr}.tn22-gallery-tile{border:0;padding:0;overflow:hidden;border-radius:11px;background:#ddd;aspect-ratio:1/1}.tn22-gallery-grid.salon .tn22-gallery-tile{aspect-ratio:1/1}.tn23-gallery-empty{grid-column:1/-1;padding:54px 10px;text-align:center;color:#847a73;font:400 13px/1.5 'Manrope',Arial,sans-serif}.tn22-gallery-tile img,.tn22-gallery-tile video{width:100%;height:100%;object-fit:cover;filter:none!important}
 .tn22-viewer{position:fixed;z-index:760;inset:0;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(27,20,20,.9);backdrop-filter:blur(9px);touch-action:none;overscroll-behavior:contain}.tn22-viewer.open{display:flex}.tn22-viewer-frame{position:relative;width:min(100%,520px);height:min(72dvh,640px);background:transparent;overflow:visible;touch-action:none}.tn42-viewer-canvas{position:absolute;inset:0;overflow:hidden;border-radius:14px;background:#151312;touch-action:none;box-shadow:0 18px 54px rgba(0,0,0,.28)}.tn23-viewer-hint{position:absolute;z-index:4;top:-42px;left:0;color:rgba(255,255,255,.65);font:400 10px/1 'Manrope',Arial,sans-serif}.tn22-viewer-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#151312;transform:translate3d(0,0,0) scale(1);transform-origin:center center;will-change:transform;-webkit-user-drag:none;user-select:none}.tn22-viewer-top{position:absolute;z-index:5;top:-52px;left:0;right:0;display:flex;justify-content:flex-end}.tn22-viewer-actions{display:flex}.tn22-vbtn{width:42px;height:42px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(255,255,255,.08);color:#fff!important;font-size:22px}.tn22-navbtn{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:30px;height:52px;border:0;background:transparent;color:#fff!important;font-size:35px;line-height:1}.tn22-prev{left:-5px}.tn22-next{right:-5px}.tn22-navbtn[hidden]{display:none!important}.tn23-viewer-foot{position:absolute;z-index:5;left:0;right:0;bottom:-34px;display:flex;align-items:center;justify-content:space-between;color:rgba(255,255,255,.68);font:400 10px/1 'Manrope',Arial,sans-serif}.tn22-viewer-count{font:500 10px/1 'Manrope',Arial,sans-serif;color:#fff}
 .tn22-team-sheet{position:fixed;z-index:140;inset:0;display:none;align-items:flex-end;background:rgba(30,25,22,.35);backdrop-filter:blur(4px)}.tn22-team-sheet.open{display:flex}.tn22-team-panel{width:100%;max-height:82dvh;overflow:auto;border-radius:26px 26px 0 0;background:#f8f4ee;padding:18px 20px 30px;animation:tn22Sheet .28s ease}@keyframes tn22Sheet{from{transform:translateY(100%)}to{transform:none}}.tn22-handle{width:38px;height:4px;border-radius:999px;background:#c9bdb5;margin:0 auto 18px}.tn22-team-panel h3{margin:0;font:500 36px/1 'Cormorant Garamond',Georgia,serif}.tn22-team-list{display:grid;gap:9px;margin-top:19px}.tn22-team-row{display:grid;grid-template-columns:54px minmax(0,1fr) 30px;align-items:center;gap:12px;min-height:72px;padding:8px 10px;border:1px solid rgba(58,46,40,.1);border-radius:14px;background:#fff;border-width:1px}.tn22-team-mini{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#d9d0c8;font:500 26px/1 'Cormorant Garamond',Georgia,serif}.tn22-team-row strong{display:block;font:500 18px/1 'Cormorant Garamond',Georgia,serif}.tn22-team-row span{display:block;margin-top:5px;font:400 10px/1 'Manrope',Arial,sans-serif;color:#80766f}
 .tn22-master-page{position:fixed;z-index:650;inset:0;display:block;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-y;background:#f8f4ee;color:#171513;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .36s ease,visibility 0s linear .5s;will-change:opacity}.tn22-master-page.open{visibility:visible;opacity:1;pointer-events:auto;transition-delay:0s}.tn22-master-page.closing{visibility:visible;opacity:0;pointer-events:none}.tn22-master-shell{padding:18px 20px 112px;transform:translate3d(0,34px,0);transition:transform .5s cubic-bezier(.16,1,.3,1);will-change:transform}.tn22-master-page.open .tn22-master-shell{transform:translate3d(0,0,0)}.tn22-master-page.closing .tn22-master-shell{transform:translate3d(0,24px,0)}.tn22-master-top{display:flex;align-items:center;justify-content:space-between}.tn22-back{width:40px;height:40px;border:0;background:none;font-size:27px}.tn42-master-spacer{width:40px;height:40px;display:block}.tn22-master-brand{font:500 16px/1 'Manrope',Arial,sans-serif;letter-spacing:.34em}.tn22-profile{text-align:center;margin-top:12px}.tn22-profile-circle{width:142px;height:142px;margin:auto;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 45% 35%,#e4ddd5,#cfc5bc 60%,#b8aaa0)}.tn22-profile-circle{color:#9b9088}.tn22-profile-circle svg{width:72px;height:72px}.tn22-profile h1{margin:14px 0 0;font:500 45px/.95 'Cormorant Garamond',Georgia,serif}.tn22-profile-role{margin-top:7px;font:400 14px/1 'Manrope',Arial,sans-serif;color:#837970}.tn22-salon-rating{margin-top:9px;font:600 12px/1 'Manrope',Arial,sans-serif;color:#504841}.tn22-salon-rating b{color:#e2ad3e}.tn22-master-about{max-width:340px;margin:14px auto 0;font:400 12.5px/1.55 'Manrope',Arial,sans-serif;color:#3d3834}.tn22-master-tabs{display:flex;margin:22px -2px 0;overflow-x:auto;gap:7px;scrollbar-width:none}.tn22-master-tabs button{flex:1 0 auto;height:42px;padding:0 16px;border:1px solid rgba(61,49,43,.12);border-radius:999px;background:transparent;font:500 11px/1 'Manrope',Arial,sans-serif}.tn22-master-tabs button.active{background:#171513;color:#fff!important}.tn22-master-content{margin-top:20px}.tn22-master-content h3{margin:0 0 13px;font:500 30px/1 'Cormorant Garamond',Georgia,serif}.tn22-master-service{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid rgba(61,49,43,.1)}.tn22-master-service b{font:500 14px/1.3 'Manrope',Arial,sans-serif}.tn22-master-service span{font:500 14px/1 'Cormorant Garamond',Georgia,serif;white-space:nowrap}.tn22-master-works{display:grid;grid-template-columns:1fr 1fr;gap:7px}.tn22-master-works img{width:100%;aspect-ratio:1.25/1;object-fit:cover;border-radius:10px}.tn22-master-review{padding:14px;border:1px solid rgba(61,49,43,.1);border-radius:12px;margin-bottom:8px;background:#fff}.tn22-master-review strong{font:500 16px/1 'Cormorant Garamond',Georgia,serif}.tn22-master-review p{margin:7px 0 0;font:400 11px/1.5 'Manrope',Arial,sans-serif;color:#514a45}.tn22-master-book{position:fixed;z-index:670;left:20px;right:20px;bottom:max(14px,env(safe-area-inset-bottom));height:52px;border:0;border-radius:14px;background:#171513;color:#fff!important;font:600 13px/1 'Manrope',Arial,sans-serif;box-shadow:0 12px 34px rgba(0,0,0,.16);opacity:0;transform:translate3d(0,18px,0);pointer-events:none;transition:transform .46s cubic-bezier(.16,1,.3,1),opacity .3s ease;will-change:transform,opacity}.tn22-master-page.open .tn22-master-book{opacity:1;transform:translate3d(0,0,0);pointer-events:auto}.tn22-master-page.closing .tn22-master-book{opacity:0;transform:translate3d(0,12px,0);pointer-events:none}
@@ -1422,7 +1351,7 @@ const book=()=>{const s=$('#tn13BookSheet');if(s){s.classList.add('open');docume
 
 // HERO
 const hero=$('#tn13Top');
-hero.innerHTML=`<div class="tn22-top"><a class="tn22-brand" href="#tn13Top">Студия Колористики Елены Багдасарян</a><button class="tn22-menu" type="button" aria-label="Меню"><i></i><i></i><i></i></button></div><button class="tn22-media" type="button" aria-label="Открыть галерею салона"><span class="tn22-slide active"></span><span class="tn22-slide"></span><span class="tn22-dots"><i class="active"></i><i></i></span></button><div class="tn22-card"><h1 class="tn22-title">Студия Колористики Елены Багдасарян</h1><div class="tn22-sub">Салон красоты</div><p class="tn22-copy">Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.</p><div class="tn37-hero-info"><div class="tn37-info"><span class="tn37-info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5v5l3.2 2"></path></svg></span><span class="tn37-info-copy tn50-hero-status"><strong class="tn50-hero-status-main">Проверяем</strong><span class="tn50-hero-status-sub">режим работы</span></span></div><span class="tn37-info-divider" aria-hidden="true"></span><div class="tn37-info tn37-location"><span class="tn37-info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5.2-7 10-7 10s-7-4.8-7-10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg></span><span class="tn37-info-copy"><strong>Люберцы,</strong>Солнечная ул., 6, Люберцы</span></div></div><button class="tn22-cta" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14" rx="2.2"></rect><path d="M8 3.5v4M16 3.5v4M4 9.5h16M8 13h.01M12 13h.01M16 13h.01M8 16h.01M12 16h.01"></path></svg><span>Записаться</span></button><a class="tn22-worklink" href="#tn13Portfolio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 .9 3.1L16 7l-3.1.9L12 11l-.9-3.1L8 7l3.1-.9L12 3ZM6 13l.7 2.3L9 16l-2.3.7L6 19l-.7-2.3L3 16l2.3-.7L6 13ZM17.5 12l.8 2.7 2.7.8-2.7.8-.8 2.7-.8-2.7-2.7-.8 2.7-.8.8-2.7Z"></path></svg><span>Смотреть работы</span></a></div>`;
+hero.innerHTML=`<div class="tn22-top"><a class="tn22-brand" href="#tn13Top">Студия Колористики Елены Багдасарян</a><button class="tn22-menu" type="button" aria-label="Меню"><i></i><i></i><i></i></button></div><button class="tn22-media" type="button" aria-label="Открыть галерею салона"><span class="tn22-slide active"></span><span class="tn22-slide"></span><span class="tn22-dots"><i class="active"></i><i></i></span></button><div class="tn22-card"><h1 class="tn22-title">ЕЛЕНЫ БАГДАСАРЯН</h1><div class="tn22-sub">СТУДИЯ КОЛОРИСТИКИ</div><p class="tn22-copy">Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.</p><div class="tn37-hero-info"><div class="tn37-info"><span class="tn37-info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5v5l3.2 2"></path></svg></span><span class="tn37-info-copy tn50-hero-status"><strong class="tn50-hero-status-main">Проверяем</strong><span class="tn50-hero-status-sub">режим работы</span></span></div><span class="tn37-info-divider" aria-hidden="true"></span><div class="tn37-info tn37-location"><span class="tn37-info-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5.2-7 10-7 10s-7-4.8-7-10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg></span><span class="tn37-info-copy"><strong>Люберцы</strong></span></div></div><button class="tn22-cta" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14" rx="2.2"></rect><path d="M8 3.5v4M16 3.5v4M4 9.5h16M8 13h.01M12 13h.01M16 13h.01M8 16h.01M12 16h.01"></path></svg><span>Записаться</span></button><a class="tn22-worklink" href="#tn13Portfolio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 .9 3.1L16 7l-3.1.9L12 11l-.9-3.1L8 7l3.1-.9L12 3ZM6 13l.7 2.3L9 16l-2.3.7L6 19l-.7-2.3L3 16l2.3-.7L6 13ZM17.5 12l.8 2.7 2.7.8-2.7.8-.8 2.7-.8-2.7-2.7-.8 2.7-.8.8-2.7Z"></path></svg><span>Смотреть работы</span></a></div>`;
 hero.querySelector('.tn22-cta').addEventListener('click',book);
 const menuButton=hero.querySelector('.tn22-menu');
 const navPop=document.createElement('nav');navPop.className='tn22-navpop';navPop.innerHTML='<a href="#tn13Portfolio">Портфолио</a><a href="#tn13Services">Услуги</a><a href="#tn38About">О салоне</a><a href="#tn13Team">Команда</a><a href="#tn13Reviews">Отзывы</a><a href="#tn13Visit">Контакты</a>';hero.querySelector('.tn22-top').appendChild(navPop);menuButton.addEventListener('click',e=>{e.stopPropagation();navPop.classList.toggle('open')});navPop.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navPop.classList.remove('open')));document.addEventListener('pointerdown',e=>{if(!e.target.closest('.tn22-top'))navPop.classList.remove('open')});
@@ -1453,7 +1382,7 @@ vCanvas.addEventListener('touchend',e=>{if(e.touches.length<2)pinchStart=0;if(e.
 
 // GALLERY
 const gallery=$('#tn13Gallery');let galleryCat='Салон';
-function renderGallery(){const items=GALLERY[galleryCat]||[];gallery.innerHTML=`<div class="tn22-gallery"><div class="tn22-gallery-top"><button class="tn22-gallery-back" type="button">←</button><div class="tn22-gallery-title"><strong>Галерея</strong><span>Студия Колористики Елены Багдасарян</span></div><div></div></div><div class="tn22-gallery-tabs">${Object.keys(GALLERY).map(c=>`<button class="tn22-gallery-tab${c===galleryCat?' active':''}" type="button" data-gcat="${c}">${c}</button>`).join('')}</div><div class="tn22-gallery-grid${galleryCat==='Салон'?' salon':''}">${items.length?items.map((x,i)=>`<button class="tn22-gallery-tile" type="button" data-gi="${i}"><img loading="lazy" decoding="async" src="${x.src}" alt="${x.alt}"></button>`).join(''):'<div class="tn23-gallery-empty">Фото ресниц пока не добавлены</div>'}</div></div>`;gallery.querySelector('.tn22-gallery-back').onclick=closeGallery;gallery.querySelectorAll('[data-gcat]').forEach(b=>b.onclick=()=>{galleryCat=b.dataset.gcat;renderGallery()});gallery.querySelectorAll('[data-gi]').forEach(b=>b.onclick=e=>{e.preventDefault();e.stopPropagation();openViewer(items,+b.dataset.gi,'gallery')});}
+function renderGallery(){const items=GALLERY[galleryCat]||[];gallery.innerHTML=`<div class="tn22-gallery"><div class="tn22-gallery-top"><button class="tn22-gallery-back" type="button">←</button><div class="tn22-gallery-title"><strong>Галерея</strong><span>Студия Колористики Елены Багдасарян</span></div><div></div></div><div class="tn22-gallery-tabs">${Object.keys(GALLERY).map(c=>`<button class="tn22-gallery-tab${c===galleryCat?' active':''}" type="button" data-gcat="${c}">${c}</button>`).join('')}</div><div class="tn22-gallery-grid${galleryCat==='Салон'?' salon':''}">${items.length?items.map((x,i)=>x.type==='video'?`<div class="tn22-gallery-tile tn22-gallery-video"><video src="${x.src}" muted autoplay loop playsinline controls preload="metadata" aria-label="${x.alt}"></video></div>`:`<button class="tn22-gallery-tile" type="button" data-gi="${i}"><img loading="lazy" decoding="async" src="${x.src}" alt="${x.alt}"></button>`).join(''):'<div class="tn23-gallery-empty">Фото ресниц пока не добавлены</div>'}</div></div>`;gallery.querySelector('.tn22-gallery-back').onclick=closeGallery;gallery.querySelectorAll('[data-gcat]').forEach(b=>b.onclick=()=>{galleryCat=b.dataset.gcat;renderGallery()});gallery.querySelectorAll('[data-gi]').forEach(b=>b.onclick=e=>{e.preventDefault();e.stopPropagation();openViewer(items,+b.dataset.gi,'gallery')});}
 let galleryCloseTimer=0;
 function openGallery(cat='Салон'){clearTimeout(galleryCloseTimer);galleryCat=Object.prototype.hasOwnProperty.call(GALLERY,cat)?cat:'Салон';renderGallery();gallery.classList.remove('closing');gallery.scrollTop=0;requestAnimationFrame(()=>gallery.classList.add('open'))}
 function closeGallery(){if(!gallery.classList.contains('open'))return;clearTimeout(galleryCloseTimer);gallery.classList.remove('open');gallery.classList.add('closing');galleryCloseTimer=setTimeout(()=>gallery.classList.remove('closing'),520)}
@@ -1468,7 +1397,7 @@ function updateSectionNav(){navRaf=0;const heroPassed=hero.getBoundingClientRect
 window.addEventListener('scroll',()=>{if(!navRaf)navRaf=requestAnimationFrame(updateSectionNav)},{passive:true});window.addEventListener('resize',updateSectionNav,{passive:true});requestAnimationFrame(updateSectionNav);
 
 // PORTFOLIO
-const port=$('#tn13Portfolio');port.innerHTML=`<div class="tn22-port"><p class="tn22-kicker">Портфолио</p><h2>Наши работы</h2><div class="tn22-port-grid">${PORTFOLIO.map((x,i)=>`<button class="tn22-photo" type="button" data-pi="${i}"><img loading="lazy" decoding="async" src="${x.src}" alt="${x.alt}"></button>`).join('')}</div><button class="tn22-port-all" type="button">Смотреть все работы <span>→</span></button></div>`;port.querySelectorAll('[data-pi]').forEach(b=>b.onclick=()=>openViewer(PORTFOLIO,+b.dataset.pi,'portfolio'));port.querySelector('.tn22-port-all').onclick=()=>openGallery('Волосы');
+const port=$('#tn13Portfolio');port.innerHTML=`<div class="tn22-port"><p class="tn22-kicker">Портфолио</p><h2>Наши работы</h2><div class="tn22-port-grid">${PORTFOLIO.map((x,i)=>x.type==='video'?`<div class="tn22-photo tn22-photo-video"><video src="${x.src}" muted autoplay loop playsinline preload="metadata" aria-label="${x.alt}"></video></div>`:`<button class="tn22-photo" type="button" data-pi="${i}"><img loading="lazy" decoding="async" src="${x.src}" alt="${x.alt}"></button>`).join('')}</div><button class="tn22-port-all" type="button">Смотреть все работы <span>→</span></button></div>`;port.querySelectorAll('[data-pi]').forEach(b=>b.onclick=()=>openViewer(PORTFOLIO,+b.dataset.pi,'portfolio'));port.querySelector('.tn22-port-all').onclick=()=>openGallery('Волосы');
 
 // SERVICES
 const serv=$('#tn13Services');let serviceCat='Окрашивание',servicesExpanded=false;
@@ -1498,23 +1427,9 @@ const reviews=$('#tn13Reviews');
 const REAL_REVIEW_DATA=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."]];
 const reviewInitial=n=>([...String(n).trim()][0]||'S').toUpperCase();
 const reviewHref=()=> "https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/";
-const reviewCard=r=>`<a class="tn30-review-card" href="${reviewHref(r)}" target="_blank" rel="noopener"><div class="tn30-review-head"><span class="tn30-review-avatar">${reviewInitial(r[0])}</span><span><strong class="tn30-review-name">${r[0]}</strong><span class="tn30-review-meta">Яндекс Карты</span></span></div><p>${r[1]}</p><span class="tn30-review-open">Подробнее →</span></a>`;
+const reviewCard=r=>`<a class="tn30-review-card" href="${reviewHref(r)}" target="_blank" rel="noopener"><div class="tn30-review-head"><span class="tn30-review-avatar">${reviewInitial(r[0])}</span><span><strong class="tn30-review-name">${r[0]}</strong><span class="tn30-review-meta">Яндекс Карты${r[2]?' · '+r[2]:''}</span></span></div><p>${r[1]}</p><span class="tn30-review-open">Подробнее →</span></a>`;
 const reviewLanes=[0,1,2].map(row=>REAL_REVIEW_DATA.filter((_,i)=>i%3===row));
-reviews.innerHTML=`<div class="tn30-reviews"><p class="tn22-kicker">Отзывы</p><h2>Что говорят о нас</h2><div class="tn30-score"><strong>5.0</strong><div class="tn30-stars">☆☆☆☆☆</div><div class="tn30-count">165 отзывов · 258 оценок · Яндекс Карты</div></div><div class="tn30-review-stage">${reviewLanes.map((lane,i)=>{const loop=[lane[lane.length-1],...lane,lane[0]];return `<div class="tn30-lane" data-lane="${i}"><div class="tn30-track">${loop.map(reviewCard).join('')}</div></div>`}).join('')}</div><a class="tn30-review-all" href="${YANDEX_REVIEWS}" target="_blank" rel="noopener">Смотреть все отзывы →</a></div>`;
-const reviewStage=reviews.querySelector('.tn30-review-stage'),reviewTracks=[...reviews.querySelectorAll('.tn30-track')];
-let reviewIndex=1,reviewPauseTimer=0,reviewMotionTimer=0,reviewDragging=false,reviewMoved=false,reviewSuppressClick=false,reviewStartX=0,reviewStartY=0,reviewDx=0;
-const reviewGap=12,reviewDuration=780,reviewGroupCount=Math.max(1,...reviewLanes.map(l=>l.length));
-function reviewMetrics(){const lane=reviews.querySelector('.tn30-lane'),card=reviews.querySelector('.tn30-review-card');const width=card?card.getBoundingClientRect().width:0;return {step:width+reviewGap,edge:lane?Math.max(0,(lane.clientWidth-width)/2):26}}
-function paintReviewTracks(animated,drag=0){const {step,edge}=reviewMetrics();reviewTracks.forEach(t=>{t.style.transition=animated?`transform ${reviewDuration}ms cubic-bezier(.22,.66,.24,1)`:'none';t.style.transform=`translate3d(${edge-reviewIndex*step+drag}px,0,0)`})}
-function scheduleReviews(){clearTimeout(reviewPauseTimer);reviewPauseTimer=setTimeout(()=>moveReviews(reviewIndex+1),4000)}
-function normalizeReviewIndex(){if(reviewIndex===0){reviewIndex=reviewGroupCount;paintReviewTracks(false)}else if(reviewIndex===reviewGroupCount+1){reviewIndex=1;paintReviewTracks(false)}}
-function moveReviews(next){clearTimeout(reviewPauseTimer);clearTimeout(reviewMotionTimer);reviewIndex=Math.max(0,Math.min(reviewGroupCount+1,next));paintReviewTracks(true);reviewMotionTimer=setTimeout(()=>{normalizeReviewIndex();scheduleReviews()},reviewDuration+40)}
-requestAnimationFrame(()=>{paintReviewTracks(false);scheduleReviews()});
-window.addEventListener('resize',()=>paintReviewTracks(false),{passive:true});
-reviewStage.addEventListener('pointerdown',e=>{clearTimeout(reviewPauseTimer);clearTimeout(reviewMotionTimer);reviewDragging=true;reviewMoved=false;reviewDx=0;reviewStartX=e.clientX;reviewStartY=e.clientY;reviewStage.classList.add('dragging');paintReviewTracks(false);try{reviewStage.setPointerCapture(e.pointerId)}catch(_){}});
-reviewStage.addEventListener('pointermove',e=>{if(!reviewDragging)return;const dx=e.clientX-reviewStartX,dy=e.clientY-reviewStartY;if(!reviewMoved&&Math.abs(dx)<6)return;if(!reviewMoved&&Math.abs(dy)>Math.abs(dx))return;reviewMoved=true;reviewDx=dx;paintReviewTracks(false,reviewDx)});
-function finishReviewDrag(e){if(!reviewDragging)return;reviewDragging=false;reviewStage.classList.remove('dragging');try{reviewStage.releasePointerCapture(e.pointerId)}catch(_){}const {step}=reviewMetrics();if(reviewMoved&&Math.abs(reviewDx)>Math.min(70,step*.16))reviewIndex+=reviewDx<0?1:-1;reviewIndex=Math.max(0,Math.min(reviewGroupCount+1,reviewIndex));reviewSuppressClick=reviewMoved;reviewDx=0;paintReviewTracks(true);clearTimeout(reviewMotionTimer);reviewMotionTimer=setTimeout(()=>{normalizeReviewIndex();scheduleReviews()},reviewDuration+40)}
-reviewStage.addEventListener('pointerup',finishReviewDrag);reviewStage.addEventListener('pointercancel',finishReviewDrag);reviewStage.addEventListener('click',e=>{if(reviewSuppressClick){e.preventDefault();e.stopPropagation();reviewSuppressClick=false}},true);
+reviews.innerHTML=`<div class="tn30-reviews"><p class="tn22-kicker">Отзывы</p><h2>Что говорят о нас</h2><div class="tn30-score"><strong>5.0</strong><div class="tn30-stars" aria-label="5 звёзд">★★★★★</div><div class="tn30-count">165 отзывов · Яндекс Карты</div></div><div class="tn30-review-stage">${reviewLanes.map((lane,i)=>`<div class="tn30-lane"><div class="tn30-track tn30-track-${i}"><div class="tn30-review-set">${lane.map(reviewCard).join('')}</div><div class="tn30-review-set" aria-hidden="true">${lane.map(reviewCard).join('')}</div></div></div>`).join('')}</div><a class="tn30-review-all" href="${YANDEX_REVIEWS}" target="_blank" rel="noopener">Смотреть все отзывы →</a></div>`;
 
 // VISIT
 const visit=$('#tn13Visit');
@@ -1551,7 +1466,7 @@ style.textContent=`
 .tn42-photo{position:relative;height:238px;background:#171513;overflow:hidden}
 .tn42-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;filter:none!important}
 .tn42-rating{position:absolute;left:12px;bottom:12px;height:32px;padding:0 10px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(18,17,16,.72);backdrop-filter:blur(10px);display:flex;align-items:center;gap:6px;color:#fff;box-shadow:0 5px 14px rgba(0,0,0,.13)}
-.tn42-rating-star{font-size:11px;line-height:1;color:#d6ad6b}
+.tn42-rating-star{color:#e4b22d!important;font-size:11px;line-height:1;color:#d6ad6b}
 .tn42-rating strong{font:600 13px/1 'Manrope',Arial,sans-serif;color:#fff}
 .tn42-rating span{font:500 7.5px/1 'Manrope',Arial,sans-serif;letter-spacing:.035em;color:rgba(255,255,255,.7)}
 .tn42-body{padding:24px 18px 18px}
@@ -2090,9 +2005,9 @@ services.insertAdjacentElement('afterend',about);
   'use strict';
   if(!window.matchMedia || !window.matchMedia('(max-width:1023px)').matches || window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches) return;
 
-  const BRAND_SRC='logo.webp';
+  const BRAND_SRC='crown.svg';
   const ABOUT_SRC='master.webp';
-  const VIDEO_SRC='galery1.MP4';
+  const HERO_SRC='salon3.webp';
 
   function ensureStyle(){
     if(document.getElementById('salon-mobile-media-style')) return;
@@ -2106,15 +2021,15 @@ services.insertAdjacentElement('afterend',about);
           align-items:center!important;
           justify-content:flex-start!important;
           height:52px!important;
-          width:auto!important;
-          max-width:250px!important;
+          width:112px!important;
+          max-width:112px!important;
           overflow:visible!important;
         }
         #salon-mobile .tn22-brand.br-logo-brand img{
           display:block!important;
-          width:auto!important;
-          height:64px!important;
-          max-width:235px!important;
+          width:104px!important;
+          height:48px!important;
+          max-width:104px!important;
           object-fit:contain!important;
           object-position:left center!important;
           filter:none!important;
@@ -2171,28 +2086,17 @@ services.insertAdjacentElement('afterend',about);
     if(!brand || brand.dataset.brLogoReady==='1') return;
     brand.dataset.brLogoReady='1';
     brand.classList.add('br-logo-brand');
-    brand.setAttribute('aria-label','СТУДИЯ КОЛОРИСТИКИ');
-    brand.innerHTML='<img src="'+BRAND_SRC+'" alt="СТУДИЯ КОЛОРИСТИКИ" decoding="async">';
+    brand.setAttribute('aria-label','Студия колористики Елены Багдасарян');
+    brand.innerHTML='<img src="'+BRAND_SRC+'" alt="Корона — Студия колористики Елены Багдасарян" decoding="async">';
   }
 
   function applyHeroVideo(root){
     const media=root.querySelector('.tn22-media');
-    if(!media || media.dataset.brVideoReady==='1') return;
-    media.dataset.brVideoReady='1';
-    media.classList.add('br-video-media');
-    media.setAttribute('aria-label','Видео Студия Колористики Елены Багдасарян');
-    media.innerHTML=VIDEO_SRC?'<video class="br-hero-video" muted autoplay loop playsinline webkit-playsinline preload="metadata" poster="salon3.webp" src="'+VIDEO_SRC+'"></video>':'<img class="br-hero-video" src="salon3.webp" alt="Фото салона">';
-    const video=media.querySelector('video');
-    if(video){
-      video.muted=true;
-      video.defaultMuted=true;
-      const tryPlay=()=>{const p=video.play();if(p&&typeof p.catch==='function')p.catch(()=>{});};
-      video.addEventListener('loadeddata',tryPlay,{once:true});
-      video.addEventListener('canplay',tryPlay,{once:true});
-      window.requestAnimationFrame(tryPlay);
-      document.addEventListener('visibilitychange',()=>{if(!document.hidden) tryPlay()});
-      document.addEventListener('pointerdown',tryPlay,{once:true,passive:true});
-    }
+    if(!media || media.dataset.brHeroReady==='1') return;
+    media.dataset.brHeroReady='1';
+    media.classList.remove('br-video-media');
+    media.setAttribute('aria-label','Интерьер Студии колористики Елены Багдасарян');
+    media.innerHTML='<img class="br-hero-video" src="'+HERO_SRC+'" alt="Интерьер студии">';
   }
 
   function applyAbout(root){
@@ -2255,7 +2159,7 @@ services.insertAdjacentElement('afterend',about);
   if(!window.matchMedia || !window.matchMedia('(max-width:1023px)').matches || window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches) return;
 
   var STORAGE_KEY='salon-template-language';
-  var currentLang='hy';
+  var currentLang='ru';
   var root=null;
 
   var meta={
@@ -2398,12 +2302,12 @@ services.insertAdjacentElement('afterend',about);
   var direct={};
   rows.forEach(function(row){ direct[row[0]]=row; });
 
-  var langIndex={ru:0,hy:1,en:2};
+  var langIndex={ru:0,en:2};
 
   function getSaved(){
     try{
       var v=localStorage.getItem(STORAGE_KEY);
-      return /^(hy|ru|en)$/.test(v||'')?v:null;
+      return /^(ru|en)$/.test(v||'')?v:null;
     }catch(_){ return null; }
   }
 
@@ -2412,11 +2316,10 @@ services.insertAdjacentElement('afterend',about);
     if(saved) return saved;
     var list=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']).map(function(x){return String(x).toLowerCase();});
     for(var i=0;i<list.length;i++){
-      if(list[i].indexOf('hy')===0) return 'hy';
       if(list[i].indexOf('ru')===0) return 'ru';
       if(list[i].indexOf('en')===0) return 'en';
     }
-    return 'hy';
+    return 'ru';
   }
 
   function save(lang){
@@ -2535,7 +2438,7 @@ services.insertAdjacentElement('afterend',about);
     sw.className='br-lang-switch';
     sw.setAttribute('role','group');
     sw.setAttribute('aria-label','Language');
-    sw.innerHTML='<button type="button" data-lang="hy">HY</button><span class="sep">/</span><button type="button" data-lang="ru">RU</button><span class="sep">/</span><button type="button" data-lang="en">EN</button>';
+    sw.innerHTML='<button type="button" data-lang="ru">RU</button><span class="sep">/</span><button type="button" data-lang="en">EN</button>';
     sw.addEventListener('pointerdown',function(e){e.stopPropagation();});
     sw.addEventListener('click',function(e){
       var btn=e.target.closest('[data-lang]');
@@ -2561,30 +2464,17 @@ services.insertAdjacentElement('afterend',about);
     if(!root) return;
     var credit=root.querySelector('.br-tanem-copy');
     if(credit){
-      if(currentLang==='hy') credit.innerHTML='Ստեղծված է <strong>TANEM.ru</strong>-ում';
-      else if(currentLang==='en') credit.innerHTML='Created with <strong>TANEM.ru</strong>';
+      if(currentLang==='en') credit.innerHTML='Created with <strong>TANEM.ru</strong>';
       else credit.innerHTML='Создано в <strong>TANEM.ru</strong>';
     }
 
     var masterBrand=root.querySelector('.tn22-master-brand');
     if(masterBrand) masterBrand.textContent='СТУДИЯ КОЛОРИСТИКИ';
 
-    if(currentLang==='hy'){
-      var team=root.querySelector('#tn13Team');
-      var masterPage=root.querySelector('.tn22-master-page');
-      if(team){
-        translateTree(team,'en');
-        translateAttributes(team,'en');
-      }
-      if(masterPage){
-        translateTree(masterPage,'en');
-        translateAttributes(masterPage,'en');
-      }
-    }
   }
 
   function updateMeta(){
-    var m=meta[currentLang]||meta.hy;
+    var m=meta[currentLang]||meta.ru;
     document.documentElement.lang=currentLang;
     document.documentElement.dir='ltr';
     document.title=m.title;
@@ -2604,7 +2494,7 @@ services.insertAdjacentElement('afterend',about);
   }
 
   function setLanguage(lang,userChoice){
-    if(!/^(hy|ru|en)$/.test(lang)) lang='hy';
+    if(!/^(ru|en)$/.test(lang)) lang='ru';
     currentLang=lang;
     if(userChoice) save(lang);
     applyLanguage();
@@ -2644,45 +2534,4 @@ services.insertAdjacentElement('afterend',about);
   start();
 })();
 
-(function(){'use strict';if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches||window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches)return;const root=document.getElementById('salon-mobile');if(!root)return;const PHONE_HREF="tel:+79266143300",PHONE_TEXT="+7 (926) 614-33-00",TELEGRAM="https://t.me/+79266143300",YANDEX="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/prices/?ll=38.040884%2C55.682708&z=10.82",MAP="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B",ADDRESS="Солнечная ул., 6, Люберцы";const apply=()=>{const title=root.querySelector('.tn22-title');if(title)title.textContent='Студия';const sub=root.querySelector('.tn22-sub');if(sub)sub.textContent='Колористики Елены Багдасарян';const copy=root.querySelector('.tn22-copy');if(copy)copy.textContent="Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.";const loc=root.querySelector('.tn37-location .tn37-info-copy');if(loc)loc.innerHTML='<strong>Люберцы</strong>Солнечная ул., 6';const al=root.querySelector('#tn38About .tn42-lead');if(al)al.textContent='Студия Колористики Елены Багдасарян';const ac=root.querySelector('#tn38About .tn42-copy');if(ac)ac.textContent="Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.";const ai=root.querySelector('#tn38About .tn42-photo img');if(ai){ai.src='master.webp';ai.alt="Студия Колористики Елены Багдасарян"}root.querySelectorAll('.tn30-review-card,.tn30-review-all').forEach(a=>{if(a.tagName==='A'){a.href=YANDEX;a.target='_blank';a.rel='noopener'}});const cs=[...root.querySelectorAll('#tn13Visit .tn22-contact')];if(cs[0]){cs[0].href=YANDEX;cs[0].target='_blank';cs[0].rel='noopener';cs[0].removeAttribute('aria-disabled');const t=cs[0].querySelector('span>strong'),d=cs[0].querySelector('span>span');if(t)t.textContent=ADDRESS;if(d)d.textContent='Открыть в Яндекс Картах'}if(cs[1]){cs[1].href=PHONE_HREF;cs[1].removeAttribute('aria-disabled');const t=cs[1].querySelector('span>strong'),d=cs[1].querySelector('span>span');if(t)t.textContent=PHONE_TEXT;if(d)d.textContent='Нажмите, чтобы позвонить'}if(cs[2]){cs[2].href=TELEGRAM;cs[2].target='_blank';cs[2].rel='noopener';cs[2].removeAttribute('aria-disabled');const t=cs[2].querySelector('span>strong'),d=cs[2].querySelector('span>span');if(t)t.textContent='Telegram';if(d)d.textContent='Написать в студию'}if(cs[3]){const d=cs[3].querySelector('span>span');if(d)d.textContent='Ежедневно 10:00–20:00'}const f=root.querySelector('#tn13Visit iframe');if(f)f.src=MAP;const call=root.querySelector('#tn13Visit .tn22-call');if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}const route=root.querySelector('#tn13Visit .tn22-route');if(route){route.href=YANDEX;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}const sh=root.querySelector('#tn13BookSheet');if(sh){const ls=[...sh.querySelectorAll('a.tn50-book-option')];if(ls[0]){ls[0].href=PHONE_HREF;ls[0].removeAttribute('aria-disabled');const t=ls[0].querySelector('strong');if(t)t.textContent='Позвонить'}if(ls[1]){ls[1].href=TELEGRAM;ls[1].target='_blank';ls[1].rel='noopener';ls[1].removeAttribute('aria-disabled');const t=ls[1].querySelector('strong');if(t)t.textContent='Telegram'}}const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())),open=h>=10&&h<20;const st=root.querySelector('#tn22Status');if(st){st.className='tn22-status '+(open?'open':'closed');const t=st.querySelector('.tn22-status-text');if(t)t.textContent=open?'Открыто до 20:00':'Закрыто'}const hs=root.querySelector('.tn50-hero-status');if(hs){hs.classList.toggle('open',open);hs.classList.toggle('closed',!open);const m=hs.querySelector('.tn50-hero-status-main'),s=hs.querySelector('.tn50-hero-status-sub');if(m)m.textContent=open?'Открыто':'Закрыто';if(s)s.textContent='Ежедневно 10:00–20:00'}};apply();requestAnimationFrame(apply);setTimeout(apply,80)})();
-/* TANEM salon-specific final adjustments — 2026-09-23 */
-(()=>{
-'use strict';
-if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches)return;
-const GOOGLE_MAPS='https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B';
-const YANDEX_REVIEWS='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/';
-const ALEXANDRA_TEXT='Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.';
-const style=document.createElement('style');style.id='tanem-final-mobile-20260923';
-style.textContent='@media(max-width:1023px){#salon-mobile .br-lang-switch [data-lang="hy"],#salon-mobile .br-lang-switch [data-lang="hy"]+.sep{display:none!important}#salon-mobile .tn42-rating-star,#salon-mobile .tn13-review-stars{color:#e4b22d!important;-webkit-text-fill-color:#e4b22d!important}#salon-mobile .tn13-review-stars{font-size:13px!important;font-weight:900!important}#salon-mobile .tn13-service-price,#salon-mobile .tn22-service-price,#salon-mobile [class*="service"] [class*="price"]{color:#fff!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:600!important}#salon-mobile [data-book],#salon-mobile .tn13-main-cta,#salon-mobile .tn22-book{background:#eee8e2!important}#salon-mobile .br-crown-only{width:112px!important;height:76px!important;overflow:hidden!important;display:flex!important;align-items:flex-start!important;justify-content:center!important}#salon-mobile .br-crown-only img{width:154px!important;max-width:none!important;height:auto!important;transform:translateY(-2px)!important;object-fit:contain!important}#salon-mobile .tn13-review-track{animation:tn13Reviews 125s linear infinite!important;will-change:transform}#salon-mobile .tn13-review-track:hover{animation-play-state:running!important}#salon-mobile .br-hero-salon3,#salon-mobile .br-portfolio-video{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important}}';
-document.head.appendChild(style);
-function apply(){
-const root=document.getElementById('salon-mobile');if(!root)return false;
-try{if(localStorage.getItem('salon-template-language')==='hy')localStorage.setItem('salon-template-language','ru')}catch(_){}
-root.querySelectorAll('[data-lang="hy"]').forEach(btn=>{const sep=btn.nextElementSibling;btn.remove();if(sep&&sep.classList.contains('sep'))sep.remove()});
-if(document.documentElement.lang==='hy'){const ru=root.querySelector('[data-lang="ru"]');if(ru)ru.click();document.documentElement.lang='ru'}
-root.querySelectorAll('.tn22-media.br-video-media,.tn13-visual-main,.tn13-hero [data-gallery="salon"]').forEach(box=>{if(box.dataset.brSalon3==='1')return;const img=document.createElement('img');img.src='salon3.webp';img.alt='Интерьер студии';img.className='br-hero-salon3';box.innerHTML='';box.classList.remove('br-video-media');box.appendChild(img);box.dataset.brSalon3='1'});
-root.querySelectorAll('a img[src="logo.webp"],.br-logo-brand img[src="logo.webp"]').forEach(img=>{const host=img.parentElement;if(host)host.classList.add('br-crown-only')});
-root.querySelectorAll('.tn13-brand').forEach(x=>{if(!x.querySelector('img'))x.textContent='ЕЛЕНЫ БАГДАСАРЯН'});
-root.querySelectorAll('.tn13-review-summary strong,.tn42-rating strong').forEach(x=>x.textContent='5.0');
-root.querySelectorAll('.tn13-review-summary span').forEach(x=>x.textContent='165 отзывов · Яндекс Карты');
-root.querySelectorAll('a[href*="yandex.ru/maps"],a[href*="yandex.com/maps"],a[href*="yandex.ru/map-widget"]').forEach(a=>{if(a.closest('#tn13Reviews,.tn13-reviews')||/отзыв/i.test(a.textContent||''))return;a.href=GOOGLE_MAPS;a.target='_blank';a.rel='noopener';if(/яндекс/i.test(a.textContent||''))a.textContent=(a.textContent||'').replace(/Яндекс\s*Карты?/gi,'Google Карты')});
-const track=root.querySelector('.tn13-review-track');if(track&&!track.querySelector('[data-review-alexandra]')){const card=document.createElement('a');card.className='tn13-review-card';card.href=YANDEX_REVIEWS;card.target='_blank';card.rel='noopener';card.dataset.reviewAlexandra='1';card.innerHTML='<div class="tn13-review-stars">★★★★★</div><blockquote>'+ALEXANDRA_TEXT+'</blockquote><small>Александра Родина · 23 января 2024</small>';track.appendChild(card);track.appendChild(card.cloneNode(true))}
-const feature=root.querySelector('.tn13-feature');if(feature&&!feature.querySelector('.br-portfolio-video')){const first=feature.querySelector('button');if(first){first.innerHTML='<video class="br-portfolio-video" src="galery1.MP4" muted playsinline loop preload="metadata" aria-label="Видео студии"></video>';first.dataset.gallery='salon';const v=first.querySelector('video');const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?v.play().catch(()=>{}):v.pause()),{threshold:.2});io.observe(v)}}
-return true}
-let n=0;const timer=setInterval(()=>{n++;if(apply()||n>100)clearInterval(timer)},80);apply();
-})();
-
-/* TANEM gallery-video completion — 2026-09-23 */
-(()=>{
- if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches)return;
- const root=document.getElementById('salon-mobile');if(!root)return;
- const inject=()=>{
-   const grid=root.querySelector('.tn22-gallery-grid.salon');
-   if(grid&&!grid.querySelector('.br-gallery-video')){
-     const tile=document.createElement('div');tile.className='tn22-gallery-tile br-gallery-video';
-     tile.innerHTML='<video src="galery1.MP4" muted playsinline loop controls preload="metadata" aria-label="Видео студии" style="width:100%;height:100%;object-fit:cover;display:block"></video>';
-     grid.prepend(tile);
-   }
- };
- new MutationObserver(inject).observe(root,{childList:true,subtree:true});inject();
-})();
+(function(){'use strict';if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches||window.matchMedia('(min-width:768px) and (hover:hover) and (pointer:fine)').matches)return;const root=document.getElementById('salon-mobile');if(!root)return;const PHONE_HREF="tel:+79266143300",PHONE_TEXT="+7 (926) 614-33-00",TELEGRAM="https://t.me/+79266143300",YANDEX_REVIEWS="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/",GOOGLE_MAPS="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B",MAP="https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed",ADDRESS="Солнечная ул., 6, Люберцы";const apply=()=>{const title=root.querySelector('.tn22-title');if(title)title.textContent='ЕЛЕНЫ БАГДАСАРЯН';const sub=root.querySelector('.tn22-sub');if(sub)sub.textContent='СТУДИЯ КОЛОРИСТИКИ';const copy=root.querySelector('.tn22-copy');if(copy)copy.textContent="Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.";const loc=root.querySelector('.tn37-location .tn37-info-copy');if(loc)loc.innerHTML='<strong>Люберцы</strong>';const al=root.querySelector('#tn38About .tn42-lead');if(al)al.textContent='Студия Колористики Елены Багдасарян';const ac=root.querySelector('#tn38About .tn42-copy');if(ac)ac.textContent="Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.";const ai=root.querySelector('#tn38About .tn42-photo img');if(ai){ai.src='master.webp';ai.alt="Студия Колористики Елены Багдасарян"}root.querySelectorAll('.tn30-review-card,.tn30-review-all').forEach(a=>{if(a.tagName==='A'){a.href=YANDEX_REVIEWS;a.target='_blank';a.rel='noopener'}});const cs=[...root.querySelectorAll('#tn13Visit .tn22-contact')];if(cs[0]){cs[0].href=GOOGLE_MAPS;cs[0].target='_blank';cs[0].rel='noopener';cs[0].removeAttribute('aria-disabled');const t=cs[0].querySelector('span>strong'),d=cs[0].querySelector('span>span');if(t)t.textContent=ADDRESS;if(d)d.textContent='Открыть в Google Картах'}if(cs[1]){cs[1].href=PHONE_HREF;cs[1].removeAttribute('aria-disabled');const t=cs[1].querySelector('span>strong'),d=cs[1].querySelector('span>span');if(t)t.textContent=PHONE_TEXT;if(d)d.textContent='Нажмите, чтобы позвонить'}if(cs[2]){cs[2].href=TELEGRAM;cs[2].target='_blank';cs[2].rel='noopener';cs[2].removeAttribute('aria-disabled');const t=cs[2].querySelector('span>strong'),d=cs[2].querySelector('span>span');if(t)t.textContent='Telegram';if(d)d.textContent='Написать в студию'}if(cs[3]){const d=cs[3].querySelector('span>span');if(d)d.textContent='Ежедневно 10:00–20:00'}const f=root.querySelector('#tn13Visit iframe');if(f)f.src=MAP;const call=root.querySelector('#tn13Visit .tn22-call');if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}const route=root.querySelector('#tn13Visit .tn22-route');if(route){route.href=GOOGLE_MAPS;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}const sh=root.querySelector('#tn13BookSheet');if(sh){const ls=[...sh.querySelectorAll('a.tn50-book-option')];if(ls[0]){ls[0].href=PHONE_HREF;ls[0].removeAttribute('aria-disabled');const t=ls[0].querySelector('strong');if(t)t.textContent='Позвонить'}if(ls[1]){ls[1].href=TELEGRAM;ls[1].target='_blank';ls[1].rel='noopener';ls[1].removeAttribute('aria-disabled');const t=ls[1].querySelector('strong');if(t)t.textContent='Telegram'}}const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())),open=h>=10&&h<20;const st=root.querySelector('#tn22Status');if(st){st.className='tn22-status '+(open?'open':'closed');const t=st.querySelector('.tn22-status-text');if(t)t.textContent=open?'Открыто до 20:00':'Закрыто'}const hs=root.querySelector('.tn50-hero-status');if(hs){hs.classList.toggle('open',open);hs.classList.toggle('closed',!open);const m=hs.querySelector('.tn50-hero-status-main'),s=hs.querySelector('.tn50-hero-status-sub');if(m)m.textContent=open?'Открыто':'Закрыто';if(s)s.textContent=''}};apply();requestAnimationFrame(apply);setTimeout(apply,80)})();
