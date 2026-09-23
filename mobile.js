@@ -681,10 +681,10 @@
         <p class="tn13-final-copy">Адрес, график и контакты заполняются для каждого салона.</p>
         <div class="tn13-final-actions">
           <button class="tn13-final-cta" type="button" data-book><span>Записаться</span><span>→</span></button>
-          <div class="tn13-final-secondary-row"><a class="tn13-final-secondary" href="#tn13Visit" aria-disabled="true" target="_blank" rel="noopener"><svg class="tn50-brand-svg" aria-hidden="true"><use href="#stl-icon-whatsapp"/></svg>Мессенджер</a><a class="tn13-final-secondary" href="#tn13Visit" aria-disabled="true"><svg aria-hidden="true"><use href="#stl-icon-phone"/></svg>Позвонить</a><a class="tn13-final-secondary" href="${YANDEX}" target="_blank" rel="noopener">Яндекс Карты</a></div>
+          <div class="tn13-final-secondary-row"><a class="tn13-final-secondary" href="https://t.me/+79266143300" target="_blank" rel="noopener"><svg class="tn50-brand-svg" aria-hidden="true"><use href="#stl-icon-whatsapp"/></svg>Telegram</a><a class="tn13-final-secondary" href="tel:+79266143300"><svg aria-hidden="true"><use href="#stl-icon-phone"/></svg>Позвонить</a><a class="tn13-final-secondary" href="${YANDEX}" target="_blank" rel="noopener">Яндекс Карты</a></div>
         </div>
-        <iframe class="tn13-map" loading="lazy" src="about:blank" title="Карта Студия Колористики Елены Багдасарян"></iframe>
-        <div class="tn13-final-facts"><span><strong>—</strong><small>график</small></span><span><strong>—</strong><small>рейтинг</small></span><span><strong>30</strong><small>услуг</small></span></div>
+        <iframe class="tn13-map" loading="lazy" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B" title="Карта Студия Колористики Елены Багдасарян"></iframe>
+        <div class="tn13-final-facts"><span><strong>10–20</strong><small>ежедневно</small></span><span><strong>5.0</strong><small>рейтинг</small></span><span><strong>57</strong><small>услуг</small></span></div>
       </div>
     </section>
 
