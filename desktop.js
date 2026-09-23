@@ -10,11 +10,12 @@
   const ROUTE=YANDEX_RU;
   const WHATSAPP_URL='https://t.me/+79266143300';
   const YANDEX_REVIEWS=YANDEX_RU;
-  const DESKTOP_REAL_REVIEWS=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."]];
+  const DESKTOP_REAL_REVIEWS=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."],["Александра Родина","Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.","23 января 2024"]];
   const PORTFOLIO=[
   {
-    "src": "galery00001.webp",
-    "alt": "Работа студии"
+    "type": "video",
+    "src": "galery1.MP4",
+    "alt": "Видео студии"
   },
   {
     "src": "galery00004.webp",
@@ -43,6 +44,11 @@
 ];
   const DESKTOP_GALLERY_GROUPS={
   "Салон": [
+    {
+      "type": "video",
+      "src": "galery1.MP4",
+      "alt": "Видео студии"
+    },
     {
       "src": "salon1.webp",
       "alt": "Фото студии"
@@ -232,13 +238,6 @@
       [],
       ""
     ],
-    [
-      "Окрашивание AirTouch — длина 3 (средние)",
-      "15000 ₽",
-      "",
-      [],
-      ""
-    ]
   ],
   "Стрижки": [
     [
@@ -276,27 +275,6 @@
       [],
       ""
     ],
-    [
-      "Мужская модельная стрижка",
-      "1300 ₽",
-      "",
-      [],
-      ""
-    ],
-    [
-      "Мужская стрижка удлиненная (стильная)",
-      "1500 ₽",
-      "",
-      [],
-      ""
-    ],
-    [
-      "2 мужские стрижки",
-      "2600 ₽",
-      "",
-      [],
-      ""
-    ]
   ],
   "Укладки": [
     [
@@ -529,27 +507,6 @@
     ]
   ],
   "Макияж": [
-    [
-      "Дневной макияж",
-      "3000 ₽",
-      "",
-      [],
-      ""
-    ],
-    [
-      "Вечерний макияж",
-      "3500 ₽",
-      "",
-      [],
-      ""
-    ],
-    [
-      "Креативный / сложный макияж",
-      "4000 ₽",
-      "",
-      [],
-      ""
-    ]
   ]
 };
   const SERVICE_CATEGORIES=Object.keys(SERVICE_DATA);
@@ -677,6 +634,7 @@
         letter-spacing:.075em;
         text-transform:uppercase;
       }
+      .std-header-crown{display:block;width:112px;height:64px;object-fit:contain}
       .std-header-brand-sub{
         margin-top:8px;
         font:600 9px/1 "Manrope",Arial,sans-serif;
@@ -7646,10 +7604,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   root.innerHTML=`
     <header class="std-header">
       <a class="std-header-brand" href="#salonDesktopTop" aria-label="Студия Колористики Елены Багдасарян">
-        <span class="std-header-brand-main">СТУДИЯ КОЛОРИСТИКИ</span>
-        <span class="std-header-brand-sub">ЕЛЕНЫ БАГДАСАРЯН</span>
+        <img class="std-header-crown" src="crown.svg" alt="Корона — Студия Колористики Елены Багдасарян">
       </a>
-      <div class="std-lang-switch std-lang-switch-under-brand" role="group" aria-label="Language"><button type="button" data-desktop-lang="ru">RU</button><span class="sep">|</span><button type="button" data-desktop-lang="en">EN</button><span class="sep">|</span><button type="button" data-desktop-lang="hy">HY</button></div>
+      <div class="std-lang-switch std-lang-switch-under-brand" role="group" aria-label="Language"><button type="button" data-desktop-lang="ru">RU</button><span class="sep">|</span><button type="button" data-desktop-lang="en">EN</button></div>
       <nav class="std-nav" aria-label="Основная навигация">
         <a href="#salonDesktopServices">Услуги</a>
         <a href="#salonDesktopPortfolio">Наши работы</a>
@@ -7672,8 +7629,8 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <div class="std-hero-frame">
           <div class="std-copy-inner">
           <p class="std-hero-kicker">Салон красоты</p>
-          <h1 class="std-logo">СТУДИЯ КОЛОРИСТИКИ</h1>
-          <div class="std-logo-sub">ЕЛЕНЫ БАГДАСАРЯН</div>
+          <h1 class="std-logo">ЕЛЕНЫ БАГДАСАРЯН</h1>
+          <div class="std-logo-sub">СТУДИЯ КОЛОРИСТИКИ</div>
 
           <p class="std-tagline">Описание салона.</p>
 
@@ -7682,7 +7639,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
               <span class="std-meta-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.7v4.8l3 1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
-              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Закрыто</span><span class="std-status-sub" id="stdStatusSub">до 10:00</span></span>
+              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Открыто</span><span class="std-status-sub" id="stdStatusSub"></span></span>
             </div>
 
             <span class="std-meta-divider" aria-hidden="true"></span>
@@ -7691,7 +7648,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
               <span class="std-meta-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
               </span>
-              <span class="std-meta-text std-address">Люберцы,<br>Солнечная ул., 6, Люберцы</span>
+              <span class="std-meta-text std-address">Люберцы</span>
             </a>
           </div>
 
@@ -7836,8 +7793,8 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <h2 class="std-reviews-title" id="stdReviewsTitle">Что говорят о нас</h2>
         <div class="std-reviews-score">
           <strong>5.0</strong>
-          <div class="std-reviews-stars" aria-label="5 звёзд">☆☆☆☆☆</div>
-          <div class="std-reviews-count">165 отзывов · 258 оценок · Яндекс Карты</div>
+          <div class="std-reviews-stars" aria-label="5 звёзд">★★★★★</div>
+          <div class="std-reviews-count">165 отзывов · Яндекс Карты</div>
         </div>
       </div>
 
@@ -7851,7 +7808,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   <span>
                     <strong class="std-review-name">${r[0]}</strong>
                     <span class="std-review-meta">Яндекс Карты</span>
-                    <span class="std-review-stars">☆☆☆☆☆</span>
+                    <span class="std-review-stars">★★★★★</span>
                   </span>
                 </div>
                 <p class="std-review-text">${r[1]}</p>
@@ -7867,7 +7824,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   <span>
                     <strong class="std-review-name">${r[0]}</strong>
                     <span class="std-review-meta">Яндекс Карты</span>
-                    <span class="std-review-stars">☆☆☆☆☆</span>
+                    <span class="std-review-stars">★★★★★</span>
                   </span>
                 </div>
                 <p class="std-review-text">${r[1]}</p>
@@ -8759,43 +8716,3 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
 })();
 
 (function(){'use strict';const root=document.getElementById('salon-desktop-v1');if(!root)return;const PHONE_HREF="tel:+79266143300",PHONE_TEXT="+7 (926) 614-33-00",TELEGRAM="https://t.me/+79266143300",YANDEX="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/prices/?ll=38.040884%2C55.682708&z=10.82",MAP="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B",ADDRESS="Солнечная ул., 6, Люберцы";const hb=root.querySelector('.std-header-brand');if(hb){hb.innerHTML='<img src="logo.webp" alt="Студия Колористики Елены Багдасарян">';hb.style.width='242px';hb.style.minWidth='242px';const im=hb.querySelector('img');if(im){im.style.maxWidth='220px';im.style.maxHeight='66px';im.style.objectFit='contain'}}const lg=root.querySelector('.std-logo');if(lg)lg.textContent='СТУДИЯ';const ls=root.querySelector('.std-logo-sub');if(ls)ls.textContent='КОЛОРИСТИКИ ЕЛЕНЫ БАГДАСАРЯН';const tg=root.querySelector('.std-tagline');if(tg)tg.textContent="Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.";const hm=root.querySelector('#stdHeroMedia');if(hm){const v=document.createElement('video');v.id='stdHeroMedia';v.muted=true;v.defaultMuted=true;v.autoplay=true;v.loop=true;v.playsInline=true;v.preload='metadata';v.poster='salon3.webp';v.src='galery1.MP4';v.setAttribute('aria-label','Видео студии');hm.replaceWith(v);const p=v.play();if(p&&p.catch)p.catch(()=>{})}const ai=root.querySelector('.mct-about-portrait img');if(ai){ai.src='masterpc.webp';ai.alt="Студия Колористики Елены Багдасарян"}const ab=root.querySelector('.dct-about-brand');if(ab)ab.textContent='Студия Колористики';const ak=root.querySelector('.dct-about-kind');if(ak)ak.textContent='Елены Багдасарян';const at=root.querySelector('.dct-about-copy');if(at)at.textContent="Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.";const am=[...root.querySelectorAll('.dct-about-amenities-grid article')];if(am[0])am[0].innerHTML='<strong>Колористика и волосы</strong><span>Окрашивание, стрижки, укладки, ботокс и кератин.</span>';if(am[1])am[1].innerHTML='<strong>Beauty-направления</strong><span>Брови, ресницы, макияж и ногтевой сервис.</span>';if(am[2])am[2].innerHTML='<strong>Прямая запись</strong><span>Связь по телефону или Telegram без лишних шагов.</span>';const sc=root.querySelector('.std-reviews-score strong');if(sc)sc.textContent='5.0';const rc=root.querySelector('.std-reviews-count');if(rc)rc.textContent='165 отзывов · 258 оценок · Яндекс Карты';root.querySelectorAll('.std-review-card,.std-reviews-all').forEach(a=>{a.href=YANDEX;a.target='_blank';a.rel='noopener'});root.querySelectorAll('.std-review-meta').forEach(x=>x.textContent='Яндекс Карты');const cs=[...root.querySelectorAll('#salonDesktopContacts .std-contact-card')];if(cs[0]){cs[0].href=YANDEX;cs[0].target='_blank';cs[0].rel='noopener';cs[0].removeAttribute('aria-disabled');const t=cs[0].querySelector('.std-contact-card-title'),s=cs[0].querySelector('.std-contact-card-sub');if(t)t.textContent=ADDRESS;if(s)s.textContent='Открыть в Яндекс Картах'}if(cs[1]){cs[1].href=PHONE_HREF;cs[1].removeAttribute('aria-disabled');const t=cs[1].querySelector('.std-contact-card-title'),s=cs[1].querySelector('.std-contact-card-sub');if(t)t.textContent=PHONE_TEXT;if(s)s.textContent='Нажмите, чтобы позвонить'}if(cs[2]){cs[2].href=TELEGRAM;cs[2].target='_blank';cs[2].rel='noopener';cs[2].removeAttribute('aria-disabled');const t=cs[2].querySelector('.std-contact-card-title'),s=cs[2].querySelector('.std-contact-card-sub');if(t)t.textContent='Telegram';if(s)s.textContent='Написать в студию'}if(cs[3]){const s=cs[3].querySelector('.std-contact-card-sub');if(s)s.textContent='Ежедневно 10:00–20:00'}const f=root.querySelector('#salonDesktopContacts iframe');if(f)f.src=MAP;const call=root.querySelector('#salonDesktopContacts .std-contact-call');if(call){call.href=PHONE_HREF;call.removeAttribute('aria-disabled')}const route=root.querySelector('#salonDesktopContacts .std-contact-route');if(route){route.href=YANDEX;route.target='_blank';route.rel='noopener';route.removeAttribute('aria-disabled')}const os=[...root.querySelectorAll('#stdBookOverlay .std-book-options a')];if(os[0]){os[0].href=PHONE_HREF;os[0].removeAttribute('aria-disabled');os[0].innerHTML='<span>Телефон</span><span>'+PHONE_TEXT+' →</span>'}if(os[1]){os[1].href=TELEGRAM;os[1].target='_blank';os[1].rel='noopener';os[1].removeAttribute('aria-disabled');os[1].innerHTML='<span>Telegram</span><span>Написать →</span>'}if(os[2]){os[2].href=YANDEX;os[2].target='_blank';os[2].rel='noopener';os[2].removeAttribute('aria-disabled');os[2].innerHTML='<span>Яндекс Карты</span><span>Открыть →</span>'}const h=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())),open=h>=10&&h<20;const st=root.querySelector('#stdContactStatus');if(st){st.classList.toggle('open',open);const tx=root.querySelector('#stdContactStatusText');if(tx)tx.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00'}const ss=root.querySelector('#stdStickyServiceStatus'),sb=root.querySelector('#stdStickyServiceStatusSub');if(ss)ss.textContent=open?'Открыто':'Закрыто';if(sb)sb.textContent='Ежедневно 10:00–20:00'})();
-/* TANEM salon-specific final desktop adjustments — 2026-09-23 */
-(()=>{
-'use strict';
-if(!window.matchMedia||!window.matchMedia('(min-width:768px)').matches)return;
-const GOOGLE_MAPS='https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B';
-const YANDEX_REVIEWS='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/';
-const ALEXANDRA_TEXT='Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.';
-const style=document.createElement('style');style.id='tanem-final-desktop-20260923';
-style.textContent='@media(min-width:768px){#salon-desktop-v1 .std-lang-switch [data-desktop-lang="hy"],#salon-desktop-v1 .std-lang-switch [data-desktop-lang="hy"]+.sep{display:none!important}#salon-desktop-v1 .std-reviews-stars,#salon-desktop-v1 .std-review-stars{color:#e4b22d!important;-webkit-text-fill-color:#e4b22d!important}#salon-desktop-v1 .br-hero-salon3,#salon-desktop-v1 .br-portfolio-video{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important}#salonDesktopTeam .std-team-window{padding:0 54px!important}#salonDesktopTeam .std-team-track{gap:28px!important;scroll-snap-type:x mandatory!important}#salonDesktopTeam .std-master{flex:0 0 calc((100% - 84px)/4)!important;min-width:calc((100% - 84px)/4)!important;scroll-snap-align:start!important}#salonDesktopTeam .br-team-arrow{position:absolute!important;top:50%!important;transform:translateY(-50%)!important;z-index:5!important;width:42px!important;height:42px!important;border:1px solid rgba(23,21,19,.14)!important;border-radius:50%!important;background:rgba(255,255,255,.72)!important;color:#171513!important;font-size:23px!important;display:grid!important;place-items:center!important}#salonDesktopTeam .br-team-prev{left:4px!important}#salonDesktopTeam .br-team-next{right:4px!important}#salonDesktopTeam .br-team-hint{text-align:center!important;margin-top:14px!important;font:500 11px/1 Manrope,Arial,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#8a817b!important}}';
-document.head.appendChild(style);
-function apply(){
-const root=document.getElementById('salon-desktop-v1');if(!root)return false;
-try{if(localStorage.getItem('salon-desktop-language')==='hy')localStorage.setItem('salon-desktop-language','ru')}catch(_){}
-root.querySelectorAll('[data-desktop-lang="hy"]').forEach(btn=>{const sep=btn.nextElementSibling;btn.remove();if(sep&&sep.classList.contains('sep'))sep.remove()});
-if(document.documentElement.lang==='hy'){const ru=root.querySelector('[data-desktop-lang="ru"]');if(ru)ru.click();document.documentElement.lang='ru'}
-const hm=root.querySelector('#stdHeroMedia');if(hm&&hm.dataset.brSalon3!=='1'){const img=document.createElement('img');img.id='stdHeroMedia';img.src='salon3.webp';img.alt='Интерьер студии';img.className='br-hero-salon3';img.dataset.brSalon3='1';hm.replaceWith(img)}
-const lg=root.querySelector('.std-logo');if(lg)lg.textContent='STUDIO';
-const ls=root.querySelector('.std-logo-sub');if(ls)ls.textContent='ЕЛЕНЫ БАГДАСАРЯН';
-const sm=root.querySelector('#stdStatusMain');if(sm)sm.textContent='Открыто';
-const ss=root.querySelector('#stdStatusSub');if(ss)ss.textContent='';
-const ad=root.querySelector('.std-address');if(ad)ad.textContent='Люберцы';
-root.querySelectorAll('.std-reviews-score strong').forEach(x=>x.textContent='5.0');
-root.querySelectorAll('.std-reviews-stars,.std-review-stars').forEach(x=>x.textContent='★★★★★');
-const rc=root.querySelector('.std-reviews-count');if(rc)rc.textContent='165 отзывов · Яндекс Карты';
-root.querySelectorAll('a[href*="yandex.ru/maps"],a[href*="yandex.com/maps"],a[href*="yandex.ru/map-widget"]').forEach(a=>{if(a.closest('#salonDesktopReviews')||/отзыв/i.test(a.textContent||''))return;a.href=GOOGLE_MAPS;a.target='_blank';a.rel='noopener';if(/яндекс/i.test(a.textContent||''))a.textContent=(a.textContent||'').replace(/Яндекс\s*Карты?/gi,'Google Карты')});
-const iframe=root.querySelector('#salonDesktopContacts iframe');if(iframe)iframe.src='https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed';
-const grid=root.querySelector('.std-portfolio-grid');if(grid&&!grid.querySelector('.br-portfolio-video')){const first=grid.querySelector('.std-work');if(first){first.innerHTML='<video class="br-portfolio-video" src="galery1.MP4" muted playsinline loop preload="metadata" aria-label="Видео студии"></video>';const v=first.querySelector('video');const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?v.play().catch(()=>{}):v.pause()),{threshold:.2});io.observe(v)}}
-const loop=root.querySelector('#salonDesktopReviews .std-reviews-loop');if(loop&&!loop.querySelector('[data-review-alexandra]')){loop.querySelectorAll('.std-reviews-set').forEach((set,idx)=>{const a=document.createElement('a');a.className='std-review-card';a.href=YANDEX_REVIEWS;a.target='_blank';a.rel='noopener';a.dataset.reviewAlexandra='1';if(idx)a.tabIndex=-1;a.innerHTML='<div class="std-review-head"><span class="std-review-avatar">А</span><span><strong class="std-review-name">Александра Родина</strong><span class="std-review-meta">Яндекс Карты · 23 января 2024</span><span class="std-review-stars">★★★★★</span></span></div><p class="std-review-text">'+ALEXANDRA_TEXT+'</p><span class="std-review-more">Подробнее →</span>';set.appendChild(a)})}
-const win=root.querySelector('#salonDesktopTeam .std-team-window'),track=root.querySelector('#salonDesktopTeam .std-team-track');if(win&&track&&!win.querySelector('.br-team-arrow')){const prev=document.createElement('button'),next=document.createElement('button'),hint=document.createElement('div');prev.type=next.type='button';prev.className='br-team-arrow br-team-prev';next.className='br-team-arrow br-team-next';prev.setAttribute('aria-label','Предыдущие мастера');next.setAttribute('aria-label','Следующие мастера');prev.textContent='‹';next.textContent='›';hint.className='br-team-hint';hint.textContent='Листайте команду влево и вправо';prev.onclick=()=>track.scrollBy({left:-track.clientWidth*.78,behavior:'smooth'});next.onclick=()=>track.scrollBy({left:track.clientWidth*.78,behavior:'smooth'});win.append(prev,next);win.insertAdjacentElement('afterend',hint)}
-return true}
-let n=0;const timer=setInterval(()=>{n++;if(apply()||n>100)clearInterval(timer)},80);apply();
-})();
-
-/* TANEM desktop crown/team completion — 2026-09-23 */
-(()=>{
- if(!window.matchMedia||!window.matchMedia('(min-width:768px)').matches)return;
- const root=document.getElementById('salon-desktop-v1');if(!root)return;
- const s=document.createElement('style');s.textContent='@media(min-width:768px){#salon-desktop-v1 .std-header-brand.br-crown-only{width:126px!important;min-width:126px!important;height:74px!important;overflow:hidden!important;display:flex!important;align-items:flex-start!important;justify-content:center!important}#salon-desktop-v1 .std-header-brand.br-crown-only img{width:176px!important;max-width:none!important;height:auto!important;max-height:none!important;transform:translateY(-2px)!important}#salonDesktopTeam .std-team-track{width:100%!important;min-width:100%!important}#salonDesktopTeam .std-master{flex:0 0 calc((100% - 84px)/4)!important;min-width:calc((100% - 84px)/4)!important}}';document.head.appendChild(s);
- const logo=root.querySelector('.std-header-brand img[src="logo.webp"]');if(logo)logo.parentElement.classList.add('br-crown-only');
-})();
