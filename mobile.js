@@ -1565,7 +1565,7 @@ document.head.appendChild(style);
 
 const about=document.createElement('section');
 about.id='tn38About';
-about.innerHTML=`<div class="tn42-about"><p class="tn42-kicker">О нас</p><div class="tn42-card"><div class="tn42-photo"><img src="salon3.webp" alt="Студия Колористики Елены Багдасарян" loading="lazy"><div class="tn42-rating"><span class="tn42-rating-star">★</span><strong>5.0</strong><span>рейтинг салона</span></div></div><div class="tn42-body"><p class="tn42-lead">СТУДИЯ КОЛОРИСТИКИ — салон красоты.</p><p class="tn42-copy">Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.</p><div class="tn42-facts"><div class="tn42-fact">Мастера разных направлений</div><div class="tn42-fact">Комфортная атмосфера</div><div class="tn42-fact">Индивидуальный подход</div></div></div></div></div>`;
+about.innerHTML=`<div class="tn42-about"><p class="tn42-kicker">О нас</p><div class="tn42-card"><div class="tn42-photo"><img src="master.webp" alt="Студия Колористики Елены Багдасарян" loading="lazy"><div class="tn42-rating"><span class="tn42-rating-star">★</span><strong>5.0</strong><span>рейтинг салона</span></div></div><div class="tn42-body"><p class="tn42-lead">СТУДИЯ КОЛОРИСТИКИ — салон красоты.</p><p class="tn42-copy">Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.</p><div class="tn42-facts"><div class="tn42-fact">Мастера разных направлений</div><div class="tn42-fact">Комфортная атмосфера</div><div class="tn42-fact">Индивидуальный подход</div></div></div></div></div>`;
 services.insertAdjacentElement('afterend',about);
 })();
 
