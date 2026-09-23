@@ -7576,6 +7576,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   #salonDesktopTeam .std-team-edge-cue span{display:block!important;width:11px!important;height:27px!important;margin:auto!important;border-top:1.5px solid rgba(238,227,220,.72)!important;border-right:1.5px solid rgba(238,227,220,.72)!important;border-bottom:1.5px solid rgba(238,227,220,.72)!important;border-left:0!important;border-radius:0 5px 5px 0!important}
   #salonDesktopTeam .std-team-edge-prev span{transform:scaleX(-1)!important}
   #salonDesktopTeam .std-team-edge-cue:hover span{border-color:#fff!important}
+  #salonDesktopTeam .std-team-edge-cue[hidden]{display:none!important}
   @keyframes brTeamCueRight{0%,100%{opacity:.38;transform:translate3d(0,-50%,0)}50%{opacity:1;transform:translate3d(5px,-50%,0)}}
 
   /* Final PC hero identity: centered within the left column and never overlaps the photo. */
