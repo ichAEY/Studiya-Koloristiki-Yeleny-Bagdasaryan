@@ -9,7 +9,7 @@
   const YANDEX_REVIEWS='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/';
   const ROUTE='https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B';
   const WHATSAPP_URL='https://t.me/+79266143300';
-  const DESKTOP_REAL_REVIEWS=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."],["Александра Родина","Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.","23 января 2024"]];
+  const DESKTOP_REAL_REVIEWS=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["Александра Родина","Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.","23 января 2024"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."]];
   const PORTFOLIO=[
   {
     "type": "video",
@@ -633,7 +633,7 @@
         letter-spacing:.075em;
         text-transform:uppercase;
       }
-      .std-header-crown{display:block;width:144px;height:72px;object-fit:contain}
+      .std-header-crown{display:block;width:132px;height:70px;object-fit:contain;object-position:left center}
       .std-header-brand-sub{
         margin-top:8px;
         font:600 9px/1 "Manrope",Arial,sans-serif;
@@ -7534,6 +7534,55 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
 }
 
 @media(min-width:1024px){
+  /* Final hero identity and full status/location composition. */
+  .std-header-brand{width:142px!important;min-width:142px!important;align-items:flex-start!important;overflow:visible!important}
+  .std-header-crown{width:132px!important;height:70px!important;max-width:132px!important;object-fit:contain!important;object-position:left center!important}
+  #salonDesktopTop .std-logo{
+    width:min(100%,570px)!important;
+    font:500 clamp(49px,4vw,66px)/.92 "Cormorant Garamond",Georgia,serif!important;
+    letter-spacing:.018em!important;
+    white-space:nowrap!important;
+  }
+  #salonDesktopTop .std-logo-sub{
+    width:min(100%,570px)!important;
+    margin:17px 0 34px!important;
+    color:#4f443f!important;
+    font:500 clamp(27px,2.25vw,37px)/1 "Cormorant Garamond",Georgia,serif!important;
+    letter-spacing:.075em!important;
+    text-align:left!important;
+    white-space:nowrap!important;
+  }
+  #salonDesktopTop .std-meta-text>span{display:block!important}
+  #salonDesktopTop .std-status-sub,
+  #salonDesktopTop .std-address>span+span{margin-top:4px!important;color:#746a64!important;font-size:12px!important;line-height:1.25!important}
+  #salonDesktopTop .std-scroll-hint{display:none!important}
+
+  /* Four visible masters per page; controls live below and never clip cards. */
+  #salonDesktopTeam .std-team-window{position:relative!important;flex:1 1 auto!important;min-height:0!important;margin:0!important;padding:6px 4px!important;overflow:hidden!important}
+  #salonDesktopTeam .std-team-track{display:flex!important;width:200%!important;height:100%!important;min-height:0!important;gap:0!important;margin:0!important;padding:0!important;overflow:visible!important;transform:translate3d(0,0,0)!important;transition:transform .55s cubic-bezier(.2,.72,.2,1)!important;will-change:transform!important}
+  #salonDesktopTeam .std-team-page{display:grid!important;flex:0 0 50%!important;width:50%!important;height:100%!important;min-width:0!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:16px 28px!important;align-items:center!important;padding:5px 8px 9px!important}
+  #salonDesktopTeam .std-team-page:last-child{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:1fr!important;align-content:center!important;padding:5px 9% 9px!important}
+  #salonDesktopTeam .std-master{overflow:visible!important}
+  #salonDesktopTeam .std-team-controls{display:flex!important;align-items:center!important;justify-content:center!important;gap:14px!important;margin-top:15px!important}
+  #salonDesktopTeam .std-team-nav{position:static!important;display:grid!important;width:38px!important;height:38px!important;place-items:center!important;border:1px solid rgba(255,255,255,.15)!important;border-radius:50%!important;background:rgba(255,255,255,.055)!important;color:#eee3dc!important;font:500 15px/1 "Manrope",Arial,sans-serif!important;transition:background .18s ease,border-color .18s ease,transform .18s ease!important}
+  #salonDesktopTeam .std-team-nav:hover{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.25)!important;transform:translateY(-1px)!important}
+  #salonDesktopTeam .std-team-nav:disabled{opacity:.28!important;cursor:default!important;transform:none!important}
+  #salonDesktopTeam .std-team-page-label{min-width:52px!important;color:#aa9c95!important;font:500 10px/1 "Manrope",Arial,sans-serif!important;letter-spacing:.13em!important;text-align:center!important}
+  #salonDesktopTeam .std-team-page-label b{color:#f7f3f0!important;font-weight:600!important}
+
+  /* One viewer handles photographs and the salon video. */
+  .std-gallery-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;background:#151312!important;border:0!important}
+  .std-gallery-video[hidden],.std-gallery-image[hidden],.std-gallery-hint[hidden]{display:none!important}
+  .std-work-video video,.std-gallery-browser-video video{pointer-events:none!important}
+  .std-gallery-browser-title strong{font-size:clamp(44px,3.4vw,58px)!important;white-space:nowrap!important}
+  .std-gallery-browser-title span{font-size:13px!important;letter-spacing:.24em!important;white-space:nowrap!important}
+
+  /* GPU-friendly, seamless marquee: two identical review sets, no per-frame JavaScript. */
+  #salonDesktopReviews .std-reviews-loop{animation:brDesktopReviewsLoop 108s linear infinite!important;transform:translate3d(0,0,0);backface-visibility:hidden}
+  @keyframes brDesktopReviewsLoop{to{transform:translate3d(calc(-50% - 8px),0,0)}}
+}
+
+@media(min-width:1024px){
   /* Exact mobile shine: same gradient, timing and travel as tn22Shine. */
   #salonDesktopTop #stdBookBtn,
   #salonDesktopServices #stdStickyServiceBook{
@@ -7604,7 +7653,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   root.innerHTML=`
     <header class="std-header">
       <a class="std-header-brand" href="#salonDesktopTop" aria-label="Студия Колористики Елены Багдасарян">
-        <img class="std-header-crown" src="crown.svg" alt="Корона — Студия Колористики Елены Багдасарян">
+        <img class="std-header-crown" src="logo.webp" alt="Студия Колористики Елены Багдасарян">
       </a>
       <div class="std-lang-switch std-lang-switch-under-brand" role="group" aria-label="Language"><button type="button" data-desktop-lang="ru">RU</button><span class="sep">|</span><button type="button" data-desktop-lang="en">EN</button></div>
       <nav class="std-nav" aria-label="Основная навигация">
@@ -7629,8 +7678,8 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <div class="std-hero-frame">
           <div class="std-copy-inner">
           <p class="std-hero-kicker">Салон красоты</p>
-          <h1 class="std-logo">ЕЛЕНЫ БАГДАСАРЯН</h1>
-          <div class="std-logo-sub">СТУДИЯ КОЛОРИСТИКИ</div>
+          <h1 class="std-logo">СТУДИЯ КОЛОРИСТИКИ</h1>
+          <div class="std-logo-sub">ЕЛЕНА БАГДАСАРЯН</div>
 
           <p class="std-tagline">Описание салона.</p>
 
@@ -7639,7 +7688,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
               <span class="std-meta-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.7v4.8l3 1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
-              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Открыто</span><span class="std-status-sub" id="stdStatusSub"></span></span>
+              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Открыто</span><span class="std-status-sub" id="stdStatusSub">Ежедневно 10:00–20:00</span></span>
             </div>
 
             <span class="std-meta-divider" aria-hidden="true"></span>
@@ -7648,7 +7697,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
               <span class="std-meta-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
               </span>
-              <span class="std-meta-text std-address">Люберцы</span>
+              <span class="std-meta-text std-address"><span>Люберцы</span><span>Солнечная ул., 6</span></span>
             </a>
           </div>
 
@@ -7680,7 +7729,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
           <p class="std-portfolio-copy">Реальные работы мастеров студии: окрашивание, стрижки, укладки, брови, ресницы, макияж и ногтевой сервис.</p>
         </div>
         <div class="std-portfolio-grid">
-          ${PORTFOLIO.map((item,i)=>item.type==='video'?`<div class="std-work std-work-video"><video src="${item.src}" muted autoplay loop playsinline preload="metadata" aria-label="${item.alt}"></video></div>`:`<button class="std-work" type="button" data-portfolio-src="${item.src}" aria-label="Открыть фотографию"><img src="${item.src}" alt="${item.alt}" loading="${i<4?'eager':'lazy'}"></button>`).join('')}
+          ${PORTFOLIO.map((item,i)=>item.type==='video'?`<button class="std-work std-work-video" type="button" data-portfolio-index="${i}" aria-label="Открыть видео"><video src="${item.src}" muted autoplay loop playsinline preload="metadata" aria-label="${item.alt}"></video></button>`:`<button class="std-work" type="button" data-portfolio-index="${i}" aria-label="Открыть фотографию"><img src="${item.src}" alt="${item.alt}" loading="${i<4?'eager':'lazy'}"></button>`).join('')}
         </div>
         <button class="std-portfolio-more" id="stdOpenGallery" type="button">Открыть галерею <span aria-hidden="true">→</span></button>
       </div>
@@ -7774,20 +7823,18 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
           <p class="std-team-kicker">Наша команда</p>
           <p class="std-team-subtitle">Нажмите на мастера, чтобы открыть страницу специалиста.</p>
           <div class="std-team-window">
-            <button class="std-team-nav std-team-prev" type="button" aria-label="Предыдущие мастера">‹</button>
             <div class="std-team-track" id="stdTeamTrack">
-              ${TEAM_MASTERS.map(master=>`
-                <button class="std-master" type="button" data-desktop-master="${master.id}">
-                  <div class="std-master-avatar">${TEAM_AVATAR}</div>
-                  <strong class="std-master-name">${master.name}</strong>
-                  <span class="std-master-role">${master.role}</span>
-                  <span class="std-master-cats">${master.cats.map(cat=>'<span class="std-master-cat">'+cat+'</span>').join('')}</span>
-                </button>
-              `).join('')}
+              ${[TEAM_MASTERS.slice(0,4),TEAM_MASTERS.slice(4)].map((page,pageIndex)=>`<div class="std-team-page" data-team-page="${pageIndex}">${page.map(master=>`
+                  <button class="std-master" type="button" data-desktop-master="${master.id}">
+                    <div class="std-master-avatar">${TEAM_AVATAR}</div>
+                    <strong class="std-master-name">${master.name}</strong>
+                    <span class="std-master-role">${master.role}</span>
+                    <span class="std-master-cats">${master.cats.map(cat=>'<span class="std-master-cat">'+cat+'</span>').join('')}</span>
+                  </button>
+                `).join('')}</div>`).join('')}
             </div>
-            <button class="std-team-nav std-team-next" type="button" aria-label="Следующие мастера">›</button>
           </div>
-          <div class="std-team-pages" aria-label="Страницы команды"><span class="active"></span><span></span></div>
+          <div class="std-team-controls" aria-label="Переключение страниц команды"><button class="std-team-nav std-team-prev" type="button" aria-label="Предыдущие мастера">←</button><span class="std-team-page-label"><b>1</b> / 2</span><button class="std-team-nav std-team-next" type="button" aria-label="Следующие мастера">→</button></div>
         </aside>
       </div>
     </section>
@@ -7935,7 +7982,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
       <div class="std-gallery-browser-shell">
         <div class="std-gallery-browser-top">
           <button class="std-gallery-browser-back" id="stdGalleryBrowserBack" type="button" aria-label="Закрыть галерею">←</button>
-          <div class="std-gallery-browser-title"><strong>Галерея</strong><span>Студия Колористики Елены Багдасарян</span></div>
+          <div class="std-gallery-browser-title"><strong>СТУДИЯ КОЛОРИСТИКИ</strong><span>ЕЛЕНА БАГДАСАРЯН</span></div>
           <div></div>
         </div>
         <div class="std-gallery-browser-tabs" id="stdGalleryBrowserTabs"></div>
@@ -7947,7 +7994,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
       <button class="std-gallery-close" id="stdGalleryClose" type="button" aria-label="Закрыть">×</button>
       <div class="std-gallery-stage">
         <div class="std-gallery-hint">Увеличение: прокрутите колесо мыши или дважды нажмите на фотографию</div>
-        <div class="std-gallery-canvas"><img class="std-gallery-image" id="stdGalleryImage" src="" alt="Фотография Студия Колористики Елены Багдасарян"></div>
+        <div class="std-gallery-canvas"><img class="std-gallery-image" id="stdGalleryImage" src="" alt="Фотография Студия Колористики Елены Багдасарян"><video class="std-gallery-video" id="stdGalleryVideo" controls playsinline preload="metadata" hidden></video></div>
         <button class="std-gallery-nav std-gallery-prev" id="stdGalleryPrev" type="button" aria-label="Предыдущее фото">‹</button>
         <button class="std-gallery-nav std-gallery-next" id="stdGalleryNext" type="button" aria-label="Следующее фото">›</button>
         <span class="std-gallery-count" id="stdGalleryCount"></span>
@@ -8005,6 +8052,8 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   const galleryStage=document.querySelector('.std-gallery-stage');
   const galleryCanvas=document.querySelector('.std-gallery-canvas');
   const galleryImage=document.getElementById('stdGalleryImage');
+  const galleryVideo=document.getElementById('stdGalleryVideo');
+  const galleryHint=document.querySelector('.std-gallery-hint');
   const galleryCount=document.getElementById('stdGalleryCount');
   const galleryViewAll=document.getElementById('stdViewGallery');
   let galleryCategory='Ногти';
@@ -8032,8 +8081,20 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   function paintGallery(){
     const item=galleryItems[galleryIndex];
     if(!item)return;
-    galleryImage.src=item.src;
-    galleryImage.alt=item.alt||'Фотография Студия Колористики Елены Багдасарян';
+    const isVideo=item.type==='video';
+    try{galleryVideo.pause()}catch(_){}
+    galleryImage.hidden=isVideo;
+    galleryVideo.hidden=!isVideo;
+    galleryHint.hidden=isVideo;
+    if(isVideo){
+      galleryVideo.src=item.src;
+      galleryVideo.setAttribute('aria-label',item.alt||'Видео студии');
+      galleryVideo.load();
+    }else{
+      galleryVideo.removeAttribute('src');
+      galleryImage.src=item.src;
+      galleryImage.alt=item.alt||'Фотография Студия Колористики Елены Багдасарян';
+    }
     galleryCount.textContent=String(galleryIndex+1).padStart(2,'0')+' / '+String(galleryItems.length).padStart(2,'0');
     document.getElementById('stdGalleryPrev').hidden=galleryItems.length<2;
     document.getElementById('stdGalleryNext').hidden=galleryItems.length<2;
@@ -8049,6 +8110,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     document.body.style.overflow='hidden';
   }
   function closeDesktopViewer(){
+    try{galleryVideo.pause()}catch(_){}
     gallery.classList.remove('open');
     resetDesktopViewer();
     if(!galleryBrowser.classList.contains('open'))document.body.style.overflow='';
@@ -8074,11 +8136,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
       btn.classList.toggle('active',active);
       btn.setAttribute('aria-selected',active?'true':'false');
     });
-    galleryBrowserGrid.innerHTML=items.map(item=>item.type==='video'?'<div class="std-gallery-browser-tile std-gallery-browser-video"><video src="'+item.src+'" muted autoplay loop playsinline controls preload="metadata" aria-label="'+item.alt+'"></video></div>':'<button class="std-gallery-browser-tile" type="button" data-gallery-src="'+item.src+'" aria-label="Открыть фотографию"><img src="'+item.src+'" alt="'+item.alt+'" loading="lazy" decoding="async"></button>').join('');
-    const photoItems=items.filter(item=>item.type!=='video');
-    galleryBrowserGrid.querySelectorAll('[data-gallery-src]').forEach(btn=>btn.onclick=()=>{
-      const index=Math.max(0,photoItems.findIndex(item=>item.src===btn.dataset.gallerySrc));
-      openDesktopViewer(photoItems,index,'gallery');
+    galleryBrowserGrid.innerHTML=items.map((item,index)=>item.type==='video'?'<button class="std-gallery-browser-tile std-gallery-browser-video" type="button" data-gallery-index="'+index+'" aria-label="Открыть видео"><video src="'+item.src+'" muted autoplay loop playsinline preload="metadata" aria-label="'+item.alt+'"></video></button>':'<button class="std-gallery-browser-tile" type="button" data-gallery-index="'+index+'" aria-label="Открыть фотографию"><img src="'+item.src+'" alt="'+item.alt+'" loading="lazy" decoding="async"></button>').join('');
+    galleryBrowserGrid.querySelectorAll('[data-gallery-index]').forEach(btn=>btn.onclick=()=>{
+      openDesktopViewer(items,Number(btn.dataset.galleryIndex)||0,'gallery');
     });
   }
   function openDesktopGalleryBrowser(cat='Ногти'){
@@ -8093,11 +8153,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     if(!gallery.classList.contains('open'))document.body.style.overflow='';
   }
 
-  document.querySelectorAll('.std-work[data-portfolio-src]').forEach(btn=>{
+  document.querySelectorAll('.std-work[data-portfolio-index]').forEach(btn=>{
     btn.addEventListener('click',()=>{
-      const photos=PORTFOLIO.filter(item=>item.type!=='video');
-      const index=Math.max(0,photos.findIndex(item=>item.src===btn.dataset.portfolioSrc));
-      openDesktopViewer(photos,index,'portfolio');
+      openDesktopViewer(PORTFOLIO,Number(btn.dataset.portfolioIndex)||0,'portfolio');
     });
   });
   document.getElementById('stdOpenGallery').addEventListener('click',()=>openDesktopGalleryBrowser('Ногти'));
@@ -8112,6 +8170,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
 
   galleryStage.addEventListener('wheel',e=>{
     if(!gallery.classList.contains('open'))return;
+    if(!galleryVideo.hidden)return;
     e.preventDefault();
     const delta=e.deltaY<0?.18:-.18;
     galleryScale=Math.max(1,Math.min(4,galleryScale+delta));
@@ -8119,6 +8178,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     applyDesktopViewerTransform();
   },{passive:false});
   const toggleDesktopViewerZoom=e=>{
+    if(!galleryVideo.hidden)return;
     if(e)e.preventDefault();
     galleryScale=galleryScale>1?1:2;
     if(galleryScale===1){galleryX=0;galleryY=0}
@@ -8128,6 +8188,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   galleryImage.addEventListener('dblclick',toggleDesktopViewerZoom);
 
   galleryStage.addEventListener('pointerdown',e=>{
+    if(!galleryVideo.hidden)return;
     if(e.pointerType==='touch'||e.target.closest('.std-gallery-nav,.std-view-gallery'))return;
     galleryDragging=true;
     galleryDragStartX=e.clientX;galleryDragStartY=e.clientY;
@@ -8153,6 +8214,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
 
   const pinchDistance=e=>Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
   galleryCanvas.addEventListener('touchstart',e=>{
+    if(!galleryVideo.hidden)return;
     if(e.touches.length===2){
       e.preventDefault();galleryHadPinch=true;galleryPinchStart=pinchDistance(e);galleryPinchBase=galleryScale;
     }else if(e.touches.length===1){
@@ -8161,6 +8223,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     }
   },{passive:false});
   galleryCanvas.addEventListener('touchmove',e=>{
+    if(!galleryVideo.hidden)return;
     if(e.touches.length===2&&galleryPinchStart){
       e.preventDefault();
       galleryScale=Math.max(1,Math.min(4,galleryPinchBase*(pinchDistance(e)/galleryPinchStart)));
@@ -8173,6 +8236,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     }
   },{passive:false});
   galleryCanvas.addEventListener('touchend',e=>{
+    if(!galleryVideo.hidden)return;
     if(e.touches.length<2)galleryPinchStart=0;
     if(e.touches.length===0){
       if(!galleryHadPinch&&galleryScale===1&&galleryItems.length>1&&e.changedTouches.length){
@@ -8320,149 +8384,35 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   const desktopTeamTrack=document.getElementById('stdTeamTrack');
   const desktopTeamPrev=document.querySelector('#salonDesktopTeam .std-team-prev');
   const desktopTeamNext=document.querySelector('#salonDesktopTeam .std-team-next');
-  const desktopTeamDots=[...document.querySelectorAll('#salonDesktopTeam .std-team-pages span')];
+  const desktopTeamPageLabel=document.querySelector('#salonDesktopTeam .std-team-page-label b');
   if(desktopTeamTrack&&desktopTeamPrev&&desktopTeamNext){
-    const teamPageWidth=()=>desktopTeamTrack.clientWidth;
+    let activeTeamPage=0;
     const setTeamPage=page=>{
-      desktopTeamTrack.scrollTo({left:page*teamPageWidth(),behavior:'smooth'});
-      desktopTeamDots.forEach((dot,i)=>dot.classList.toggle('active',i===page));
+      activeTeamPage=Math.max(0,Math.min(1,page));
+      desktopTeamTrack.style.setProperty('transform','translate3d('+(activeTeamPage*-50)+'%,0,0)','important');
+      desktopTeamPrev.disabled=activeTeamPage===0;
+      desktopTeamNext.disabled=activeTeamPage===1;
+      if(desktopTeamPageLabel)desktopTeamPageLabel.textContent=String(activeTeamPage+1);
     };
-    desktopTeamPrev.addEventListener('click',()=>setTeamPage(0));
-    desktopTeamNext.addEventListener('click',()=>setTeamPage(1));
-    desktopTeamTrack.addEventListener('scroll',()=>{
-      const page=desktopTeamTrack.scrollLeft>teamPageWidth()*.35?1:0;
-      desktopTeamDots.forEach((dot,i)=>dot.classList.toggle('active',i===page));
-    },{passive:true});
+    desktopTeamPrev.addEventListener('click',()=>setTeamPage(activeTeamPage-1));
+    desktopTeamNext.addEventListener('click',()=>setTeamPage(activeTeamPage+1));
+    setTeamPage(0);
   }
 
   const desktopReviewsViewport=document.getElementById('stdReviewsViewport');
   const desktopReviewsLoop=desktopReviewsViewport?.querySelector('.std-reviews-loop');
   const desktopReviewsFirstSet=desktopReviewsViewport?.querySelector('.std-reviews-set');
   if(desktopReviewsViewport&&desktopReviewsLoop&&desktopReviewsFirstSet){
-    desktopReviewsLoop.style.setProperty('animation','none','important');
-    desktopReviewsViewport.style.cursor='grab';
-    let reviewCycle=0;
-    let reviewX=0;
-    let reviewLast=performance.now();
-    let reviewDragging=false;
-    let reviewMoved=false;
-    let reviewStartX=0;
-    let reviewStartOffset=0;
-    let reviewPauseUntil=0;
-    let reviewHoverPause=false;
-    let reviewIgnoreHoverUntil=0;
-    let reviewSuppressClick=false;
-    let reviewInView=false;
-    let reviewRaf=0;
+    desktopReviewsViewport.style.cursor='default';
     if('IntersectionObserver' in window){
       const reviewObserver=new IntersectionObserver(entries=>{
-        reviewInView=!!entries[0]?.isIntersecting;
-        if(reviewInView)startDesktopReviews();
-        else stopDesktopReviews();
+        desktopReviewsLoop.style.animationPlayState=entries[0]?.isIntersecting&&!document.hidden?'running':'paused';
       },{rootMargin:'160px 0px',threshold:0});
       reviewObserver.observe(desktopReviewsViewport);
-    }else{
-      reviewInView=true;
     }
-
-    function measureDesktopReviews(){
-      reviewCycle=desktopReviewsFirstSet.getBoundingClientRect().width+16;
-      if(reviewCycle>0){
-        while(reviewX<=-reviewCycle)reviewX+=reviewCycle;
-        while(reviewX>0)reviewX-=reviewCycle;
-      }
-    }
-    function paintDesktopReviews(){
-      desktopReviewsLoop.style.setProperty('transform','translate3d('+reviewX+'px,0,0)','important');
-    }
-    function desktopReviewsFrame(now){
-      reviewRaf=0;
-      const dt=Math.min(50,now-reviewLast);
-      reviewLast=now;
-      const hoverBlocked=reviewHoverPause&&Date.now()>=reviewIgnoreHoverUntil;
-      if(!document.hidden&&!reviewDragging&&Date.now()>=reviewPauseUntil&&!hoverBlocked&&reviewCycle>0){
-        reviewX-=reviewCycle/105000*dt;
-        if(reviewX<=-reviewCycle)reviewX+=reviewCycle;
-        paintDesktopReviews();
-      }
-      if(reviewInView&&!document.hidden)reviewRaf=requestAnimationFrame(desktopReviewsFrame);
-    }
-    function startDesktopReviews(){
-      if(reviewRaf||!reviewInView||document.hidden)return;
-      reviewLast=performance.now();
-      reviewRaf=requestAnimationFrame(desktopReviewsFrame);
-    }
-    function stopDesktopReviews(){
-      if(!reviewRaf)return;
-      cancelAnimationFrame(reviewRaf);
-      reviewRaf=0;
-    }
-    measureDesktopReviews();
-    paintDesktopReviews();
-    startDesktopReviews();
     document.addEventListener('visibilitychange',()=>{
-      if(document.hidden)stopDesktopReviews();
-      else startDesktopReviews();
+      desktopReviewsLoop.style.animationPlayState=document.hidden?'paused':'running';
     });
-    window.addEventListener('resize',()=>{measureDesktopReviews();paintDesktopReviews()},{passive:true});
-
-    desktopReviewsViewport.addEventListener('pointerenter',()=>{reviewHoverPause=false});
-    desktopReviewsViewport.addEventListener('pointerleave',()=>{reviewHoverPause=false});
-    desktopReviewsViewport.addEventListener('pointerdown',e=>{
-      reviewDragging=true;
-      reviewMoved=false;
-      reviewStartX=e.clientX;
-      reviewStartOffset=reviewX;
-      reviewHoverPause=false;
-      reviewPauseUntil=Number.POSITIVE_INFINITY;
-      desktopReviewsViewport.style.cursor='grabbing';
-      try{desktopReviewsViewport.setPointerCapture(e.pointerId)}catch(_){}
-    });
-    desktopReviewsViewport.addEventListener('pointermove',e=>{
-      if(!reviewDragging)return;
-      const dx=e.clientX-reviewStartX;
-      if(Math.abs(dx)>5)reviewMoved=true;
-      reviewX=reviewStartOffset+dx;
-      if(reviewCycle>0){
-        while(reviewX<=-reviewCycle)reviewX+=reviewCycle;
-        while(reviewX>0)reviewX-=reviewCycle;
-      }
-      paintDesktopReviews();
-    });
-    function finishDesktopReviewDrag(e){
-      if(!reviewDragging)return;
-      reviewDragging=false;
-      reviewSuppressClick=reviewMoved;
-      desktopReviewsViewport.style.cursor='grab';
-      reviewPauseUntil=Date.now()+3200;
-      reviewIgnoreHoverUntil=Date.now()+3200;
-      reviewHoverPause=false;
-      try{desktopReviewsViewport.releasePointerCapture(e.pointerId)}catch(_){}
-    }
-    desktopReviewsViewport.addEventListener('pointerup',finishDesktopReviewDrag);
-    desktopReviewsViewport.addEventListener('pointercancel',finishDesktopReviewDrag);
-    desktopReviewsViewport.addEventListener('click',e=>{
-      if(reviewSuppressClick){
-        e.preventDefault();
-        e.stopPropagation();
-        reviewSuppressClick=false;
-      }
-    },true);
-    desktopReviewsViewport.addEventListener('wheel',e=>{
-      const horizontal=Math.abs(e.deltaX)>Math.abs(e.deltaY)&&Math.abs(e.deltaX)>2;
-      if(!horizontal)return;
-      e.preventDefault();
-      const delta=e.deltaX;
-      reviewX-=delta;
-      if(reviewCycle>0){
-        while(reviewX<=-reviewCycle)reviewX+=reviewCycle;
-        while(reviewX>0)reviewX-=reviewCycle;
-      }
-      paintDesktopReviews();
-      reviewPauseUntil=Date.now()+2600;
-      reviewIgnoreHoverUntil=Date.now()+2600;
-      reviewHoverPause=false;
-    },{passive:false});
   }
 
   // Desktop master pages: mobile structure adapted to a wide screen.
@@ -8532,6 +8482,8 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
 
   const DESKTOP_LANG_STORAGE='salon-template-language';
   const DESKTOP_I18N_ROWS=[
+    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНА БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
+    ['Студия Колористики','Գունագետների ստուդիա','Color Studio'],['Люберцы','Լյուբերցի','Lyubertsy'],['Солнечная ул., 6','Սոլնեչնայա փ., 6','Solnechnaya St., 6'],
     ['Услуги','Ծառայություններ','Services'],['Наши работы','Մեր աշխատանքները','Our work'],['О нас','Մեր մասին','About us'],
     ['Отзывы','Կարծիքներ','Reviews'],['Контакты','Կոնտակտներ','Contacts'],['Салон красоты','Գեղեցկության սրահ','Beauty salon'],
     ['Салон красоты в самом сердце Города.','Գեղեցկության սրահ Քաղաքի սրտում։','A beauty salon in the heart of City.'],['Листайте вниз','Սահեցրեք ներքև','Scroll down'],['Люберцы,','Քաղաք,','City,'],['Солнечная ул., 6, Люберцы','Սրահի հասցե','Солнечная ул., 6, Люберцы'],
@@ -8559,7 +8511,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     ['Смотреть все отзывы →','Դիտել բոլոր կարծիքները →','View all reviews →'],['Ждём вас','Սպասում ենք ձեզ','We look forward to seeing you'],['Солнечная ул., 6, Люберцы','Солнечная ул., 6, Люберцы','Lyubertsy, Solnechnaya st., 6'],
     ['Люберцы · открыть в Яндекс Картах','Հայաստան · բացել Яндекс Карты-ում','Lyubertsy · open in Yandex Maps'],
     ['Нажмите, чтобы позвонить','Սեղմեք զանգահարելու համար','Click to call'],['Написать в салон','Գրել սրահին','Message the salon'],
-    ['График работы','Աշխատանքային ժամեր','Opening hours'],['Ежедневно 10:00–20:00','Կավելացվի','To be added'],
+    ['График работы','Աշխատանքային ժամեր','Opening hours'],['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
     ['Цифровой офис для салонов красоты','Թվային գրասենյակ գեղեցկության սրահների համար','Digital office for beauty salons'],['Создано в','Ստեղծված է','Created in'],['Позвонить','Զանգահարել','Call'],['Построить маршрут','Կառուցել երթուղի','Get directions'],['Всё необходимое для комфортного визита','Ամեն ինչ հարմարավետ այցի համար','Everything for a comfortable visit'],['Студия колористики в Люберцах','Գեղեցկության սրահ Քաղաքում','Color studio in Lyubertsy'],['Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.','Այստեղ կարող եք հանգիստ ընտրել անհրաժեշտ ծառայությունները և վստահել խնամքը տարբեր ուղղությունների մասնագետներին։ Մենք կարևորում ենք ճշգրիտ աշխատանքը, հարմարավետությունն ու յուրաքանչյուր հյուրի նկատմամբ ուշադիր վերաբերմունքը։','Choose the services you need and trust your care to specialists across different beauty fields. We value precise work, comfort, and attentive service for every guest.'],['Маникюр, волосы, брови и косметология.','Մատնահարդարում, մազեր, հոնքեր և կոսմետոլոգիա։','Nails, hair, brows and cosmetology.'],['Спокойная атмосфера и внимание к каждому гостю.','Հանգիստ մթնոլորտ և ուշադրություն յուրաքանչյուր հյուրի նկատմամբ։','A calm atmosphere and personal attention.'],['Связь по телефону или Мессенджер без лишних шагов.','Կապ հեռախոսով կամ Мессенджер-ով՝ առանց ավելորդ քայլերի։','Direct booking by phone or Мессенджер.'],['Разные направления','Տարբեր ուղղություններ','Different services'],['Комфорт','Հարմարավետություն','Comfort'],['Прямая запись','Ուղիղ ամրագրում','Direct booking'],
     ['Запись','Ամրագրում','Booking'],['Как вам удобнее записаться?','Ինչպե՞ս է ձեզ հարմար ամրագրել։','How would you like to book?'],
     ['Выберите удобный способ связи.','Ընտրեք ձեզ հարմար կապի տարբերակը։','Choose the most convenient way to contact us.'],
@@ -8583,7 +8535,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     ['Удаление волос нитью','Մազահեռացում թելով','Threading hair removal'],['Шугаринг','Շուգարինգ','Sugaring'],
     ['Электроэпиляция игловая','Ասեղային էլեկտրոէպիլյացիա','Needle electrolysis'],['Восковая эпиляция','Մոմային էպիլյացիա','Waxing'],
     ['Прокалывание ушей','Ականջների ծակում','Ear piercing'],
-    ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['Ежедневно 10:00–20:00','Կավելացվի','To be added'],['Ежедневно 10:00–20:00','Կավելացվի','To be added'],
+    ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
     ['График работы','Աշխատանքային ժամեր','Opening hours'],['График работы','Աշխատանքային ժամեր','Opening hours']
   ];
   const desktopLangIndex={ru:0,en:2};
@@ -8708,9 +8660,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     const main=document.getElementById('stdStatusMain');
     const sub=document.getElementById('stdStatusSub');
     if(main){main.textContent=open?'Открыто':'Закрыто';main.className='std-status-main';main.style.color=''}
-    if(sub)sub.textContent='';
+    if(sub)sub.textContent='Ежедневно 10:00–20:00';
     const address=root.querySelector('.std-address');
-    if(address)address.textContent='Люберцы';
+    if(address)address.innerHTML='<span>Люберцы</span><span>Солнечная ул., 6</span>';
     const stickyStatus=document.getElementById('stdStickyServiceStatus');
     const stickyStatusSub=document.getElementById('stdStickyServiceStatusSub');
     const stickyCard=document.getElementById('stdStickyServiceCard');
@@ -8721,6 +8673,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     const contactStatusText=document.getElementById('stdContactStatusText');
     if(contactStatus){contactStatus.classList.toggle('open',open);contactStatus.classList.toggle('closed',!open)}
     if(contactStatusText)contactStatusText.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';
+    requestAnimationFrame(applyDesktopLanguage);
   }
   updateStatus();
 })();
@@ -8739,13 +8692,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   const ADDRESS='Солнечная ул., 6, Люберцы';
 
   const hb=root.querySelector('.std-header-brand');
-  if(hb)hb.innerHTML='<img class="std-header-crown" src="crown.svg" alt="Корона — Студия Колористики Елены Багдасарян">';
+  if(hb)hb.innerHTML='<img class="std-header-crown" src="logo.webp" alt="Студия Колористики Елены Багдасарян">';
 
-  const lg=root.querySelector('.std-logo');
-  const ls=root.querySelector('.std-logo-sub');
   const tg=root.querySelector('.std-tagline');
-  if(lg)lg.textContent='ЕЛЕНЫ БАГДАСАРЯН';
-  if(ls)ls.textContent='СТУДИЯ КОЛОРИСТИКИ';
   if(tg)tg.textContent='Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.';
 
   const heroMedia=root.querySelector('#stdHeroMedia');
