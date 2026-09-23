@@ -399,14 +399,7 @@
       [],
       ""
     ],
-    [
-      "Кератиновое выпрямление до поясницы",
-      "8500 ₽",
-      "",
-      [],
-      ""
-    ]
-  ],
+    ],
   "Брови и ресницы": [
     [
       "Архитектура бровей (коррекция + окрашивание хна/краска)",
@@ -7842,7 +7835,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <p class="std-reviews-kicker">Отзывы</p>
         <h2 class="std-reviews-title" id="stdReviewsTitle">Что говорят о нас</h2>
         <div class="std-reviews-score">
-          <strong>—</strong>
+          <strong>5.0</strong>
           <div class="std-reviews-stars" aria-label="5 звёзд">☆☆☆☆☆</div>
           <div class="std-reviews-count">Отзывы на Яндекс Карты</div>
         </div>
