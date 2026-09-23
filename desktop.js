@@ -8089,7 +8089,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     if(isVideo){
       galleryVideo.src=item.src;
       galleryVideo.setAttribute('aria-label',item.alt||'Видео студии');
-      galleryVideo.load();
+      try{galleryVideo.load()}catch(_){}
     }else{
       galleryVideo.removeAttribute('src');
       galleryImage.src=item.src;
@@ -8108,6 +8108,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     paintGallery();
     gallery.classList.add('open');
     document.body.style.overflow='hidden';
+    if(galleryItems[galleryIndex]?.type==='video'){
+      requestAnimationFrame(()=>{const p=galleryVideo.play();if(p&&typeof p.catch==='function')p.catch(()=>{})});
+    }
   }
   function closeDesktopViewer(){
     try{galleryVideo.pause()}catch(_){}
