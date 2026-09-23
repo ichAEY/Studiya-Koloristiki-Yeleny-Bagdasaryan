@@ -7539,7 +7539,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   .std-header-crown{width:132px!important;height:70px!important;max-width:132px!important;object-fit:contain!important;object-position:left center!important}
   #salonDesktopTop .std-logo{
     width:min(100%,570px)!important;
-    font:500 clamp(49px,4vw,66px)/.92 "Cormorant Garamond",Georgia,serif!important;
+    font:500 clamp(34px,3.4vw,58px)/.92 "Cormorant Garamond",Georgia,serif!important;
     letter-spacing:.018em!important;
     white-space:nowrap!important;
   }
