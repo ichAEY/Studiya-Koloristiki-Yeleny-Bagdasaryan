@@ -1442,7 +1442,7 @@ const iconPhone=`<span class="tn22-contact-icon"><svg viewBox="0 0 24 24" aria-h
 const iconMessage=`<span class="tn22-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5h14v10H9l-4 3v-13Z"/></svg></span>`;
 const iconClock=`<span class="tn22-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 1.8"/></svg></span>`;
 const statusClock=`<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 1.8"/></svg>`;
-visit.innerHTML=`<div class="tn22-visit"><div class="tn22-visit-head"><p class="tn22-kicker">Контакты</p><span class="tn22-status" id="tn22Status">${statusClock}<span class="tn22-status-text"></span></span></div><h2>Ждём вас</h2><div class="tn22-contact-grid"><a class="tn22-contact" href="#tn13Visit" aria-disabled="true">${iconPin}<span><strong>Солнечная ул., 6, Люберцы</strong><span>Солнечная ул., 6, Люберцы</span></span></a><a class="tn22-contact" href="tel:+79266143300">${iconPhone}<span><strong>+7 (926) 614-33-00</strong><span>Нажмите, чтобы позвонить</span></span></a><a class="tn22-contact" href="https://t.me/+79266143300" target="_blank" rel="noopener">${iconMessage}<span><strong>Telegram</strong><span>Написать в студию</span></span></a><div class="tn22-contact">${iconClock}<span><strong>График работы</strong><span>Ежедневно 10:00–20:00</span></span></div></div><div class="tn22-mapwrap"><div class="tn22-map-skeleton">Загружаем карту…</div><iframe title="Карта Студия Колористики Елены Багдасарян" loading="lazy" src="https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed"></iframe></div><div class="tn22-visit-actions"><a class="tn22-visit-btn tn22-call" href="#tn13Visit" aria-disabled="true">Позвонить</a><a class="tn22-visit-btn tn22-route" href="#tn13Visit" aria-disabled="true">Построить маршрут</a></div><a class="tn22-footer" href="https://tanem.ru/" target="_blank" rel="noopener"><strong>TANEM.ru</strong><span>Цифровой офис для салонов красоты</span></a></div>`;
+visit.innerHTML=`<div class="tn22-visit"><div class="tn22-visit-head"><p class="tn22-kicker">Контакты</p><span class="tn22-status" id="tn22Status">${statusClock}<span class="tn22-status-text"></span></span></div><h2>Ждём вас</h2><div class="tn22-contact-grid"><a class="tn22-contact" href="#tn13Visit" aria-disabled="true">${iconPin}<span><strong>Солнечная ул., 6, Люберцы</strong><span>Солнечная ул., 6, Люберцы</span></span></a><a class="tn22-contact" href="tel:+79266143300">${iconPhone}<span><strong>+7 (926) 614-33-00</strong><span>Нажмите, чтобы позвонить</span></span></a><a class="tn22-contact" href="https://t.me/+79266143300" target="_blank" rel="noopener">${iconMessage}<span><strong>Telegram</strong><span>Написать в студию</span></span></a><div class="tn22-contact">${iconClock}<span><strong>График работы</strong><span>10:00–20:00</span></span></div></div><div class="tn22-mapwrap"><div class="tn22-map-skeleton">Загружаем карту…</div><iframe title="Карта Студия Колористики Елены Багдасарян" loading="lazy" src="https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed"></iframe></div><div class="tn22-visit-actions"><a class="tn22-visit-btn tn22-call" href="#tn13Visit" aria-disabled="true">Позвонить</a><a class="tn22-visit-btn tn22-route" href="#tn13Visit" aria-disabled="true">Построить маршрут</a></div><a class="tn22-footer" href="https://tanem.ru/" target="_blank" rel="noopener"><strong>TANEM.ru</strong><span>Цифровой офис для салонов красоты</span></a></div>`;
 const map=visit.querySelector('.tn22-mapwrap'),iframe=map.querySelector('iframe');iframe.addEventListener('load',()=>map.classList.add('loaded'));setTimeout(()=>map.classList.add('loaded'),5000);
 function status(){const hour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Moscow',hour:'2-digit',hour12:false}).format(new Date())),open=hour>=10&&hour<20;const el=visit.querySelector('#tn22Status'),txt=el&&el.querySelector('.tn22-status-text');if(txt)txt.textContent=open?'Открыто до 20:00':'Закрыто · 10:00–20:00';if(el)el.className='tn22-status '+(open?'open':'closed');const hs=hero.querySelector('.tn50-hero-status');if(hs){const main=hs.querySelector('.tn50-hero-status-main'),sub=hs.querySelector('.tn50-hero-status-sub');if(main)main.textContent=open?'Открыто':'Закрыто';if(sub)sub.textContent='10:00–20:00';hs.classList.toggle('open',open);hs.classList.toggle('closed',!open)}}status();setInterval(status,60000);
 
@@ -2167,7 +2167,7 @@ services.insertAdjacentElement('afterend',about);
     ['Нажмите, чтобы позвонить','Սեղմեք զանգահարելու համար','Tap to call'],
     ['Написать в салон','Գրել սրահին','Message the salon'],
     ['График работы','Աշխատանքային ժամեր','Opening hours'],
-    ['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
+    ['10:00–20:00','10:00–20:00','10:00–20:00'],
     ['Загружаем карту…','Քարտեզը բեռնվում է…','Loading map…'],
     ['Позвонить','Զանգահարել','Call'],
     ['Построить маршрут','Ստանալ երթուղին','Get directions'],
@@ -2176,8 +2176,8 @@ services.insertAdjacentElement('afterend',about);
     ['График работы','Աշխատանքային ժամեր','Opening hours'],
     ['Открыто','Բաց է','Open'],
     ['Закрыто','Փակ է','Closed'],
-    ['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
-    ['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
+    ['10:00–20:00','10:00–20:00','10:00–20:00'],
+    ['10:00–20:00','10:00–20:00','10:00–20:00'],
     ['О нас','Մեր մասին','About us'],
     ['Студия колористики в Люберцах','Գեղեցկության սրահ Քաղաքում','Color studio in Lyubertsy'],
     ['Студия Колористики Елены Багдасарян — студия красоты в Люберцах.','Студия Колористики Елены Багдасарян — գեղեցկության սրահ Քաղաքում։','Elena Bagdasaryan Color Studio — a beauty studio in Lyubertsy.'],
@@ -2340,16 +2340,6 @@ services.insertAdjacentElement('afterend',about);
       '#salon-mobile .br-lang-switch .sep{color:#c7bbb3;font-size:10px;line-height:1;pointer-events:none}',
       '#salon-mobile .br-lang-switch button:active{transform:scale(.92)}',
       '@media(max-width:360px){#salon-mobile .br-lang-switch{right:52px;gap:1px}#salon-mobile .br-lang-switch button{min-width:23px;padding:0 1px;font-size:10.5px}}',
-      'body[data-br-lang="hy"] #tn13Portfolio .tn22-port h2{font-size:38px!important;line-height:1!important;letter-spacing:-.035em!important;max-width:100%!important;overflow-wrap:anywhere!important}',
-      'body[data-br-lang="hy"] #tn13Services .tn31-services h2{font-size:39px!important;line-height:1!important;letter-spacing:-.035em!important;white-space:normal!important;max-width:100%!important;overflow-wrap:anywhere!important}',
-      'body[data-br-lang="hy"] #tn13Services .tn31-service-row{grid-template-columns:minmax(0,1fr) 92px!important;gap:10px!important}',
-      'body[data-br-lang="hy"] #tn13Services .tn31-service-copy{min-width:0!important}',
-      'body[data-br-lang="hy"] #tn13Services .tn31-service-name{font-weight:500!important;line-height:1.2!important;max-width:100%!important;overflow-wrap:anywhere!important;word-break:normal!important;-webkit-line-clamp:3!important}',
-      'body[data-br-lang="hy"] #tn13Services .tn31-service-detail{white-space:normal!important;overflow-wrap:anywhere!important}',
-      'body[data-br-lang="hy"] #tn13Visit h2{font-size:39px!important;line-height:1!important;white-space:nowrap!important;letter-spacing:-.035em!important}',
-      'body[data-br-lang="hy"] #tn13Visit .tn22-contact:last-child strong{font-size:13.2px!important;white-space:nowrap!important}',
-      'body[data-br-lang="hy"] #tn13Visit .tn22-contact:last-child>span:last-child>span{font-size:8.8px!important;white-space:nowrap!important}',
-      'body[data-br-lang="hy"] #tn13Visit .tn22-route{font-size:11.5px!important;white-space:nowrap!important}',
       '#salon-mobile .tn22-master-top{display:grid!important;grid-template-columns:40px minmax(0,1fr) 40px!important;align-items:center!important}',
       '#salon-mobile .tn22-master-brand{text-align:center!important;justify-self:center!important;max-width:100%!important;font-size:14px!important;letter-spacing:.12em!important;white-space:nowrap!important}',
       '}'
