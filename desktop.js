@@ -1030,7 +1030,7 @@
         transition:transform .35s cubic-bezier(.2,.7,.2,1);
       }
       .std-work:hover img{transform:scale(1.018)}
-      .std-work-video{pointer-events:none}
+      .std-work-video{pointer-events:auto;cursor:pointer}
       .std-portfolio-more{
         width:516px;
         max-width:calc(100% - 84px);
