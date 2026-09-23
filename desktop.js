@@ -7270,10 +7270,6 @@
     letter-spacing:.035em!important;
     color:rgba(255,255,255,.72)!important;
   }
-  body[data-br-lang="hy"] #salonDesktopServices .dct-service-sticky-card>strong{
-    font-size:clamp(31px,2.25vw,38px)!important;
-    letter-spacing:-.035em!important;
-  }
 }
 @media(min-width:1024px){
   #salonDesktopServices #stdServiceTabs .mct-tab.is-active[aria-selected="true"],
@@ -7822,7 +7818,7 @@
               <span class="std-meta-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.7v4.8l3 1.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
-              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Открыто</span><span class="std-status-sub" id="stdStatusSub">Ежедневно 10:00–20:00</span></span>
+              <span class="std-meta-text"><span class="std-status-main" id="stdStatusMain">Открыто</span><span class="std-status-sub" id="stdStatusSub">10:00–20:00</span></span>
             </div>
 
             <span class="std-meta-divider" aria-hidden="true"></span>
@@ -7882,7 +7878,7 @@
                 </span>
                 <span class="dct-service-sticky-copy">
                   <b id="stdStickyServiceStatus">Закрыто</b>
-                  <small id="stdStickyServiceStatusSub">Ежедневно 10:00–20:00</small>
+                  <small id="stdStickyServiceStatusSub">10:00–20:00</small>
                 </span>
               </div>
               <a class="dct-service-sticky-row dct-service-sticky-route" href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B" target="_blank" rel="noopener" aria-label="Построить маршрут в Google Картах">
@@ -8067,7 +8063,7 @@
               <span class="std-contact-card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3.2 1.8"></path></svg>
               </span>
-              <span class="std-contact-card-copy"><strong class="std-contact-card-title">График работы</strong><span class="std-contact-card-sub">Ежедневно 10:00–20:00</span></span>
+              <span class="std-contact-card-copy"><strong class="std-contact-card-title">График работы</strong><span class="std-contact-card-sub">10:00–20:00</span></span>
             </div>
           </div>
 
@@ -8700,7 +8696,7 @@
     ['Смотреть все отзывы →','Դիտել բոլոր կարծիքները →','View all reviews →'],['Ждём вас','Սպասում ենք ձեզ','We look forward to seeing you'],['Солнечная ул., 6, Люберцы','Солнечная ул., 6, Люберцы','Lyubertsy, Solnechnaya st., 6'],
     ['Люберцы · открыть в Яндекс Картах','Հայաստան · բացել Яндекс Карты-ում','Lyubertsy · open in Yandex Maps'],
     ['Нажмите, чтобы позвонить','Սեղմեք զանգահարելու համար','Click to call'],['Написать в салон','Գրել սրահին','Message the salon'],
-    ['График работы','Աշխատանքային ժամեր','Opening hours'],['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
+    ['График работы','Աշխատանքային ժամեր','Opening hours'],['10:00–20:00','10:00–20:00','10:00–20:00'],
     ['Цифровой офис для салонов красоты','Թվային գրասենյակ գեղեցկության սրահների համար','Digital office for beauty salons'],['Создано в','Ստեղծված է','Created in'],['Позвонить','Զանգահարել','Call'],['Построить маршрут','Կառուցել երթուղի','Get directions'],['Всё необходимое для комфортного визита','Ամեն ինչ հարմարավետ այցի համար','Everything for a comfortable visit'],['Студия колористики в Люберцах','Գեղեցկության սրահ Քաղաքում','Color studio in Lyubertsy'],['Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.','Այստեղ կարող եք հանգիստ ընտրել անհրաժեշտ ծառայությունները և վստահել խնամքը տարբեր ուղղությունների մասնագետներին։ Մենք կարևորում ենք ճշգրիտ աշխատանքը, հարմարավետությունն ու յուրաքանչյուր հյուրի նկատմամբ ուշադիր վերաբերմունքը։','Choose the services you need and trust your care to specialists across different beauty fields. We value precise work, comfort, and attentive service for every guest.'],['Маникюр, волосы, брови и косметология.','Մատնահարդարում, մազեր, հոնքեր և կոսմետոլոգիա։','Nails, hair, brows and cosmetology.'],['Спокойная атмосфера и внимание к каждому гостю.','Հանգիստ մթնոլորտ և ուշադրություն յուրաքանչյուր հյուրի նկատմամբ։','A calm atmosphere and personal attention.'],['Связь по телефону или Мессенджер без лишних шагов.','Կապ հեռախոսով կամ Мессенджер-ով՝ առանց ավելորդ քայլերի։','Direct booking by phone or Мессенджер.'],['Разные направления','Տարբեր ուղղություններ','Different services'],['Комфорт','Հարմարավետություն','Comfort'],['Прямая запись','Ուղիղ ամրագրում','Direct booking'],
     ['Запись','Ամրագրում','Booking'],['Как вам удобнее записаться?','Ինչպե՞ս է ձեզ հարմար ամրագրել։','How would you like to book?'],
     ['Выберите удобный способ связи.','Ընտրեք ձեզ հարմար կապի տարբերակը։','Choose the most convenient way to contact us.'],
@@ -8724,7 +8720,7 @@
     ['Удаление волос нитью','Մազահեռացում թելով','Threading hair removal'],['Шугаринг','Շուգարինգ','Sugaring'],
     ['Электроэпиляция игловая','Ասեղային էլեկտրոէպիլյացիա','Needle electrolysis'],['Восковая эпиляция','Մոմային էպիլյացիա','Waxing'],
     ['Прокалывание ушей','Ականջների ծակում','Ear piercing'],
-    ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],['Ежедневно 10:00–20:00','Ամեն օր 10:00–20:00','Daily 10:00–20:00'],
+    ['Открыто','Բաց է','Open'],['Закрыто','Փակ է','Closed'],['10:00–20:00','10:00–20:00','10:00–20:00'],['10:00–20:00','10:00–20:00','10:00–20:00'],
     ['График работы','Աշխատանքային ժամեր','Opening hours'],['График работы','Աշխատանքային ժամեր','Opening hours']
   ];
   const desktopLangIndex={ru:0,en:2};
@@ -8849,14 +8845,14 @@
     const main=document.getElementById('stdStatusMain');
     const sub=document.getElementById('stdStatusSub');
     if(main){main.textContent=open?'Открыто':'Закрыто';main.className='std-status-main';main.style.color=''}
-    if(sub)sub.textContent='Ежедневно 10:00–20:00';
+    if(sub)sub.textContent='10:00–20:00';
     const address=root.querySelector('.std-address');
     if(address)address.innerHTML='<span>Люберцы</span><span>Солнечная ул., 6</span>';
     const stickyStatus=document.getElementById('stdStickyServiceStatus');
     const stickyStatusSub=document.getElementById('stdStickyServiceStatusSub');
     const stickyCard=document.getElementById('stdStickyServiceCard');
     if(stickyStatus)stickyStatus.textContent=open?'Открыто':'Закрыто';
-    if(stickyStatusSub)stickyStatusSub.textContent='Ежедневно 10:00–20:00';
+    if(stickyStatusSub)stickyStatusSub.textContent='10:00–20:00';
     if(stickyCard){stickyCard.classList.toggle('is-open',open);stickyCard.classList.toggle('is-closed',!open)}
     const contactStatus=document.getElementById('stdContactStatus');
     const contactStatusText=document.getElementById('stdContactStatusText');
@@ -8955,7 +8951,7 @@
   }
   if(contacts[3]){
     const sub=contacts[3].querySelector('.std-contact-card-sub');
-    if(sub)sub.textContent='Ежедневно 10:00–20:00';
+    if(sub)sub.textContent='10:00–20:00';
   }
 
   const map=root.querySelector('#salonDesktopContacts iframe');
@@ -9002,5 +8998,5 @@
   const stickyStatus=root.querySelector('#stdStickyServiceStatus');
   const stickySub=root.querySelector('#stdStickyServiceStatusSub');
   if(stickyStatus)stickyStatus.textContent=open?'Открыто':'Закрыто';
-  if(stickySub)stickySub.textContent='Ежедневно 10:00–20:00';
+  if(stickySub)stickySub.textContent='10:00–20:00';
 })();
