@@ -6,10 +6,9 @@
 
   const PHONE='+7 (926) 614-33-00';
   const ADDRESS='Солнечная ул., 6, Люберцы';
-  const YANDEX_RU='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/prices/?ll=38.040884%2C55.682708&z=10.82';
-  const ROUTE=YANDEX_RU;
+  const YANDEX_REVIEWS='https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/reviews/';
+  const ROUTE='https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B';
   const WHATSAPP_URL='https://t.me/+79266143300';
-  const YANDEX_REVIEWS=YANDEX_RU;
   const DESKTOP_REAL_REVIEWS=[["Мария Густова","Хочу сказать большое спасибо мастеру Лауре, подстригла мне челку аккуратно и именно по тому запросу с которым я пришла. В салоне приятная атмосфера, так же хочу сказать спасибо администратору, оперативно подобрали время и записали на стрижку!"],["Danil Andryuk","Был у мастера Валерии на коррекции, все очень понравилось, сделала аккуратную форму и восстановила рост волосков в нужном направлении, действительно профессионал. Сама студия приятная и уютная, всем советую!"],["Анастасия Л.","Нужно было сделать вечерние локоны. Записали быстро и срочно. Сделали шикарную прическу, подарили комплименты и приятное общение с мастером❤️ Очень хороший салон. Приду еще."],["an.braa","Была на бровках у Надежды, очень приятная девушка, классный салон, в одном доме со мной, остались только положительные впечатления от персонала, так же была у мастера Елены (хозяйка студии) подстригла каре, всё так как я хотела, золотые руки🌷"],["татьяна к","Ходим с ребенком на стрижку к мастеру Любе. Очень довольны, Любовь хорошо находит общий язык с детьми, всегда приветлива, стрижку делает быстро и качественно. Я тоже делала стрижку и осталась довольна. Теперь мы ваши постоянные клиенты😊"],["Ольга Беляева","Благодарю замечательного мастера Асмик! Обслуживаюсь уже много лет, все года довольна результатом. Асмик большой профессионал парикмахерского искусства, достойный колорист, результат всегда на высоте! Благодарю за красоту волос, за душевное и теплое отношение!"],["Ксения Лунина","Отличная студия! Всегда тепло и приветливо! Постоянно тут стригусь и теперь крашусь) Дочку здесь собирали на важное мероприятие все на 100 баллов! Так же делала брови, просто блеск! Спасибо огромное что Вы есть)))) всем советую мастеров этой студии, все ваши пожелания и мечты будут воплощены в жизнь) 💗"],["ВЕНЕРА ДУРМАНОВА","Очень понравился сервис и работа мастера Елены. Делала мелирование/тонирование. Мастер сориентировала по стоимости и предложила варианты работ. Результат очень понравился! У мастера золотые руки! В салоне чистота, порядок. Рекомендация к посещению 100 %."],["Александра Родина","Была на педикюре и сложном окрашивании (мелирование + тонирование) + стрижка. Очень приятные девушки. Сделали все потрясающе. Я очень довольна результатом. Однозначно рекомендую салон! Просто находка, да еще и рядом с домом. Также, хочу отметить, что в салоне очень комфортно, уютно и чисто.","23 января 2024"]];
   const PORTFOLIO=[
   {
@@ -7703,7 +7702,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   <small id="stdStickyServiceStatusSub">Ежедневно 10:00–20:00</small>
                 </span>
               </div>
-              <a class="dct-service-sticky-row dct-service-sticky-route" href="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/" target="_blank" rel="noopener" aria-label="Построить маршрут в Яндекс Картах">
+              <a class="dct-service-sticky-row dct-service-sticky-route" href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B" target="_blank" rel="noopener" aria-label="Построить маршрут в Google Картах">
                 <span class="dct-service-sticky-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="M19 10c0 5.2-7 10-7 10s-7-4.8-7-10a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg>
                 </span>
@@ -7804,7 +7803,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         </div>
       </div>
 
-      <div class="std-reviews-viewport" id="stdReviewsViewport" aria-label="Отзывы клиентов. Наведите курсор, чтобы остановить ленту.">
+      <div class="std-reviews-viewport" id="stdReviewsViewport" aria-label="Бесконечная лента отзывов клиентов.">
         <div class="std-reviews-loop">
           <div class="std-reviews-set">
             ${DESKTOP_REAL_REVIEWS.map(r=>`
@@ -7813,7 +7812,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   <span class="std-review-avatar">${([...(String(r[0]).trim())][0]||'S').toUpperCase()}</span>
                   <span>
                     <strong class="std-review-name">${r[0]}</strong>
-                    <span class="std-review-meta">Яндекс Карты</span>
+                    <span class="std-review-meta">Яндекс Карты${r[2]?' · '+r[2]:''}</span>
                     <span class="std-review-stars">★★★★★</span>
                   </span>
                 </div>
@@ -7829,7 +7828,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   <span class="std-review-avatar">${([...(String(r[0]).trim())][0]||'S').toUpperCase()}</span>
                   <span>
                     <strong class="std-review-name">${r[0]}</strong>
-                    <span class="std-review-meta">Яндекс Карты</span>
+                    <span class="std-review-meta">Яндекс Карты${r[2]?' · '+r[2]:''}</span>
                     <span class="std-review-stars">★★★★★</span>
                   </span>
                 </div>
@@ -7891,10 +7890,10 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
           </div>
 
           <div class="std-contact-right">
-            <div class="std-contact-map"><iframe title="Карта салона" loading="eager" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B"></iframe></div>
+            <div class="std-contact-map"><iframe title="Карта салона" loading="eager" src="https://www.google.com/maps?q=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B&output=embed"></iframe></div>
             <div class="std-contact-actions">
               <a class="std-contact-action-btn std-contact-call" href="tel:+79266143300">Позвонить</a>
-              <a class="std-contact-action-btn std-contact-route" href="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/" target="_blank" rel="noopener">Построить маршрут</a>
+              <a class="std-contact-action-btn std-contact-route" href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B" target="_blank" rel="noopener">Построить маршрут</a>
             </div>
           </div>
         </div>
@@ -7927,7 +7926,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
         <div class="std-book-options">
           <a href="tel:+79266143300"><span>Телефон</span><span>+7 (926) 614-33-00 →</span></a>
           <a href="https://t.me/+79266143300" target="_blank" rel="noopener"><span>Telegram</span><span>Написать →</span></a>
-          <a href="https://yandex.ru/maps/org/studiya_koloristiki_yeleny_bagdasaryan/18398312097/" target="_blank" rel="noopener"><span>Яндекс Карты</span><span>Открыть →</span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+6+%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B" target="_blank" rel="noopener"><span>Google Карты</span><span>Открыть →</span></a>
         </div>
       </div>
     </div>
@@ -8407,13 +8406,8 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     });
     window.addEventListener('resize',()=>{measureDesktopReviews();paintDesktopReviews()},{passive:true});
 
-    desktopReviewsViewport.addEventListener('pointerenter',()=>{
-      if(Date.now()>=reviewIgnoreHoverUntil)reviewHoverPause=true;
-    });
-    desktopReviewsViewport.addEventListener('pointerleave',()=>{
-      reviewHoverPause=false;
-      reviewPauseUntil=Date.now()+900;
-    });
+    desktopReviewsViewport.addEventListener('pointerenter',()=>{reviewHoverPause=false});
+    desktopReviewsViewport.addEventListener('pointerleave',()=>{reviewHoverPause=false});
     desktopReviewsViewport.addEventListener('pointerdown',e=>{
       reviewDragging=true;
       reviewMoved=false;
@@ -8506,7 +8500,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     }
   }
   function paintDesktopMaster(master){
-    masterPageContent.innerHTML='<div class="std-master-profile"><div class="std-master-avatar">'+TEAM_AVATAR+'</div><h2>'+master.name+'</h2><p>'+master.role+'</p><div class="std-master-profile-rating"><b>☆☆☆☆☆</b> · СТУДИЯ КОЛОРИСТИКИ</div><div class="std-master-profile-cats">'+(master.cats||[]).map(cat=>'<span>'+cat+'</span>').join('')+'</div></div><div class="std-master-tabs">'+['Профиль','Услуги','Портфолио','Отзывы'].map(tab=>'<button type="button" data-master-tab="'+tab+'" class="'+(tab===activeDesktopMasterTab?'active':'')+'">'+tab+'</button>').join('')+'</div><div class="std-master-tab-content"></div>';
+    masterPageContent.innerHTML='<div class="std-master-profile"><div class="std-master-avatar">'+TEAM_AVATAR+'</div><h2>'+master.name+'</h2><p>'+master.role+'</p><div class="std-master-profile-rating"><b>★★★★★</b> · СТУДИЯ КОЛОРИСТИКИ</div><div class="std-master-profile-cats">'+(master.cats||[]).map(cat=>'<span>'+cat+'</span>').join('')+'</div></div><div class="std-master-tabs">'+['Профиль','Услуги','Портфолио','Отзывы'].map(tab=>'<button type="button" data-master-tab="'+tab+'" class="'+(tab===activeDesktopMasterTab?'active':'')+'">'+tab+'</button>').join('')+'</div><div class="std-master-tab-content"></div>';
     masterPageContent.querySelectorAll('[data-master-tab]').forEach(btn=>btn.onclick=()=>{
       activeDesktopMasterTab=btn.dataset.masterTab;
       masterPageContent.querySelectorAll('[data-master-tab]').forEach(x=>x.classList.toggle('active',x===btn));
