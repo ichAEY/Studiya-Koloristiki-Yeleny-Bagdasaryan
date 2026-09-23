@@ -1525,7 +1525,7 @@ const iconClock=`<span class="tn22-contact-icon"><svg viewBox="0 0 24 24" aria-h
 const statusClock=`<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 1.8"/></svg>`;
 visit.innerHTML=`<div class="tn22-visit"><div class="tn22-visit-head"><p class="tn22-kicker">Контакты</p><span class="tn22-status" id="tn22Status">${statusClock}<span class="tn22-status-text"></span></span></div><h2>Ждём вас</h2><div class="tn22-contact-grid"><a class="tn22-contact" href="#tn13Visit" aria-disabled="true">${iconPin}<span><strong>Солнечная ул., 6, Люберцы</strong><span>Солнечная ул., 6, Люберцы</span></span></a><a class="tn22-contact" href="tel:+79266143300">${iconPhone}<span><strong>+7 (926) 614-33-00</strong><span>Нажмите, чтобы позвонить</span></span></a><a class="tn22-contact" href="https://t.me/+79266143300" target="_blank" rel="noopener">${iconMessage}<span><strong>Telegram</strong><span>Написать в студию</span></span></a><div class="tn22-contact">${iconClock}<span><strong>График работы</strong><span>Ежедневно 10:00–20:00</span></span></div></div><div class="tn22-mapwrap"><div class="tn22-map-skeleton">Загружаем карту…</div><iframe title="Карта Студия Колористики Елены Багдасарян" loading="lazy" src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%206%2C%20%D0%9B%D1%8E%D0%B1%D0%B5%D1%80%D1%86%D1%8B"></iframe></div><div class="tn22-visit-actions"><a class="tn22-visit-btn tn22-call" href="#tn13Visit" aria-disabled="true">Позвонить</a><a class="tn22-visit-btn tn22-route" href="#tn13Visit" aria-disabled="true">Построить маршрут</a></div><a class="tn22-footer" href="https://tanem.ru/" target="_blank" rel="noopener"><strong>TANEM.ru</strong><span>Цифровой офис для салонов красоты</span></a></div>`;
 const map=visit.querySelector('.tn22-mapwrap'),iframe=map.querySelector('iframe');iframe.addEventListener('load',()=>map.classList.add('loaded'));setTimeout(()=>map.classList.add('loaded'),5000);
-function status(){const el=visit.querySelector('#tn22Status'),txt=el&&el.querySelector('.tn22-status-text');if(txt)txt.textContent='Ежедневно 10:00–20:00';if(el)el.className='tn22-status';const hs=hero.querySelector('.tn50-hero-status');if(hs){const main=hs.querySelector('.tn50-hero-status-main'),sub=hs.querySelector('.tn50-hero-status-sub');if(main)main.textContent='График';if(sub)sub.textContent='Уточняется';hs.classList.remove('open','closed')}}status();
+function status(){const el=visit.querySelector('#tn22Status'),txt=el&&el.querySelector('.tn22-status-text');if(txt)txt.textContent='Ежедневно 10:00–20:00';if(el)el.className='tn22-status';const hs=hero.querySelector('.tn50-hero-status');if(hs){const main=hs.querySelector('.tn50-hero-status-main'),sub=hs.querySelector('.tn50-hero-status-sub');if(main)main.textContent='График';if(sub)sub.textContent='Ежедневно 10:00–20:00';hs.classList.remove('open','closed')}}status();
 
 // STICKY
 const sticky=$('#tn13Sticky');if(sticky){sticky.innerHTML=`<strong>Доступно ${SERVICES.length} услуг</strong><button type="button">Записаться</button>`;sticky.querySelector('button').onclick=book}
@@ -2331,12 +2331,12 @@ services.insertAdjacentElement('afterend',about);
     ['Подробнее →','Ավելին →','Read more →'],
     ['Смотреть все отзывы →','Դիտել բոլոր կարծիքները →','View all reviews →'],
     ['Ждём вас','Սպասում ենք ձեզ','We look forward to seeing you'],
-    ['Солнечная ул., 6, Люберцы','Քաղաք, Սրահի հասցե','City, Солнечная ул., 6, Люберцы'],
+    ['Солнечная ул., 6, Люберцы','Քաղաք, Սրահի հասցե','Lyubertsy, Solnechnaya st., 6'],
     ['Открыть в Яндекс Карты','Բացել Яндекс Карты-ում','Open in Яндекс Карты'],
     ['Нажмите, чтобы позвонить','Սեղմեք զանգահարելու համար','Tap to call'],
     ['Написать в салон','Գրել սրահին','Message the salon'],
     ['График работы','Աշխատանքային ժամեր','Opening hours'],
-    ['Уточняется','Կավելացվի','To be added'],
+    ['Ежедневно 10:00–20:00','Կավելացվի','To be added'],
     ['Загружаем карту…','Քարտեզը բեռնվում է…','Loading map…'],
     ['Позвонить','Զանգահարել','Call'],
     ['Построить маршрут','Ստանալ երթուղին','Get directions'],
@@ -2345,12 +2345,12 @@ services.insertAdjacentElement('afterend',about);
     ['График работы','Աշխատանքային ժամեր','Opening hours'],
     ['Открыто','Բաց է','Open'],
     ['Закрыто','Փակ է','Closed'],
-    ['Уточняется','Կավելացվի','To be added'],
-    ['Уточняется','Կավելացվի','To be added'],
+    ['Ежедневно 10:00–20:00','Կավելացվի','To be added'],
+    ['Ежедневно 10:00–20:00','Կավելացվի','To be added'],
     ['О нас','Մեր մասին','About us'],
-    ['Салон красоты в городе','Գեղեցկության սրահ Քաղաքում','Beauty salon in City'],
-    ['Студия Колористики Елены Багдасарян — салон красоты.','Студия Колористики Елены Багдасарян — գեղեցկության սրահ Քաղաքում։','Студия Колористики Елены Багдасарян — a beauty salon in City.'],
-    ['Описание услуг салона.','Մատնահարդարում, մազեր, հոնքեր և թարթիչներ, դիմահարդարում, կոսմետոլոգիա, էպիլյացիա և մերսում՝ մեկ վայրում։','Manicure, hair, brows and lashes, makeup, cosmetology, hair removal and massage — all in one place.'],
+    ['Студия колористики в Люберцах','Գեղեցկության սրահ Քաղաքում','Color studio in Lyubertsy'],
+    ['Студия Колористики Елены Багдасарян — студия красоты в Люберцах.','Студия Колористики Елены Багдасарян — գեղեցկության սրահ Քաղաքում։','Elena Bagdasaryan Color Studio — a beauty studio in Lyubertsy.'],
+    ['Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.','Մատնահարդարում, մազեր, հոնքեր և թարթիչներ, դիմահարդարում, կոսմետոլոգիա, էպիլյացիա և մերսում՝ մեկ վայրում։','Manicure, hair, brows and lashes, makeup, cosmetology, hair removal and massage — all in one place.'],
     ['Студия колористики в Люберцах: окрашивание, стрижки, укладки, уход за волосами, брови, ресницы и макияж. В одном пространстве работают мастера разных направлений.','Այստեղ կարող եք հանգիստ ընտրել անհրաժեշտ ծառայությունները և ձեր խնամքը վստահել տարբեր ուղղությունների մասնագետների։ Մենք կարևորում ենք կոկիկ աշխատանքը, հարմարավետությունն ու յուրաքանչյուր հյուրի նկատմամբ ուշադիր վերաբերմունքը։','Here you can comfortably choose the services you need and trust your care to specialists in different fields. We value precise work, comfort and attentive service for every guest.'],
     ['Мастера разных направлений','Տարբեր ուղղությունների մասնագետներ','Specialists in different fields'],
     ['Комфортная атмосфера','Հարմարավետ մթնոլորտ','Comfortable atmosphere'],
