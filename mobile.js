@@ -2671,3 +2671,18 @@ const feature=root.querySelector('.tn13-feature');if(feature&&!feature.querySele
 return true}
 let n=0;const timer=setInterval(()=>{n++;if(apply()||n>100)clearInterval(timer)},80);apply();
 })();
+
+/* TANEM gallery-video completion — 2026-09-23 */
+(()=>{
+ if(!window.matchMedia||!window.matchMedia('(max-width:1023px)').matches)return;
+ const root=document.getElementById('salon-mobile');if(!root)return;
+ const inject=()=>{
+   const grid=root.querySelector('.tn22-gallery-grid.salon');
+   if(grid&&!grid.querySelector('.br-gallery-video')){
+     const tile=document.createElement('div');tile.className='tn22-gallery-tile br-gallery-video';
+     tile.innerHTML='<video src="galery1.MP4" muted playsinline loop controls preload="metadata" aria-label="Видео студии" style="width:100%;height:100%;object-fit:cover;display:block"></video>';
+     grid.prepend(tile);
+   }
+ };
+ new MutationObserver(inject).observe(root,{childList:true,subtree:true});inject();
+})();
