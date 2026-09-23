@@ -7537,19 +7537,23 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   /* Final hero identity and full status/location composition. */
   .std-header-brand{width:142px!important;min-width:142px!important;align-items:flex-start!important;overflow:visible!important}
   .std-header-crown{width:132px!important;height:70px!important;max-width:132px!important;object-fit:contain!important;object-position:left center!important}
+  #salonDesktopTop .std-copy-inner{width:min(100%,520px)!important;max-width:520px!important;margin-left:auto!important;margin-right:auto!important}
   #salonDesktopTop .std-logo{
-    width:min(100%,570px)!important;
-    font:500 clamp(34px,3.4vw,58px)/.92 "Cormorant Garamond",Georgia,serif!important;
-    letter-spacing:.018em!important;
+    width:100%!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font:500 clamp(36px,3.05vw,52px)/.92 "Cormorant Garamond",Georgia,serif!important;
+    letter-spacing:.012em!important;
+    text-align:center!important;
     white-space:nowrap!important;
   }
   #salonDesktopTop .std-logo-sub{
-    width:min(100%,570px)!important;
-    margin:17px 0 34px!important;
+    width:100%!important;
+    margin:15px auto 34px!important;
     color:#4f443f!important;
-    font:500 clamp(27px,2.25vw,37px)/1 "Cormorant Garamond",Georgia,serif!important;
-    letter-spacing:.075em!important;
-    text-align:left!important;
+    font:500 clamp(24px,1.9vw,31px)/1 "Cormorant Garamond",Georgia,serif!important;
+    letter-spacing:.055em!important;
+    text-align:center!important;
     white-space:nowrap!important;
   }
   #salonDesktopTop .std-meta-text>span{display:block!important}
@@ -7557,23 +7561,26 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   #salonDesktopTop .std-address>span+span{margin-top:4px!important;color:#746a64!important;font-size:12px!important;line-height:1.25!important}
   #salonDesktopTop .std-scroll-hint{display:none!important}
 
-  /* Four visible masters per page; controls live below and never clip cards. */
-  #salonDesktopTeam .std-team-window{position:relative!important;flex:1 1 auto!important;min-height:0!important;margin:0!important;padding:6px 4px!important;overflow:hidden!important}
-  #salonDesktopTeam .std-team-track{display:flex!important;width:200%!important;height:100%!important;min-height:0!important;gap:0!important;margin:0!important;padding:0!important;overflow:visible!important;transform:translate3d(0,0,0)!important;transition:transform .55s cubic-bezier(.2,.72,.2,1)!important;will-change:transform!important}
-  #salonDesktopTeam .std-team-page{display:grid!important;flex:0 0 50%!important;width:50%!important;height:100%!important;min-width:0!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:16px 28px!important;align-items:center!important;padding:5px 8px 9px!important}
-  #salonDesktopTeam .std-team-page:last-child{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:1fr!important;align-content:center!important;padding:5px 9% 9px!important}
-  #salonDesktopTeam .std-master{overflow:visible!important}
-  #salonDesktopTeam .std-team-controls{display:flex!important;align-items:center!important;justify-content:center!important;gap:14px!important;margin-top:15px!important}
-  #salonDesktopTeam .std-team-nav{position:static!important;display:grid!important;width:38px!important;height:38px!important;place-items:center!important;border:1px solid rgba(255,255,255,.15)!important;border-radius:50%!important;background:rgba(255,255,255,.055)!important;color:#eee3dc!important;font:500 15px/1 "Manrope",Arial,sans-serif!important;transition:background .18s ease,border-color .18s ease,transform .18s ease!important}
-  #salonDesktopTeam .std-team-nav:hover{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.25)!important;transform:translateY(-1px)!important}
-  #salonDesktopTeam .std-team-nav:disabled{opacity:.28!important;cursor:default!important;transform:none!important}
-  #salonDesktopTeam .std-team-page-label{min-width:52px!important;color:#aa9c95!important;font:500 10px/1 "Manrope",Arial,sans-serif!important;letter-spacing:.13em!important;text-align:center!important}
-  #salonDesktopTeam .std-team-page-label b{color:#f7f3f0!important;font-weight:600!important}
+  /* Four visible masters per page; second page keeps identical geometry. Drag/swipe or use the quiet edge cue. */
+  #salonDesktopTeam .std-team-window{position:relative!important;flex:1 1 auto!important;min-height:0!important;margin:0!important;padding:10px 34px 14px!important;overflow:hidden!important;touch-action:pan-y!important}
+  #salonDesktopTeam .std-team-track{display:flex!important;width:200%!important;height:100%!important;min-height:0!important;gap:0!important;margin:0!important;padding:0!important;overflow:visible!important;transform:translate3d(0,0,0)!important;transition:transform .5s cubic-bezier(.2,.72,.2,1)!important;will-change:transform!important}
+  #salonDesktopTeam .std-team-page{display:grid!important;flex:0 0 50%!important;width:50%!important;height:100%!important;min-width:0!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:16px 28px!important;align-items:start!important;align-content:stretch!important;padding:5px 10px 9px!important}
+  #salonDesktopTeam .std-team-page:last-child{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;align-items:start!important;align-content:stretch!important;padding:5px 10px 9px!important}
+  #salonDesktopTeam .std-master{overflow:visible!important;align-self:start!important}
+  #salonDesktopTeam .std-master-avatar{width:216px!important;height:216px!important;min-width:216px!important;min-height:216px!important;max-width:216px!important;max-height:216px!important;aspect-ratio:1/1!important;margin-left:auto!important;margin-right:auto!important;border-radius:50%!important;flex:0 0 216px!important}
+  #salonDesktopTeam .std-team-controls{display:none!important}
+  #salonDesktopTeam .std-team-edge-cue{position:absolute!important;z-index:8!important;top:50%!important;width:30px!important;height:58px!important;padding:0!important;border:0!important;background:transparent!important;transform:translateY(-50%)!important;cursor:pointer!important}
+  #salonDesktopTeam .std-team-edge-next{right:5px!important;animation:brTeamCueRight 1.8s ease-in-out infinite!important}
+  #salonDesktopTeam .std-team-edge-prev{left:5px!important}
+  #salonDesktopTeam .std-team-edge-cue span{display:block!important;width:11px!important;height:27px!important;margin:auto!important;border-top:1.5px solid rgba(238,227,220,.72)!important;border-right:1.5px solid rgba(238,227,220,.72)!important;border-bottom:1.5px solid rgba(238,227,220,.72)!important;border-left:0!important;border-radius:0 5px 5px 0!important}
+  #salonDesktopTeam .std-team-edge-prev span{transform:scaleX(-1)!important}
+  #salonDesktopTeam .std-team-edge-cue:hover span{border-color:#fff!important}
+  @keyframes brTeamCueRight{0%,100%{opacity:.38;transform:translate3d(0,-50%,0)}50%{opacity:1;transform:translate3d(5px,-50%,0)}}
 
   /* One viewer handles photographs and the salon video. */
   .std-gallery-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;background:#151312!important;border:0!important}
   .std-gallery-video[hidden],.std-gallery-image[hidden],.std-gallery-hint[hidden]{display:none!important}
-  .std-work-video video,.std-gallery-browser-video video{pointer-events:none!important}
+  .std-work-video video,.std-gallery-browser-video video{pointer-events:none!important}.std-work-video{cursor:pointer!important}
   .std-gallery-browser-title strong{font-size:clamp(44px,3.4vw,58px)!important;white-space:nowrap!important}
   .std-gallery-browser-title span{font-size:13px!important;letter-spacing:.24em!important;white-space:nowrap!important}
 
@@ -7679,7 +7686,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
           <div class="std-copy-inner">
           <p class="std-hero-kicker">Салон красоты</p>
           <h1 class="std-logo">СТУДИЯ КОЛОРИСТИКИ</h1>
-          <div class="std-logo-sub">ЕЛЕНА БАГДАСАРЯН</div>
+          <div class="std-logo-sub">ЕЛЕНЫ БАГДАСАРЯН</div>
 
           <p class="std-tagline">Описание салона.</p>
 
@@ -7833,8 +7840,9 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
                   </button>
                 `).join('')}</div>`).join('')}
             </div>
+            <button class="std-team-edge-cue std-team-edge-prev" type="button" aria-label="Предыдущие мастера" hidden><span aria-hidden="true"></span></button>
+            <button class="std-team-edge-cue std-team-edge-next" type="button" aria-label="Следующие мастера"><span aria-hidden="true"></span></button>
           </div>
-          <div class="std-team-controls" aria-label="Переключение страниц команды"><button class="std-team-nav std-team-prev" type="button" aria-label="Предыдущие мастера">←</button><span class="std-team-page-label"><b>1</b> / 2</span><button class="std-team-nav std-team-next" type="button" aria-label="Следующие мастера">→</button></div>
         </aside>
       </div>
     </section>
@@ -8090,6 +8098,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
       galleryVideo.src=item.src;
       galleryVideo.setAttribute('aria-label',item.alt||'Видео студии');
       try{galleryVideo.load()}catch(_){}
+      requestAnimationFrame(()=>{const p=galleryVideo.play();if(p&&typeof p.catch==='function')p.catch(()=>{})});
     }else{
       galleryVideo.removeAttribute('src');
       galleryImage.src=item.src;
@@ -8385,21 +8394,77 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   renderDesktopServices();
 
   const desktopTeamTrack=document.getElementById('stdTeamTrack');
-  const desktopTeamPrev=document.querySelector('#salonDesktopTeam .std-team-prev');
-  const desktopTeamNext=document.querySelector('#salonDesktopTeam .std-team-next');
-  const desktopTeamPageLabel=document.querySelector('#salonDesktopTeam .std-team-page-label b');
-  if(desktopTeamTrack&&desktopTeamPrev&&desktopTeamNext){
+  const desktopTeamWindow=document.querySelector('#salonDesktopTeam .std-team-window');
+  const desktopTeamPrev=document.querySelector('#salonDesktopTeam .std-team-edge-prev');
+  const desktopTeamNext=document.querySelector('#salonDesktopTeam .std-team-edge-next');
+  if(desktopTeamTrack&&desktopTeamWindow&&desktopTeamPrev&&desktopTeamNext){
     let activeTeamPage=0;
+    let teamDragging=false;
+    let teamMoved=false;
+    let teamStartX=0;
+    let teamDx=0;
+    let teamPointer=null;
+
+    const updateTeamCues=()=>{
+      desktopTeamPrev.hidden=activeTeamPage===0;
+      desktopTeamNext.hidden=activeTeamPage===1;
+    };
+    const paintTeam=(animate=true,dragPx=0)=>{
+      desktopTeamTrack.style.transition=animate?'transform .5s cubic-bezier(.2,.72,.2,1)':'none';
+      const base=activeTeamPage*-50;
+      desktopTeamTrack.style.setProperty('transform','translate3d(calc('+base+'% + '+dragPx+'px),0,0)','important');
+    };
     const setTeamPage=page=>{
       activeTeamPage=Math.max(0,Math.min(1,page));
-      desktopTeamTrack.style.setProperty('transform','translate3d('+(activeTeamPage*-50)+'%,0,0)','important');
-      desktopTeamPrev.disabled=activeTeamPage===0;
-      desktopTeamNext.disabled=activeTeamPage===1;
-      if(desktopTeamPageLabel)desktopTeamPageLabel.textContent=String(activeTeamPage+1);
+      teamDx=0;
+      paintTeam(true,0);
+      updateTeamCues();
     };
-    desktopTeamPrev.addEventListener('click',()=>setTeamPage(activeTeamPage-1));
-    desktopTeamNext.addEventListener('click',()=>setTeamPage(activeTeamPage+1));
-    setTeamPage(0);
+
+    desktopTeamPrev.addEventListener('click',()=>setTeamPage(0));
+    desktopTeamNext.addEventListener('click',()=>setTeamPage(1));
+
+    desktopTeamWindow.addEventListener('pointerdown',e=>{
+      if(e.button!==undefined&&e.button!==0)return;
+      teamDragging=true;
+      teamMoved=false;
+      teamStartX=e.clientX;
+      teamDx=0;
+      teamPointer=e.pointerId;
+    });
+    desktopTeamWindow.addEventListener('pointermove',e=>{
+      if(!teamDragging)return;
+      const dx=e.clientX-teamStartX;
+      if(Math.abs(dx)<5&&!teamMoved)return;
+      teamMoved=true;
+      teamDx=dx;
+      try{desktopTeamWindow.setPointerCapture(teamPointer)}catch(_){}
+      paintTeam(false,dx);
+    });
+    const finishTeamDrag=e=>{
+      if(!teamDragging)return;
+      teamDragging=false;
+      if(teamPointer!==null){try{desktopTeamWindow.releasePointerCapture(teamPointer)}catch(_){}}
+      teamPointer=null;
+      const threshold=Math.min(90,desktopTeamWindow.clientWidth*.14);
+      if(teamMoved&&Math.abs(teamDx)>threshold) activeTeamPage=Math.max(0,Math.min(1,activeTeamPage+(teamDx<0?1:-1)));
+      teamDx=0;
+      paintTeam(true,0);
+      updateTeamCues();
+    };
+    desktopTeamWindow.addEventListener('pointerup',finishTeamDrag);
+    desktopTeamWindow.addEventListener('pointercancel',finishTeamDrag);
+    desktopTeamWindow.addEventListener('click',e=>{
+      if(teamMoved){e.preventDefault();e.stopPropagation();teamMoved=false}
+    },true);
+    desktopTeamWindow.addEventListener('wheel',e=>{
+      if(Math.abs(e.deltaX)<=Math.abs(e.deltaY)||Math.abs(e.deltaX)<18)return;
+      e.preventDefault();
+      setTeamPage(activeTeamPage+(e.deltaX>0?1:-1));
+    },{passive:false});
+
+    paintTeam(false,0);
+    updateTeamCues();
   }
 
   const desktopReviewsViewport=document.getElementById('stdReviewsViewport');
@@ -8485,7 +8550,7 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
 
   const DESKTOP_LANG_STORAGE='salon-template-language';
   const DESKTOP_I18N_ROWS=[
-    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНА БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
+    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНЫ БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
     ['Студия Колористики','Գունագետների ստուդիա','Color Studio'],['Люберцы','Լյուբերցի','Lyubertsy'],['Солнечная ул., 6','Սոլնեչնայա փ., 6','Solnechnaya St., 6'],
     ['Услуги','Ծառայություններ','Services'],['Наши работы','Մեր աշխատանքները','Our work'],['О нас','Մեր մասին','About us'],
     ['Отзывы','Կարծիքներ','Reviews'],['Контакты','Կոնտակտներ','Contacts'],['Салон красоты','Գեղեցկության սրահ','Beauty salon'],
