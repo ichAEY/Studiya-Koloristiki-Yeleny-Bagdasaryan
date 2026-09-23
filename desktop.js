@@ -7586,19 +7586,29 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
   #salonDesktopTop .std-logo-sub{margin-top:15px!important;font-size:clamp(22px,1.75vw,30px)!important;letter-spacing:.09em!important}
 
   /* Team: keep the approved card positions, make page 2 match page 1, add a subtle half-square cue and drag/swipe navigation. */
-  #salonDesktopTeam .std-team-window{overflow:visible!important;touch-action:pan-y!important}
+  #salonDesktopTeam .std-team-window{box-sizing:border-box!important;width:calc(100% + 40px)!important;margin-left:-20px!important;margin-right:-20px!important;padding:10px 54px 14px!important;overflow:hidden!important;touch-action:pan-y!important;user-select:none!important}
   #salonDesktopTeam .std-team-page{align-content:start!important;align-items:start!important}
+  #salonDesktopTeam .std-team-page,
   #salonDesktopTeam .std-team-page:last-child{
+    box-sizing:border-box!important;
     grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    grid-template-rows:auto 1fr!important;
+    grid-template-rows:repeat(2,minmax(0,1fr))!important;
     align-content:start!important;
     align-items:start!important;
-    padding:5px 8px 9px!important;
+    padding:5px 10px 9px!important;
   }
   #salonDesktopTeam .std-master{align-self:start!important}
+  #salonDesktopTeam .std-master{min-width:0!important}
   #salonDesktopTeam .std-master-avatar{
-    width:216px!important;height:216px!important;min-width:216px!important;min-height:216px!important;
-    aspect-ratio:1/1!important;border-radius:50%!important;flex:none!important
+    box-sizing:border-box!important;display:grid!important;place-items:center!important;
+    width:min(216px,100%)!important;height:auto!important;
+    min-width:0!important;min-height:0!important;max-width:216px!important;max-height:none!important;
+    aspect-ratio:1/1!important;border-radius:50%!important;flex:none!important;overflow:hidden!important
+  }
+  @media(min-width:768px) and (max-width:1100px){
+    #salonDesktopTop .std-copy-inner{width:min(100%,440px)!important;max-width:calc(100% - 20px)!important}
+    #salonDesktopTop .std-logo{font-size:clamp(28px,3vw,37px)!important;letter-spacing:0!important}
+    #salonDesktopTop .std-logo-sub{font-size:clamp(18px,2.45vw,25px)!important;letter-spacing:.025em!important}
   }
   /* One viewer handles photographs and the salon video. */
   .std-gallery-video{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;background:#151312!important;border:0!important}
@@ -8144,9 +8154,6 @@ html,body,#salon-desktop-v1{scroll-behavior:auto!important;scroll-snap-type:none
     paintGallery();
     gallery.classList.add('open');
     document.body.style.overflow='hidden';
-    if(galleryItems[galleryIndex]?.type==='video'){
-      requestAnimationFrame(()=>{try{galleryVideo.currentTime=0}catch(_){}const p=galleryVideo.play();if(p&&typeof p.catch==='function')p.catch(()=>{})});
-    }
   }
   function closeDesktopViewer(){
     try{galleryVideo.pause()}catch(_){}
