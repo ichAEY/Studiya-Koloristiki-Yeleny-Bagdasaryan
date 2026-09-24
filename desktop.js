@@ -7582,8 +7582,8 @@
     margin-right:36px!important;
   }
   #salonDesktopTop .std-logo{
-    font-size:clamp(38px,2.9vw,52px)!important;
-    letter-spacing:.012em!important;
+    font-size:clamp(36px,2.6vw,47px)!important;
+    letter-spacing:.008em!important;
   }
   #salonDesktopTop .std-logo-sub{
     margin-top:15px!important;
