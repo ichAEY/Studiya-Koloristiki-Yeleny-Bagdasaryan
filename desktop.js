@@ -7433,6 +7433,7 @@
     max-width:132px!important;
     object-fit:contain!important;
     object-position:left center!important;
+    mix-blend-mode:multiply!important;
   }
   #salonDesktopTop .std-copy-inner{
     max-width:520px!important;
@@ -7576,13 +7577,13 @@
     margin-right:auto!important;
   }
   #salonDesktopTop .std-logo{
-    font-size:clamp(38px,3.05vw,53px)!important;
+    font-size:clamp(41px,3.3vw,57px)!important;
     letter-spacing:.012em!important;
   }
   #salonDesktopTop .std-logo-sub{
     margin-top:15px!important;
-    font-size:clamp(22px,1.75vw,30px)!important;
-    letter-spacing:.09em!important;
+    font-size:clamp(24px,1.9vw,33px)!important;
+    letter-spacing:.075em!important;
   }
   #salonDesktopTeam .std-team-window{
     box-sizing:border-box!important;
@@ -7634,11 +7635,11 @@
       max-width:calc(100% - 20px)!important;
     }
     #salonDesktopTop .std-logo{
-      font-size:clamp(28px,3vw,37px)!important;
+      font-size:clamp(30px,3.2vw,40px)!important;
       letter-spacing:0!important;
     }
     #salonDesktopTop .std-logo-sub{
-      font-size:clamp(18px,2.45vw,25px)!important;
+      font-size:clamp(20px,2.6vw,27px)!important;
       letter-spacing:.025em!important;
     }
   }
@@ -7754,7 +7755,7 @@
   root.innerHTML=`
     <header class="std-header">
       <a class="std-header-brand" href="#salonDesktopTop" aria-label="Студия Колористики Елены Багдасарян">
-        <img class="std-header-crown" src="logo.webp" alt="Студия Колористики Елены Багдасарян">
+        <img class="std-header-crown" src="logoglavnaya.jpg" alt="Корона Студии Колористики Елены Багдасарян">
       </a>
       <div class="std-lang-switch std-lang-switch-under-brand" role="group" aria-label="Language"><button type="button" data-desktop-lang="ru">RU</button><span class="sep">|</span><button type="button" data-desktop-lang="en">EN</button></div>
       <nav class="std-nav" aria-label="Основная навигация">
@@ -7780,7 +7781,7 @@
           <div class="std-copy-inner">
           <p class="std-hero-kicker">Салон красоты</p>
           <h1 class="std-logo">СТУДИЯ КОЛОРИСТИКИ</h1>
-          <div class="std-logo-sub">ЕЛЕНЫ БАГДАСАРЯН</div>
+          <div class="std-logo-sub">ЕЛЕНА БАГДАСАРЯН</div>
 
           <p class="std-tagline">Описание салона.</p>
 
@@ -8638,7 +8639,7 @@
 
   const DESKTOP_LANG_STORAGE='salon-template-language';
   const DESKTOP_I18N_ROWS=[
-    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНЫ БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
+    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНА БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
     ['Студия Колористики','Գունագետների ստուդիա','Color Studio'],['Люберцы','Լյուբերցի','Lyubertsy'],['Солнечная ул., 6','Սոլնեչնայա փ., 6','Solnechnaya St., 6'],
     ['Услуги','Ծառայություններ','Services'],['Наши работы','Մեր աշխատանքները','Our work'],['О нас','Մեր մասին','About us'],
     ['Отзывы','Կարծիքներ','Reviews'],['Контакты','Կոնտակտներ','Contacts'],['Салон красоты','Գեղեցկության սրահ','Beauty salon'],
@@ -8849,7 +8850,7 @@
   const ADDRESS='Солнечная ул., 6, Люберцы';
 
   const hb=root.querySelector('.std-header-brand');
-  if(hb)hb.innerHTML='<img class="std-header-crown" src="logo.webp" alt="Студия Колористики Елены Багдасарян">';
+  if(hb)hb.innerHTML='<img class="std-header-crown" src="logoglavnaya.jpg" alt="Корона Студии Колористики Елены Багдасарян">';
 
   const tg=root.querySelector('.std-tagline');
   if(tg)tg.textContent='Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.';
