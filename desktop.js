@@ -7537,17 +7537,18 @@
   }
   #salonDesktopTeam .std-team-edge-cue span{
     display:block!important;
-    width:11px!important;
-    height:27px!important;
+    width:15px!important;
+    height:15px!important;
     margin:auto!important;
-    border-top:1.5px solid rgba(238,227,220,.72)!important;
-    border-right:1.5px solid rgba(238,227,220,.72)!important;
-    border-bottom:1.5px solid rgba(238,227,220,.72)!important;
+    border-top:2px solid rgba(238,227,220,.86)!important;
+    border-right:2px solid rgba(238,227,220,.86)!important;
+    border-bottom:0!important;
     border-left:0!important;
-    border-radius:0 5px 5px 0!important;
+    border-radius:1px!important;
+    transform:rotate(45deg)!important;
   }
   #salonDesktopTeam .std-team-edge-prev span{
-    transform:scaleX(-1)!important;
+    transform:rotate(-135deg)!important;
   }
   #salonDesktopTeam .std-team-edge-cue:hover span{
     border-color:#fff!important;
@@ -7566,7 +7567,10 @@
     }
   }
   #salonDesktopTop .std-copy-inner{
-    width:min(100%,520px)!important;
+    width:var(--hero-video-start)!important;
+    max-width:none!important;
+    padding-left:0!important;
+    padding-right:0!important;
   }
   #salonDesktopTop .std-logo,
   #salonDesktopTop .std-logo-sub{
@@ -7585,12 +7589,33 @@
     font-size:clamp(24px,1.9vw,33px)!important;
     letter-spacing:.075em!important;
   }
+  #salonDesktopTop .std-actions{
+    width:540px!important;
+    max-width:calc(100% - 72px)!important;
+    gap:12px!important;
+  }
+  #salonDesktopTop .std-actions > #stdBookBtn,
+  #salonDesktopTop .std-actions > a.std-btn{
+    height:70.9838px!important;
+    font-size:18.3184px!important;
+  }
+  @media(min-width:768px) and (max-width:1180px){
+    #salonDesktopTop .std-actions{
+      width:500px!important;
+      max-width:calc(100% - 52px)!important;
+    }
+    #salonDesktopTop .std-actions > #stdBookBtn,
+    #salonDesktopTop .std-actions > a.std-btn{
+      height:66.4042px!important;
+      font-size:17.1735px!important;
+    }
+  }
   #salonDesktopTeam .std-team-window{
     box-sizing:border-box!important;
     width:calc(100% + 40px)!important;
     margin-left:-20px!important;
     margin-right:-20px!important;
-    padding:10px 54px 14px!important;
+    padding:10px 0 14px!important;
     overflow:hidden!important;
     touch-action:pan-y!important;
     user-select:none!important;
@@ -7606,7 +7631,7 @@
     grid-template-rows:repeat(2,minmax(0,1fr))!important;
     align-content:start!important;
     align-items:start!important;
-    padding:5px 10px 9px!important;
+    padding:5px 54px 9px!important;
   }
   #salonDesktopTeam .std-master{
     align-self:start!important;
@@ -7631,8 +7656,10 @@
   }
   @media(min-width:768px) and (max-width:1100px){
     #salonDesktopTop .std-copy-inner{
-      width:min(100%,440px)!important;
-      max-width:calc(100% - 20px)!important;
+      width:var(--hero-video-start)!important;
+      max-width:none!important;
+      padding-left:0!important;
+      padding-right:0!important;
     }
     #salonDesktopTop .std-logo{
       font-size:clamp(30px,3.2vw,40px)!important;
@@ -7781,7 +7808,7 @@
           <div class="std-copy-inner">
           <p class="std-hero-kicker">Салон красоты</p>
           <h1 class="std-logo">СТУДИЯ КОЛОРИСТИКИ</h1>
-          <div class="std-logo-sub">ЕЛЕНА БАГДАСАРЯН</div>
+          <div class="std-logo-sub">ЕЛЕНЫ БАГДАСАРЯН</div>
 
           <p class="std-tagline">Описание салона.</p>
 
@@ -8639,7 +8666,7 @@
 
   const DESKTOP_LANG_STORAGE='salon-template-language';
   const DESKTOP_I18N_ROWS=[
-    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНА БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
+    ['СТУДИЯ КОЛОРИСТИКИ','ԳՈՒՆԱԳԵՏՆԵՐԻ ՍՏՈՒԴԻԱ','COLOR STUDIO'],['ЕЛЕНЫ БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],['ЕЛЕНА БАГДАСАРЯН','ԵԼԵՆԱ ԲԱՂԴԱՍԱՐՅԱՆ','ELENA BAGHDASARYAN'],
     ['Студия Колористики','Գունագետների ստուդիա','Color Studio'],['Люберцы','Լյուբերցի','Lyubertsy'],['Солнечная ул., 6','Սոլնեչնայա փ., 6','Solnechnaya St., 6'],
     ['Услуги','Ծառայություններ','Services'],['Наши работы','Մեր աշխատանքները','Our work'],['О нас','Մեր մասին','About us'],
     ['Отзывы','Կարծիքներ','Reviews'],['Контакты','Կոնտակտներ','Contacts'],['Салон красоты','Գեղեցկության սրահ','Beauty salon'],
