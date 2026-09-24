@@ -7582,13 +7582,13 @@
     margin-right:36px!important;
   }
   #salonDesktopTop .std-logo{
-    font-size:clamp(36px,2.6vw,47px)!important;
-    letter-spacing:.008em!important;
+    font-size:clamp(38px,2.72vw,49px)!important;
+    letter-spacing:.006em!important;
   }
   #salonDesktopTop .std-logo-sub{
     margin-top:15px!important;
-    font-size:clamp(24px,1.9vw,33px)!important;
-    letter-spacing:.075em!important;
+    font-size:clamp(26px,2.02vw,35px)!important;
+    letter-spacing:.065em!important;
   }
   #salonDesktopTop .std-actions{
     width:540px!important;
@@ -7669,12 +7669,12 @@
       margin-right:26px!important;
     }
     #salonDesktopTop .std-logo{
-      font-size:clamp(30px,3vw,38px)!important;
+      font-size:clamp(31px,3.08vw,40px)!important;
       letter-spacing:0!important;
     }
     #salonDesktopTop .std-logo-sub{
-      font-size:clamp(20px,2.45vw,26px)!important;
-      letter-spacing:.025em!important;
+      font-size:clamp(21px,2.55vw,28px)!important;
+      letter-spacing:.02em!important;
     }
   }
   .std-gallery-video{
