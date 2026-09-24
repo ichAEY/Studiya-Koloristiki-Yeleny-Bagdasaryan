@@ -2422,12 +2422,12 @@ services.insertAdjacentElement('afterend',about);
     style.id='salon-mobile-i18n-style';
     style.textContent=[
       '@media(max-width:1023px){',
-      '#salon-mobile .br-lang-switch{position:absolute;z-index:66;top:0;right:57px;height:52px;display:flex;align-items:center;gap:3px;font-family:Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}',
+      '#salon-mobile .br-lang-switch{position:absolute;z-index:66;top:0;right:16px;height:52px;display:flex;align-items:center;gap:3px;font-family:Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}',
       '#salon-mobile .br-lang-switch button{border:0;background:transparent;padding:0 3px;min-width:27px;height:36px;color:#8b817b;font:600 11.5px/1 Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;letter-spacing:.035em;-webkit-tap-highlight-color:transparent}',
       '#salon-mobile .br-lang-switch button.active{color:#171513}',
       '#salon-mobile .br-lang-switch .sep{color:#c7bbb3;font-size:10px;line-height:1;pointer-events:none}',
       '#salon-mobile .br-lang-switch button:active{transform:scale(.92)}',
-      '@media(max-width:360px){#salon-mobile .br-lang-switch{right:52px;gap:1px}#salon-mobile .br-lang-switch button{min-width:23px;padding:0 1px;font-size:10.5px}}',
+      '@media(max-width:360px){#salon-mobile .br-lang-switch{right:12px;gap:1px}#salon-mobile .br-lang-switch button{min-width:23px;padding:0 1px;font-size:10.5px}}',
       '#salon-mobile .tn22-master-top{display:grid!important;grid-template-columns:40px minmax(0,1fr) 40px!important;align-items:center!important}',
       '#salon-mobile .tn22-master-brand{text-align:center!important;justify-self:center!important;max-width:100%!important;font-size:14px!important;letter-spacing:.12em!important;white-space:nowrap!important}',
       '}'
