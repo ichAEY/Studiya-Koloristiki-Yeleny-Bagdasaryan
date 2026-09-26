@@ -1,0 +1,67 @@
+name: Bagdasaryan Studio — Selectel
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bagdasaryan-selectel
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publish Bagdasaryan to Selectel
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify studio site files
+        run: |
+          set -euo pipefail
+          test -s index.html
+          test -s desktop.js
+          test -s mobile.js
+          test -s logo.webp
+          test -s galery1.MP4
+          test -s salon1.webp
+
+      - name: Configure SSH and verify server identity
+        env:
+          DEPLOY_KEY: ${{ secrets.TANEM_SELECTEL_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$DEPLOY_KEY" || { echo "::error::Add TANEM_SELECTEL_SSH_KEY as a repository secret"; exit 1; }
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/tanem_deploy
+          chmod 600 ~/.ssh/tanem_deploy
+          ssh-keyscan -T 10 -t ed25519 135.106.229.21 > ~/.ssh/known_hosts 2>/dev/null
+          ssh-keygen -lf ~/.ssh/known_hosts -E sha256 |
+            grep -F 'SHA256:MWw6jvFkfSnqQn9npxFFbGjp20D9HPrU+luB+Owt4u4' >/dev/null || {
+              echo "::error::Server SSH fingerprint does not match; stopping."
+              exit 1
+            }
+          ssh -i ~/.ssh/tanem_deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+            tanem-deploy@135.106.229.21 \
+            'test -w /var/www/bagdasaryan-studio && command -v rsync >/dev/null'
+
+      - name: Upload studio
+        run: |
+          set -euo pipefail
+          rsync -az --delete \
+            --exclude '/.git/' \
+            --exclude '/.github/' \
+            --exclude '/CNAME' \
+            --exclude '/.nojekyll' \
+            -e "ssh -i $HOME/.ssh/tanem_deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
+            ./ tanem-deploy@135.106.229.21:/var/www/bagdasaryan-studio/
+
+      - name: Verify studio on Selectel without changing DNS
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --max-time 15 \
+            --resolve bagdasaryan-studio.tanem.ru:80:135.106.229.21 \
+            http://bagdasaryan-studio.tanem.ru/ -o /tmp/studio.html
+          grep -q 'Багдасарян' /tmp/studio.html
