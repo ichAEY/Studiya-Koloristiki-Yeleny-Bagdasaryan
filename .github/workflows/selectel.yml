@@ -60,10 +60,20 @@ jobs:
             -e "ssh -i $HOME/.ssh/tanem_deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes" \
             ./ tanem-deploy@135.106.229.21:/var/www/bagdasaryan-studio/
 
-      - name: Verify studio on Selectel without changing DNS
+      - name: Verify published files and site response
         run: |
           set -euo pipefail
-          curl --fail --silent --show-error --max-time 15 \
+          ssh -i ~/.ssh/tanem_deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+            tanem-deploy@135.106.229.21 \
+            "grep -q '20260927-elena-review-loop-1' /var/www/bagdasaryan-studio/index.html && grep -q 'requestAnimationFrame(animateReviews)' /var/www/bagdasaryan-studio/mobile.js"
+          curl --silent --show-error --max-time 15 \
             --resolve bagdasaryan-studio.tanem.ru:80:135.106.229.21 \
-            http://bagdasaryan-studio.tanem.ru/ -o /tmp/studio.html
-          grep -q 'Багдасарян' /tmp/studio.html
+            -D /tmp/studio.headers -o /tmp/studio.html \
+            -w 'HTTP status: %{http_code}; redirect: %{redirect_url}; bytes: %{size_download}\\n' \
+            http://bagdasaryan-studio.tanem.ru/
+          sed -n '1,14p' /tmp/studio.headers
+          if ! grep -q 'Багдасарян' /tmp/studio.html; then
+            echo "::error::Public HTTP response did not contain the studio site."
+            head -c 260 /tmp/studio.html
+            exit 1
+          fi
