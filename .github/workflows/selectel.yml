@@ -65,7 +65,7 @@ jobs:
           set -euo pipefail
           ssh -i ~/.ssh/tanem_deploy -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
             tanem-deploy@135.106.229.21 \
-            "grep -q '20260927-elena-review-loop-1' /var/www/bagdasaryan-studio/index.html && grep -q 'requestAnimationFrame(animateReviews)' /var/www/bagdasaryan-studio/mobile.js"
+            "grep -Fq '20260927-elena-review-step-loop-2' /var/www/bagdasaryan-studio/index.html && grep -Fq 'const reviewLoop=[reviewGroups[reviewGroups.length-1],...reviewGroups,reviewGroups[0]];' /var/www/bagdasaryan-studio/mobile.js"
           curl --fail --location --silent --show-error --max-time 25 \
             --resolve bagdasaryan-studio.tanem.ru:80:135.106.229.21 \
             --resolve bagdasaryan-studio.tanem.ru:443:135.106.229.21 \
