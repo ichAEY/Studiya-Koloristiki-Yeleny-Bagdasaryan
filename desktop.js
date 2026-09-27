@@ -7582,8 +7582,8 @@
     margin-right:36px!important;
   }
   #salonDesktopTop .std-logo{
-    font-size:clamp(40px,2.9vw,53px)!important;
-    letter-spacing:.002em!important;
+    font-size:clamp(43px,3.32vw,60px)!important;
+    letter-spacing:.012em!important;
   }
   #salonDesktopTop .std-logo-sub{
     margin-top:15px!important;
@@ -7669,8 +7669,8 @@
       margin-right:26px!important;
     }
     #salonDesktopTop .std-logo{
-      font-size:clamp(33px,3.2vw,42px)!important;
-      letter-spacing:0!important;
+      font-size:clamp(36px,3.55vw,47px)!important;
+      letter-spacing:.006em!important;
     }
     #salonDesktopTop .std-logo-sub{
       font-size:clamp(22px,2.7vw,30px)!important;
@@ -7755,34 +7755,6 @@
 }
 `;
   document.head.appendChild(desktopStyle);
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   const root=document.createElement('div');
   root.id='salon-desktop-v1';
@@ -7817,7 +7789,7 @@
           <h1 class="std-logo">СТУДИЯ КОЛОРИСТИКИ</h1>
           <div class="std-logo-sub">ЕЛЕНЫ БАГДАСАРЯН</div>
 
-          <p class="std-tagline">Описание салона.</p>
+          <p class="std-tagline">Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.</p>
 
           <div class="std-meta">
             <div class="std-meta-item">
@@ -8677,6 +8649,7 @@
     ['Студия Колористики','Գունագետների ստուդիա','Color Studio'],['Люберцы','Լյուբերցի','Lyubertsy'],['Солнечная ул., 6','Սոլնեչնայա փ., 6','Solnechnaya St., 6'],
     ['Услуги','Ծառայություններ','Services'],['Наши работы','Մեր աշխատանքները','Our work'],['О нас','Մեր մասին','About us'],
     ['Отзывы','Կարծիքներ','Reviews'],['Контакты','Կոնտակտներ','Contacts'],['Салон красоты','Գեղեցկության սրահ','Beauty salon'],
+    ['Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.','Ներկում, սանրվածք, հարդարում և գեղեցկության ծառայություններ Լյուբերցիում։','Hair coloring, haircuts, styling and beauty services in Lyubertsy.'],
     ['Салон красоты в самом сердце Города.','Գեղեցկության սրահ Քաղաքի սրտում։','A beauty salon in the heart of City.'],['Листайте вниз','Սահեցրեք ներքև','Scroll down'],['Люберцы,','Քաղաք,','City,'],['Солнечная ул., 6, Люберцы','Սրահի հասցե','Солнечная ул., 6, Люберцы'],
     ['Записаться','Ամրագրել','Book now'],['Записаться →','Ամրագրել →','Book now →'],['Записаться онлайн','Ամրագրել առցանց','Book online'],['Смотреть работы','Դիտել աշխատանքները','View our work'],
     ['Портфолио','Պորտֆոլիո','Portfolio'],['Вдохновляйтесь реальными результатами наших мастеров и выбирайте свой идеальный образ.','Ոգեշնչվեք մեր մասնագետների իրական աշխատանքներով և ընտրեք ձեր կերպարը։','Explore real results from our specialists and choose your look.'],['Смотреть все работы','Դիտել բոլոր աշխատանքները','View all work'],
@@ -8800,8 +8773,27 @@
       btn.setAttribute('aria-pressed',active?'true':'false');
     });
   }
+  // Fit the centered heading between equal gutters without touching the photo.
+  function fitDesktopHeroHeading(){
+    const heading=root.querySelector('#salonDesktopTop .std-logo');
+    if(!heading)return;
+    heading.style.removeProperty('font-size');
+    const available=heading.clientWidth-12;
+    if(available<=0)return;
+    const range=document.createRange();
+    range.selectNodeContents(heading);
+    const rendered=range.getBoundingClientRect().width;
+    if(rendered>available){
+      const base=parseFloat(getComputedStyle(heading).fontSize);
+      heading.style.setProperty('font-size',(base*available/rendered).toFixed(2)+'px','important');
+    }
+  }
+  window.addEventListener('resize',fitDesktopHeroHeading,{passive:true});
+  if(document.fonts)document.fonts.ready.then(fitDesktopHeroHeading);
+
   function applyDesktopLanguage(){
     translateDesktopTree(root,currentDesktopLang);
+    fitDesktopHeroHeading();
     updateDesktopLangSwitcher();
     document.documentElement.lang=currentDesktopLang;
     document.documentElement.dir='ltr';
@@ -8885,9 +8877,6 @@
 
   const hb=root.querySelector('.std-header-brand');
   if(hb)hb.innerHTML='<img class="std-header-crown" src="logoglavnaya.jpg" alt="Корона Студии Колористики Елены Багдасарян">';
-
-  const tg=root.querySelector('.std-tagline');
-  if(tg)tg.textContent='Окрашивание, стрижки, укладки и beauty-услуги в Люберцах.';
 
   const heroMedia=root.querySelector('#stdHeroMedia');
   if(heroMedia){
