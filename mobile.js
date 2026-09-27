@@ -1488,7 +1488,7 @@ reviews.innerHTML=`<div class="br-reviews"><p class="tn22-kicker">Отзывы</
 
 const reviewViewport=reviews.querySelector('.br-review-viewport');
 const reviewTrack=reviews.querySelector('.br-review-track');
-let reviewPageIndex=// Three identical runs keep the existing review pages seamless in either swipe direction.
+// Three identical runs keep the existing review pages seamless in either swipe direction.
 const reviewTotal=reviewGroups.length;
 const reviewGap=12;
 const reviewSpeed=32; // pixels per second; no timed pauses between review pages
