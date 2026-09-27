@@ -1,6 +1,8 @@
 name: Bagdasaryan Studio — Selectel
 
 on:
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
