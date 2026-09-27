@@ -1483,46 +1483,53 @@ const reviewCard=r=>`<a class="br-review-card" href="${REVIEW_URL}" target="_bla
 const reviewGroups=[];
 for(let i=0;i<REAL_REVIEW_DATA.length;i+=3)reviewGroups.push(REAL_REVIEW_DATA.slice(i,i+3));
 const reviewPage=g=>`<div class="br-review-page">${g.map(reviewCard).join('')}</div>`;
-const reviewLoop=[reviewGroups[reviewGroups.length-1],...reviewGroups,reviewGroups[0]];
+const reviewLoop=[...reviewGroups,...reviewGroups,...reviewGroups];
 reviews.innerHTML=`<div class="br-reviews"><p class="tn22-kicker">Отзывы</p><h2>Что говорят о нас</h2><div class="br-score"><strong>5.0</strong><div class="br-stars">★★★★★</div><div class="br-count">165 отзывов · Яндекс Карты</div></div><div class="br-review-viewport"><div class="br-review-track">${reviewLoop.map(reviewPage).join('')}</div></div><a class="br-review-all" href="${REVIEW_URL}" target="_blank" rel="noopener">Смотреть все отзывы →</a></div>`;
 
 const reviewViewport=reviews.querySelector('.br-review-viewport');
 const reviewTrack=reviews.querySelector('.br-review-track');
-let reviewPageIndex=1,reviewStartX=0,reviewStartY=0,reviewDx=0,reviewDragging=false,reviewMoved=false,reviewAutoTimer=0,reviewGestureAxis=null,reviewCapturedPointer=null;
+let reviewPageIndex=// Three identical runs keep the existing review pages seamless in either swipe direction.
 const reviewTotal=reviewGroups.length;
 const reviewGap=12;
+const reviewSpeed=32; // pixels per second; no timed pauses between review pages
+let reviewStartX=0,reviewStartY=0,reviewDx=0,reviewDragging=false,reviewMoved=false;
+let reviewGestureAxis=null,reviewCapturedPointer=null,reviewLastFrame=0,reviewInView=true;
 const reviewMetrics=()=>{
   const page=reviewTrack.querySelector('.br-review-page');
   const width=page?page.getBoundingClientRect().width:Math.max(0,window.innerWidth-52);
-  return {width,step:width+reviewGap,edge:Math.max(0,(reviewViewport.clientWidth-width)/2)};
+  return {step:width+reviewGap,edge:Math.max(0,(reviewViewport.clientWidth-width)/2)};
 };
-const paintReviews=(animate=true,drag=0)=>{
-  const {step,edge}=reviewMetrics();
-  reviewTrack.style.transition=animate?'transform 650ms cubic-bezier(.22,.66,.24,1)':'none';
-  reviewTrack.style.transform=`translate3d(${edge-reviewPageIndex*step+drag}px,0,0)`;
-};
-const scheduleReviews=()=>{
-  clearTimeout(reviewAutoTimer);
-  reviewAutoTimer=setTimeout(()=>{
-    reviewPageIndex+=1;
-    paintReviews(true);
-  },3200);
-};
+let reviewStep=reviewMetrics().step;
+let reviewOffset=reviewTotal*reviewStep; // start with the middle copy of the same reviews
 const normalizeReviews=()=>{
-  if(reviewPageIndex===0){
-    reviewPageIndex=reviewTotal;
-    paintReviews(false);
-  }else if(reviewPageIndex===reviewTotal+1){
-    reviewPageIndex=1;
-    paintReviews(false);
-  }
+  const cycle=reviewTotal*reviewStep;
+  if(!cycle)return;
+  while(reviewOffset>=2*cycle)reviewOffset-=cycle;
+  while(reviewOffset<cycle)reviewOffset+=cycle;
 };
-reviewTrack.addEventListener('transitionend',()=>{
-  normalizeReviews();
-  scheduleReviews();
-});
+const paintReviews=(drag=0)=>{
+  const {edge}=reviewMetrics();
+  reviewTrack.style.transform=`translate3d(${edge-reviewOffset+drag}px,0,0)`;
+};
+reviewTrack.style.transition='none';
+const animateReviews=now=>{
+  if(!reviewLastFrame)reviewLastFrame=now;
+  const elapsed=Math.max(0,Math.min(now-reviewLastFrame,64));
+  reviewLastFrame=now;
+  if(!document.hidden&&reviewInView&&!reviewDragging){
+    reviewOffset+=elapsed*reviewSpeed/1000;
+    normalizeReviews();
+    paintReviews();
+  }
+  requestAnimationFrame(animateReviews);
+};
+if('IntersectionObserver' in window){
+  new IntersectionObserver(entries=>{
+    reviewInView=!!entries[0]?.isIntersecting;
+    reviewLastFrame=0;
+  },{rootMargin:'80px 0px',threshold:0}).observe(reviewViewport);
+}
 reviewViewport.addEventListener('pointerdown',e=>{
-  clearTimeout(reviewAutoTimer);
   reviewDragging=true;
   reviewMoved=false;
   reviewGestureAxis=null;
@@ -1540,7 +1547,6 @@ reviewViewport.addEventListener('pointermove',e=>{
       reviewGestureAxis='vertical';
       reviewDragging=false;
       reviewViewport.classList.remove('dragging');
-      scheduleReviews();
       return;
     }
     reviewGestureAxis='horizontal';
@@ -1551,37 +1557,41 @@ reviewViewport.addEventListener('pointermove',e=>{
   if(reviewGestureAxis!=='horizontal')return;
   reviewMoved=true;
   reviewDx=x;
-  paintReviews(false,reviewDx);
+  paintReviews(reviewDx);
 });
-const endReviewDrag=e=>{
+const endReviewDrag=()=>{
   if(!reviewDragging)return;
   reviewDragging=false;
   reviewViewport.classList.remove('dragging');
   if(reviewCapturedPointer!==null){try{reviewViewport.releasePointerCapture(reviewCapturedPointer)}catch(_){}}
   reviewCapturedPointer=null;
   reviewGestureAxis=null;
-  const {step}=reviewMetrics();
-  if(reviewMoved&&Math.abs(reviewDx)>Math.min(70,step*.16))reviewPageIndex+=reviewDx<0?1:-1;
-  reviewPageIndex=Math.max(0,Math.min(reviewTotal+1,reviewPageIndex));
+  if(reviewMoved){
+    reviewOffset-=reviewDx;
+    normalizeReviews();
+  }
   reviewDx=0;
-  paintReviews(true);
-  if(!reviewMoved)scheduleReviews();
+  reviewLastFrame=0;
+  paintReviews();
 };
 reviewViewport.addEventListener('pointerup',endReviewDrag);
 reviewViewport.addEventListener('pointercancel',endReviewDrag);
 reviewViewport.addEventListener('click',e=>{
   if(reviewMoved){e.preventDefault();e.stopPropagation();reviewMoved=false}
 },true);
-window.addEventListener('resize',()=>paintReviews(false),{passive:true});
-document.addEventListener('visibilitychange',()=>{
-  clearTimeout(reviewAutoTimer);
-  if(document.visibilityState==='visible'){
-    paintReviews(false);
-    scheduleReviews();
+window.addEventListener('resize',()=>{
+  const nextStep=reviewMetrics().step;
+  if(reviewStep&&nextStep&&nextStep!==reviewStep){
+    reviewOffset=reviewOffset/reviewStep*nextStep;
+    reviewStep=nextStep;
+    normalizeReviews();
   }
-});
-paintReviews(false);
-scheduleReviews();
+  reviewLastFrame=0;
+  paintReviews();
+},{passive:true});
+document.addEventListener('visibilitychange',()=>{reviewLastFrame=0;});
+paintReviews();
+requestAnimationFrame(animateReviews);
 
 // VISIT
 const visit=$('#tn13Visit');
